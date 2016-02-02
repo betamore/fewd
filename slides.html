@@ -1,0 +1,24 @@
+---
+layout: page
+title: Slides
+description: The front-end web development course slides by unit.
+permalink: /slides/
+---
+
+<div class="slides">
+
+  <h1 class="page-heading">{{ page.title }}</h1>
+
+  <ul class="post-list">
+    {% for slide in site.slides %}
+      <li>
+        <!-- <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
+
+        <h2>
+          <a class="post-link" href="{{ slide.url | prepend: site.baseurl }}">{{ slide.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
