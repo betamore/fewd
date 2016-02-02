@@ -1,0 +1,12 @@
+#circle {
+  width: 100px;
+  height: 100px;
+  background-color: $background-color;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  top: -275px;
+  z-index: 1;
+}

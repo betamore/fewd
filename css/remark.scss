@@ -1,0 +1,73 @@
+---
+# empty front matter for jekyll to compile into _site/css
+---
+
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+body { font-family: 'Droid Serif'; }
+h1, h2, h3 {
+  font-family: 'Yanone Kaffeesatz';
+  font-weight: normal;
+}
+
+.remark-code,
+.remark-inline-code {
+  font-family: 'Ubuntu Mono';
+  font-size: 1.2em;
+}
+
+#slide-css-stylesheet-hierarchy .remark-inline-code {
+  color: crimson;
+}
+
+#slide-css-browser,
+#slide-css-rule,
+#slide-css-selector-declaration,
+#slide-css-property-value {
+  background-color: #233135;
+}
+
+.red-text {
+  color: crimson;
+}
+
+.pink-bg {
+  background-color: pink;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+/*******************************************************************************
+Flexbox experiments
+*******************************************************************************/
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  width: 200px;
+  line-height: 50px;
+  color: tomato;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+}

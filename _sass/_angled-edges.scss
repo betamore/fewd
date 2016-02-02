@@ -1,0 +1,53 @@
+.red {
+  border: 1px solid $betamore-red;
+}
+
+.orange {
+  border: 1px solid $betamore-orange;
+}
+
+.yellow {
+  border: 1px solid $betamore-yellow;
+}
+
+.green {
+  border: 1px solid $betamore-green;
+}
+
+.block {
+  background-color: #fbfbfb;
+  float: left;
+  margin: 0 0 15px;
+  padding: 10% 20px;
+  text-align: center;
+  width: 49%;
+}
+
+.block:nth-child(even) {
+  float: right;
+}
+
+// slanted edges
+.edge--bottom {
+  @include angle(after);
+}
+
+.edge--bottom--reverse {
+  @include angle(after, true);
+}
+
+.edge--top {
+  @include angle(before);
+}
+
+.edge--top--reverse {
+  @include angle(before, true);
+}
+
+.edge--both {
+  @include angle(both);
+}
+
+.edge--both--reverse {
+  @include angle(both, true);
+}

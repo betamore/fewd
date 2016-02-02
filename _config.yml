@@ -1,0 +1,20 @@
+# Site settings
+title: Betamore Academy
+email: fewd@betamore.com
+description: Betamore Academy front-end web development course.
+baseurl: ""
+url: "fewd.betamore.com"
+twitter_username: betamore
+github_username:  betamore
+
+# Build settings
+markdown: kramdown
+
+# Collections
+collections:
+  slides:
+    output: true
+    permalink: /slides/unit/:path/
+
+
+exclude: [node_modules, Gemfile, Gemfile.lock, gulpfile.js, feed.xml, LICENSE.txt, Rakefile, README.md]
