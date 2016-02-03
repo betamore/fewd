@@ -43,5 +43,6 @@ permalink: /headstart
 * [GitHub Essentials](https://guides.github.com/activities/hello-world/) Hello World on GitHub!
 * [GitImmersion](http://gitimmersion.com) A guided tour that walks through the fundamentals of Git.
 * [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/index.html) Rough instructions for particular effects. Great approach for learning Git.
+* [The Art of the Commit](http://alistapart.com/article/the-art-of-the-commit) An excerpt from Chapter 5 of David Demaree's book, [Git for Humans](http://abookapart.com/products/git-for-humans).
 * [Understanding the GitHub Flow](https://guides.github.com/introduction/flow/) This guide explains how and why GitHub Flow works.
 * [Git Basics - a General Workflow](http://blackfalcon.roughdraft.io/8428401-git-basics-a-general-workflow) An introduction to the feature branch workflow.
