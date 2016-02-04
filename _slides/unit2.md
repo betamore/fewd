@@ -33,11 +33,12 @@ class: center, middle
 
 # Version Control with Git
 
+## An open source program for tracking changes in text files.
+
 ???
 ## Learn more
 
 * [Code School: Try Git](https://try.github.io)
-* [GitHub Help](https://help.github.com/)
 
 ---
 class: center, middle
@@ -45,3 +46,9 @@ class: center, middle
 # GitHub
 
 ## A social and user interface built on top of Git.
+
+???
+## Learn more
+
+* [GitHub Help](https://help.github.com/)
+* [GitHub Glossary](https://help.github.com/articles/github-glossary/)
