@@ -41,6 +41,26 @@ class: center, middle
 * [Code School: Try Git](https://try.github.io)
 
 ---
+class: center
+
+# .red-text[Tracking changes to files over time.]
+
+![Git Basics ](../assets/git-basics.png)
+
+???
+Slide image by [Jonathan McGlone](http://jmcglone.com/guides/github-pages/)
+
+---
+class: center
+
+# .red-text[Git Workflow:] Stage & Commit
+
+![Git Stage and Commit](../assets/git-add-commit.png)
+
+???
+Slide image by [devopscube.com](http://devopscube.com/git-basics-every-developer-and-administrator-should-know/)
+
+---
 class: center, middle
 
 # GitHub
