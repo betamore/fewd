@@ -6,11 +6,11 @@ class: center, middle
 ---
 class: center, middle
 
-# Text Editors & IDEs
+# Text Editors
 ### SublimeText
 ### Atom
 ### Brackets
-### Notepad++
+### Visual Studio Code
 
 ---
 class: center, middle
