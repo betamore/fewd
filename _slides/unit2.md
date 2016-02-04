@@ -22,18 +22,6 @@ class: center, middle
 ---
 class: center, middle
 
-# Local Development Server
-### MAMP
-
-???
-## Learn more
-
-* [MAMP](https://www.mamp.info/en/)
-* [The Perfect Web Development Environment for Your New Mac](https://mallinson.ca/osx-web-development/)
-
----
-class: center, middle
-
 # Command Line Basics
 
 ???
