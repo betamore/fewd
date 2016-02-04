@@ -15,9 +15,7 @@ class: center, middle
 ---
 class: center, middle
 
-# FTP & Chrome DevTools
-### FileZilla
-### Transmit
+# Browser Developer Tools
 
 ---
 class: center, middle
