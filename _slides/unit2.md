@@ -31,10 +31,17 @@ class: center, middle
 ---
 class: center, middle
 
-# Version Control with Git & GitHub
+# Version Control with Git
 
 ???
 ## Learn more
 
 * [Code School: Try Git](https://try.github.io)
 * [GitHub Help](https://help.github.com/)
+
+---
+class: center, middle
+
+# GitHub
+
+## A social and user interface built on top of Git.
