@@ -45,6 +45,7 @@ class: center, middle
 * [Introduction to the Mac OS X Command Line](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line)
 
 ---
+name: version-control-with-git
 class: center, middle
 
 # Version Control with Git
