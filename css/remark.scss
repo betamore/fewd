@@ -50,7 +50,18 @@ h1 {
 }
 
 /*******************************************************************************
-Flexbox experiments
+ SVG logos
+*******************************************************************************/
+
+#slide-version-control-with-git #version-control-with:after {
+  content: url(../slides/unit/assets/git.svg);
+  display: inline-block;
+  margin-left: .5em;
+  vertical-align: middle;
+}
+
+/*******************************************************************************
+ Flexbox experiments
 *******************************************************************************/
 
 .flex-container {
