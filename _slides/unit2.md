@@ -34,6 +34,8 @@ class: center, middle
 
 # Command Line Basics
 
+![Command Line Basics](../assets/terminal.svg)
+
 ???
 ## Learn more
 
