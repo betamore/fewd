@@ -39,6 +39,8 @@ class: center, middle
 ???
 ## Learn more
 
+* [Command Line 101](https://www.git-tower.com/learn/git/ebook/command-line/appendix/command-line-101)
+* [Command Line Crash Course](http://cli.learncodethehardway.org/book/)
 * [The designer’s guide to the OSX command prompt](http://wiseheartdesign.com/articles/2010/11/12/the-designers-guide-to-the-osx-command-prompt/)
 * [Introduction to the Mac OS X Command Line](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line)
 
