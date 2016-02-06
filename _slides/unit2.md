@@ -16,6 +16,18 @@ class: center, middle
 class: center, middle
 
 # Browser Developer Tools
+### Chrome DevTools
+### Edge Developer Tools
+### Firefox Developer Tools
+### Safari Web Inspector
+
+???
+## Learn more
+
+* [Chrome DevTools Overview](https://developer.chrome.com/devtools)
+* [Meet the Microsoft Edge Developer Tools](https://dev.windows.com/en-us/microsoft-edge/platform/documentation/f12-devtools-guide/)
+* [Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools)
+* [Safari Web Inspector Guide](https://developer.apple.com/library/safari/documentation/AppleApplications/Conceptual/Safari_Developer_Guide/Introduction/Introduction.html)
 
 ---
 class: center, middle
