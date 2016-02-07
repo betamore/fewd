@@ -124,6 +124,56 @@ $ git clone [url]
 Think of a **repository** as a kind of database where your VCS stores all the versions and metadata that accumulate in the course of your project. In Git, the repository is just a simple hidden folder named ".git" in the root directory of your project.
 
 ---
+name: git-ignore-local
+class:
+
+# Ignoring files locally
+
+### Create a .gitignore file in your project root
+
+```bash
+$ cd path/to/project/folder
+$ touch .gitignore
+```
+
+### .gitignore is .red-text[not] recursive
+
+```bash
+$ git rm --cached [file name]
+```
+
+???
+## Learn more
+
+[GitHub Help: Ignoring Files](https://help.github.com/articles/ignoring-files/)
+
+[Common .gitignore configurations](https://gist.github.com/octocat/9257657)
+
+---
+name: git-ignore-global
+class:
+
+# Ignoring files globally
+
+```bash
+$ git config --global core.excludesfile ~/.gitignore_global
+```
+
+### Sample .gitignore file
+
+```bash
+# OSX
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Desktop.ini
+```
+
+---
 class: center
 
 # Basic workflow of version control
