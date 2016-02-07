@@ -127,15 +127,34 @@ Think of a **repository** as a kind of database where your VCS stores all the ve
 class: center
 
 # Basic workflow of version control
+
+![Git Stage and Commit](../assets/git-add-commit.png)
+
+???
+
+Use the **"status"** command to get a list of all the changes you performed since the last commit: which files did you change? Did you create any new ones or deleted some old ones?
+
+Next, you tell Git which of your local changes you want to wrap up in the next commit. **Only because a file was changed doesn't mean it will be part of the next commit!** Instead, you have to **explicitly decide which changes you want to include**. You add them to the so-called **"staging area."**
+
+
+If you feel you've reached a **noteworthy state**, then it's time to wrap up your changes in a **commit.**
+
+A **commit** is a wrapper for a specific set of changes. The author of a commit has to comment what he did in a short **"commit message."**
+
+Every set of changes implicitly creates a new, different version of your project. Therefore, **every commit also marks a specific version**. It's a **snapshot** of your complete project at that certain point in time. The commit knows exactly how all of your files and directories looked and can therefore be used to restore the project to that certain state.
+
+
+Source: [git-tower.com/learn/git](https://www.git-tower.com/learn/git/ebook/command-line/basics/basic-workflow#start)
+
+Slide image from [devopscube.com](http://devopscube.com/git-basics-every-developer-and-administrator-should-know/)
+
 ---
 class: center
 
 # .red-text[Git Workflow:] Stage & Commit
 
-![Git Stage and Commit](../assets/git-add-commit.png)
 
 ???
-Slide image by [devopscube.com](http://devopscube.com/git-basics-every-developer-and-administrator-should-know/)
 
 ---
 class: center, middle
