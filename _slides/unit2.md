@@ -68,7 +68,7 @@ class: center
 Slide image by [Jonathan McGlone](http://jmcglone.com/guides/github-pages/)
 
 ---
-class: center
+class:
 
 # Configure all local repositories
 
