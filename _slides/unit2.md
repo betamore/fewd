@@ -98,6 +98,23 @@ $ git config --global core.editor "subl -n -w"
 ---
 class: center
 
+# Create repositories
+
+## New local repository
+
+```bash
+$ git init [project-name]
+```
+
+## Download a repository and its entire version history
+
+```bash
+$ git clone [url]
+```
+
+---
+class: center
+
 # .red-text[Git Workflow:] Stage & Commit
 
 ![Git Stage and Commit](../assets/git-add-commit.png)
