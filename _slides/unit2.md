@@ -96,22 +96,33 @@ $ git config --global core.editor "subl -n -w"
 [Associating text editors with Git](https://help.github.com/articles/associating-text-editors-with-git/)
 
 ---
-class: center
+class:
 
 # Create repositories
 
-## New local repository
+### New local repository
 
 ```bash
 $ git init [project-name]
 ```
 
-## Download a repository and its entire version history
+### or
+
+```bash
+$ cd path/to/project/folder
+$ git init
+```
+
+### Download a repository and its entire version history
 
 ```bash
 $ git clone [url]
 ```
 
+---
+class: center
+
+# Basic workflow of version control
 ---
 class: center
 
