@@ -46,3 +46,4 @@ permalink: /headstart
 * [The Art of the Commit](http://alistapart.com/article/the-art-of-the-commit) An excerpt from Chapter 5 of David Demaree's book, [Git for Humans](http://abookapart.com/products/git-for-humans).
 * [Understanding the GitHub Flow](https://guides.github.com/introduction/flow/) This guide explains how and why GitHub Flow works.
 * [Git Basics - a General Workflow](http://blackfalcon.roughdraft.io/8428401-git-basics-a-general-workflow) An introduction to the feature branch workflow.
+* [Associating text editors with Git](https://help.github.com/articles/associating-text-editors-with-git/) Configure Git to use Atom or Sublime Text.
