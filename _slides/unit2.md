@@ -149,9 +149,27 @@ Source: [git-tower.com/learn/git](https://www.git-tower.com/learn/git/ebook/comm
 Slide image from [devopscube.com](http://devopscube.com/git-basics-every-developer-and-administrator-should-know/)
 
 ---
-class: center
+class:
 
-# .red-text[Git Workflow:] Stage & Commit
+# Git basic workflow
+
+### list all new or modified files
+
+```bash
+$ git status
+```
+
+### add file(s) to staging area
+
+```bash
+$ git add [file name]
+```
+
+### record project snapshot in version history
+
+```bash
+$ git commit [descriptive message]
+```
 
 
 ???
