@@ -119,6 +119,10 @@ $ git init
 $ git clone [url]
 ```
 
+???
+
+Think of a **repository** as a kind of database where your VCS stores all the versions and metadata that accumulate in the course of your project. In Git, the repository is just a simple hidden folder named ".git" in the root directory of your project.
+
 ---
 class: center
 
