@@ -60,12 +60,40 @@ class: center, middle
 ---
 class: center
 
-# .red-text[Tracking changes to files over time.]
+# Tracking changes to files over time
 
 ![Git Basics ](../assets/git-basics.png)
 
 ???
 Slide image by [Jonathan McGlone](http://jmcglone.com/guides/github-pages/)
+
+---
+class: center
+
+# Configure all local repositories
+
+## Set user info
+
+```bash
+$ git config --global user.name "[full name]"
+
+$ git config --global user.email "[email address]"
+```
+
+## Set Git default text editor
+
+```bash
+
+$ git config --global core.editor "atom --wait"
+
+$ git config --global core.editor "subl -n -w"
+
+```
+
+???
+## Learn more
+
+[Associating text editors with Git](https://help.github.com/articles/associating-text-editors-with-git/)
 
 ---
 class: center
