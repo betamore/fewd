@@ -246,6 +246,19 @@ class: center
 
 A commit should only wrap related changes: fixing two different bugs should produce (at the very least) two separate commits. Small commits that only contain one topic make it easier for other members of your team to understand the changes - and to possibly undo them if something went wrong.
 ---
+name: git-branches
+class: center
+
+# Git branches
+![Git Branches](../assets/git-branches-hero.svg)
+## A parallel version of a repository.
+---
+name: git-feature-branches
+class: center
+
+![Git Feature Branches](../assets/git-feature-branches.svg)
+## Working in differnt contexts
+---
 class: center, middle
 
 # GitHub
