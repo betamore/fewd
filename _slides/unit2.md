@@ -226,9 +226,25 @@ $ git add [file name]
 $ git commit [descriptive message]
 ```
 
-
 ???
 
+---
+name:good-commit
+class: center
+
+# What makes a good commit?
+
+## Commit only related changes (the staging area is your friend)
+## Commit only completed work
+## Commit only tested work
+## Write good commit messages
+
+# Commit often
+
+???
+[What makes a good commit?](https://www.git-tower.com/learn/git/ebook/command-line/basics/working-on-your-project)
+
+A commit should only wrap related changes: fixing two different bugs should produce (at the very least) two separate commits. Small commits that only contain one topic make it easier for other members of your team to understand the changes - and to possibly undo them if something went wrong.
 ---
 class: center, middle
 
