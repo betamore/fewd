@@ -1,9 +1,11 @@
+name: unit-2
 class: center, middle
 
 # Unit 2
-## Local Development Environment
+## The Local Development Environment
 
 ---
+name: text-editors
 class: center, middle
 
 # Text Editors
@@ -13,6 +15,7 @@ class: center, middle
 ### Visual Studio Code
 
 ---
+name: browser-developer-tools
 class: center, middle
 
 # Browser Developer Tools
@@ -30,6 +33,7 @@ class: center, middle
 * [Safari Web Inspector Guide](https://developer.apple.com/library/safari/documentation/AppleApplications/Conceptual/Safari_Developer_Guide/Introduction/Introduction.html)
 
 ---
+name: command-line-basics
 class: center, middle
 
 # Command Line Basics
@@ -50,7 +54,7 @@ class: center, middle
 
 # Version Control with
 
-## An open source program for tracking changes in text files.
+## An open source program for tracking changes in text files
 
 ???
 ## Learn more
@@ -58,6 +62,7 @@ class: center, middle
 * [Code School: Try Git](https://try.github.io)
 
 ---
+name: tracking-changes-to-files-over-time
 class: center
 
 # Tracking changes to files over time
@@ -68,6 +73,7 @@ class: center
 Slide image by [Jonathan McGlone](http://jmcglone.com/guides/github-pages/)
 
 ---
+name: configure-all-local-repositories
 class:
 
 # Configure all local repositories
@@ -80,7 +86,7 @@ $ git config --global user.name "[full name]"
 $ git config --global user.email "[email address]"
 ```
 
-## Set Git default text editor
+## Set default text editor
 
 ```bash
 
@@ -96,6 +102,7 @@ $ git config --global core.editor "subl -n -w"
 [Associating text editors with Git](https://help.github.com/articles/associating-text-editors-with-git/)
 
 ---
+name: create-repositories
 class:
 
 # Create repositories
@@ -123,6 +130,7 @@ $ git clone https://github.com/betamore/fewd.git
 ```
 
 ???
+## Learn more
 
 Think of a **repository** as a kind of database where your VCS stores all the versions and metadata that accumulate in the course of your project. In Git, the repository is just a simple hidden folder named ".git" in the root directory of your project.
 
@@ -179,6 +187,7 @@ Desktop.ini
 ```
 
 ---
+name: basic-workflow-of-version-control
 class: center
 
 # Basic workflow of version control
@@ -186,6 +195,7 @@ class: center
 ![Git Stage and Commit](../assets/git-add-commit.png)
 
 ???
+## Learn more
 
 Use the **"status"** command to get a list of all the changes you performed since the last commit: which files did you change? Did you create any new ones or deleted some old ones?
 
@@ -204,6 +214,7 @@ Source: [git-tower.com/learn/git](https://www.git-tower.com/learn/git/ebook/comm
 Slide image from [devopscube.com](http://devopscube.com/git-basics-every-developer-and-administrator-should-know/)
 
 ---
+name: git-basic-workflow
 class:
 
 # Git basic workflow
@@ -234,14 +245,16 @@ class: center
 
 # What makes a good commit?
 
-## Commit only related changes (the staging area is your friend)
-## Commit only completed work
-## Commit only tested work
-## Write good commit messages
+### Commit only related changes (the staging area is your friend)
+### Commit only completed work
+### Commit only tested work
+### Write good commit messages
 
 # Commit often
 
 ???
+## Learn more
+
 [What makes a good commit?](https://www.git-tower.com/learn/git/ebook/command-line/basics/working-on-your-project)
 
 A commit should only wrap related changes: fixing two different bugs should produce (at the very least) two separate commits. Small commits that only contain one topic make it easier for other members of your team to understand the changes - and to possibly undo them if something went wrong.
@@ -251,7 +264,7 @@ class: center
 
 # Git branches
 ![Git Branches](../assets/git-branches-hero.svg)
-## A parallel version of a repository.
+## A parallel version of a repository
 ---
 name: git-feature-branches
 class: center
@@ -259,6 +272,7 @@ class: center
 ![Git Feature Branches](../assets/git-feature-branches.svg)
 ## Working in differnt contexts
 ---
+name: github-intro
 class: center, middle
 
 # GitHub
