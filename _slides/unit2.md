@@ -106,8 +106,6 @@ class:
 $ git init [project-name]
 ```
 
-### or
-
 ```bash
 $ cd path/to/project/folder
 $ git init
@@ -117,6 +115,11 @@ $ git init
 
 ```bash
 $ git clone [url]
+```
+
+```bash
+$ cd ~/Desktop/betamore_projects/fewd.betamore.com
+$ git clone https://github.com/betamore/fewd.git
 ```
 
 ???
