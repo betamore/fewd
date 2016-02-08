@@ -149,6 +149,8 @@ $ git rm --cached [file name]
 
 [Common .gitignore configurations](https://gist.github.com/octocat/9257657)
 
+[Create useful .gitignore files for your project](https://www.gitignore.io)
+
 ---
 name: git-ignore-global
 class:
