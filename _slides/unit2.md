@@ -270,7 +270,7 @@ name: git-feature-branches
 class: center
 
 ![Git Feature Branches](../assets/git-feature-branches.svg)
-## Working in differnt contexts
+## Working in different contexts
 ---
 name: github-intro
 class: center, middle
