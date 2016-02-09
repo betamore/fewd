@@ -265,6 +265,14 @@ class: center
 # Git branches
 ![Git Branches](../assets/git-branches-hero.svg)
 ## A parallel version of a repository
+
+???
+
+[Drupal Repo Diagram](https://www.drupal.org/files/repositorydiagram.png)
+
+[Git Tower: Working with Branches](https://www.git-tower.com/learn/git/ebook/command-line/branching-merging/working-with-branches#start)
+
+[A comprehensive introduction to Git branches](https://www.atlassian.com/git/tutorials/using-branches)
 ---
 name: git-feature-branches
 class: center
