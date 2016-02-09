@@ -280,6 +280,55 @@ class: center
 ![Git Feature Branches](../assets/git-feature-branches.svg)
 ## Working in different contexts
 ---
+name: git-branch-commands
+class:
+
+# Git branches
+
+### list all branches in current repository
+
+```bash
+$ git branch
+```
+
+### create new branch
+
+```bash
+$ git branch [branch-name]
+```
+
+### switch to branch
+
+```bash
+$ git checkout [branch-name]
+```
+
+???
+
+[A comprehensive introduction to Git branches](https://www.atlassian.com/git/tutorials/using-branches)
+
+[Git Tower: Working with Branches](https://www.git-tower.com/learn/git/ebook/command-line/branching-merging/working-with-branches#start)
+
+---
+name: git-merge-fast-forward-before
+class:
+
+# Git branches
+
+## Fast-forward merge: before merging
+
+![Git fast-forward merge before](../assets/git-merge-fast-forward-before.svg)
+---
+name: git-merge-fast-forward-after
+class:
+
+# Git branches
+
+## Fast forward merge: after merging
+
+![Git fast-forwad merge after](../assets/git-merge-fast-forward-after.svg)
+---
+
 name: github-intro
 class: center, middle
 

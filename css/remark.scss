@@ -70,6 +70,17 @@ h1 {
   top: -180px;
 }
 
+#slide-git-merge-fast-forward-before img[src*="forward-before"] {
+  position: relative;
+  top: -150px;
+}
+
+#slide-git-merge-fast-forward-after img[src*="forward-after"] {
+  position: relative;
+  top: -900px;
+}
+
+
 /*******************************************************************************
  Flexbox experiments
 *******************************************************************************/
