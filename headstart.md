@@ -17,6 +17,7 @@ permalink: /headstart
 ## Tools of the Trade: Text Editors
 
 * [Atom](https://atom.io) Free, cross-platform (OS X, Windows, and Linux.) editor from the fine folks at GitHub.
+* [Atom Keyboard Shortcut Cheat Sheet](http://blog.bugsnag.com/atom-editor-cheat-sheet) Great printable sheet to keep on your desk.
 * [Sublime Text 3](https://www.sublimetext.com/3) Widely used text editor for code, markup and prose. Free to try, $70 to own.
 * [Visual Studio Code](https://code.visualstudio.com) Excellent newcomer from Microsoft. Free and cross-platform.
 * [Brackets](http://brackets.io) Open source text editor founded by Adobe. Free.
@@ -24,6 +25,7 @@ permalink: /headstart
 ## Tools of the Trade: Terminal / Console Emulators
 
 * [iTerm2](http://www.iterm2.com) iTerm2 is a replacement for Terminal app on OS X. Therefore, Mac only.
+* [iTerm2 Keyboard Shortcut Cheat Sheet](https://gist.github.com/helger/3070258) Another cheat sheet to keep on your desk.
 * [cmder](http://cmder.net) A must for Windows users. Install it now. Full version recommended.
 
 ## Intro to the Command Line
