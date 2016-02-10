@@ -234,7 +234,7 @@ $ git add [file name]
 ### record project snapshot in version history
 
 ```bash
-$ git commit [descriptive message]
+$ git commit -m [descriptive message]
 ```
 
 ???
