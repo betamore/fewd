@@ -125,7 +125,7 @@ $ git clone [url]
 ```
 
 ```bash
-$ cd ~/Desktop/betamore_projects/fewd.betamore.com
+$ cd ~/Desktop/betamore_projects
 $ git clone https://github.com/betamore/fewd.git
 ```
 
