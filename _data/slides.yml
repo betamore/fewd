@@ -1,4 +1,8 @@
 - unit: 1
-  title: Intro to front-end web development.
+  unit-title: Intro to front-end web development
 - unit: 2
-  title: The local development environment.
+  unit-title: The local development environment
+- unit: 3
+  unit-title: Basic HTML
+# - unit: 4
+#   title: Styling HTML with CSS
