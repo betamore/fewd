@@ -11,10 +11,17 @@ github_username:  betamore
 markdown: kramdown
 
 # Collections
-collections:
-  slides:
-    output: true
-    permalink: /slides/unit/:path/
+# collections:
+#   slides:
+#     output: false
+#     permalink: /slides/unit/:path/
 
+
+page_gen:
+  - data: 'slide'
+    template: 'slide'
+    name: 'unit'
+    dir: 'slides/unit'
+    extension:
 
 exclude: [node_modules, Gemfile, Gemfile.lock, gulpfile.js, feed.xml, LICENSE.txt, Rakefile, README.md]
