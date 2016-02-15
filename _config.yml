@@ -18,7 +18,7 @@ markdown: kramdown
 
 
 page_gen:
-  - data: 'slide'
+  - data: 'slides'
     template: 'slide'
     name: 'unit'
     dir: 'slides/unit'
