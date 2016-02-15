@@ -2,19 +2,17 @@
 layout: page
 title: Instructor Slides
 description: The front-end web development course instructor slides by unit.
-permalink: /slides/
 ---
 
 <div class="slides">
 
   <ul class="post-list">
-    {% for slide in site.slides %}
+    {% for unit in site.data.slides %}
       <li>
         <h2>
-          <a class="post-link" href="{{ slide.url | prepend: site.baseurl }}">Unit {{ slide.unit }}: {{ slide.description }}</a>
+          <a class="post-link" href="unit/{{ forloop.index }}">Unit {{ unit.unit }}: {{ unit.unit-title }}</a>
         </h2>
       </li>
     {% endfor %}
   </ul>
-
 </div>
