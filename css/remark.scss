@@ -22,6 +22,48 @@ h1 {
   font-size: 1.2em;
 }
 
+blockquote {
+  background: transparent;
+  border-left: 5px solid #eeeeee;
+  margin: 1.5em 1em;
+  padding: .5em 1em;
+  quotes: "\201C""\201D";
+
+  &:before {
+    color: #cecece;
+    content: open-quote;
+    font-size: 4em;
+    line-height: .1em;
+    margin-right: .1em;
+    vertical-align: -.2em;
+  }
+
+  &:after {
+    color: #cecece;
+    content: close-quote;
+    font-size: 4em;
+    line-height: .1em;
+    margin-left: .1em;
+    vertical-align: -.3em;
+  }
+
+  & :first-child {
+    display: inline;
+  }
+
+  p {
+    font-size: 2em;
+  }
+
+  span {
+  color: crimson;
+  }
+}
+
+cite {
+  margin-left: 3em;
+}
+
 #slide-css-stylesheet-hierarchy .remark-inline-code {
   color: crimson;
 }
