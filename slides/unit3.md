@@ -1,8 +1,8 @@
 name: unit-3
-class: center, middle
+class: center
 
 # Unit 3
-## Intro to HTML
+![HTML5 Logo](../assets/html5-logo.svg)
 ---
 
 name: jeremy-keith-html-quote
