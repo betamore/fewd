@@ -3,6 +3,10 @@ class: center
 
 # Unit 3
 ![HTML5 Logo](../assets/html5-logo.svg)
+
+???
+
+[HTML5 on Wikipedia](https://en.wikipedia.org/wiki/HTML5)
 ---
 
 name: jeremy-keith-html-quote
