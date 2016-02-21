@@ -13,6 +13,7 @@ permalink: /headstart
 * [State of Front-end Development](http://alistapart.com/event/front-end-dev/) Things are changing quickly. What do we need to know now?
 * [Stack Overflow Developer Survey 2015](http://stackoverflow.com/research/developer-survey-2015) Where do developers live? How much do they earn?
 * [What Web Can Do Today](https://whatwebcando.today) Can I rely on the web platform features to build my app?
+* [Domain Name System](https://webhostinggeeks.com/guides/dns/) DNS explained in simple terms.
 
 ## Tools of the Trade: Text Editors
 
@@ -44,6 +45,8 @@ permalink: /headstart
 * [GitHub For Beginners: Don't Get Scared, Get Started](http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1) Getting started with GitHub.
 * [Become a Git Guru](https://www.atlassian.com/git/tutorials/) Comprehenisve Git tutorilas from Atlassian.
 * [GitHub Essentials](https://guides.github.com/activities/hello-world/) Hello World on GitHub!
+* [GitHub Glossary](https://help.github.com/articles/github-glossary/) A list of some Git and GitHub specific terms.
+* [GitHub Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet) A list of cool features of Git and GitHub.
 * [GitImmersion](http://gitimmersion.com) A guided tour that walks through the fundamentals of Git.
 * [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/index.html) Rough instructions for particular effects. Great approach for learning Git.
 * [The Art of the Commit](http://alistapart.com/article/the-art-of-the-commit) An excerpt from Chapter 5 of David Demaree's book, [Git for Humans](http://abookapart.com/products/git-for-humans).
