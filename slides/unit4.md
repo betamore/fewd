@@ -21,7 +21,7 @@ class: center, middle
 ### - Earliest CSS 3 drafts were published in June .red-text[1999]
 
 ???
-[W3C: CSS Current Work](khttp://www.w3.org/Style/CSS/current-work.en.html)
+[W3C: CSS Current Work](http://www.w3.org/Style/CSS/current-work.en.html)
 
 ---
 

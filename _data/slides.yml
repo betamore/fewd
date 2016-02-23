@@ -4,5 +4,5 @@
   unit-title: The local development environment
 - unit: 3
   unit-title: Basic HTML
-# - unit: 4
-#   title: Styling HTML with CSS
+- unit: 4
+  unit-title: Styling HTML with CSS
