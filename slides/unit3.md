@@ -28,7 +28,7 @@ class:
 name: html-status-taxonomy
 class:
 
-![HTML5 Status & Taxanomy](../assets/html5-taxonomy-status.svg)
+background-image: url(../assets/html5-taxonomy-status.svg)
 
 ???
 
