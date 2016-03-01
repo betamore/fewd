@@ -599,47 +599,6 @@ span {
 
 ---
 
-class:
-
-## CSS allows us to create rules that control the way that each individual box (and its content) is presented.
-
-```css
-h1 {
-  font-family: Arial sans-serif;
-  font-size: 2em;
-  color: tomato;
-}
-```
-
-```css
-p {
-  border-bottom: 1px solid black;
-}
-```
-
-```css
-section {
-    width: 100px;
-    height: 100px;
-    background-color: tomato;
-  }
-```
-
-???
-
-## Boxes
-* width and height
-* borders (color, with, style)
-* background color and images
-* position in browser window
-
-## Text
-* typeface
-* size
-* color
-
----
-
 name: css-box-model-inline-block
 
 # Block-level vs. Inline Elements
@@ -659,6 +618,19 @@ name: css-box-model-inline-block
 * .red-text[only maintain the width of their content]
 * may be nested inside one another
 * cannot wrap block-level elements
+
+???
+
+## Boxes
+* width and height
+* borders (color, with, style)
+* background color and images
+* position in browser window
+
+## Text
+* typeface
+* size
+* color
 
 ---
 
