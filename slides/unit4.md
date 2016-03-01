@@ -1,20 +1,22 @@
+name: unit-4
 class: center, middle
 
-# Unit 4
-## Cascading Style Sheets (CSS)
+# Unit 4: Cascading Style Sheets (CSS)
+![CSS3 Logo](../assets/css3-logo.svg)
 ### Styling Markup (HTML) Documents
 
 ???
 
 * style sheet language for formatting / styling markup languages such as HTML
 * enables the separation of content (HTML) and presentation (CSS)
+* [Cascading Style Sheets on Wikipedia](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 
 ---
 
 name: css-history
 class: center, middle
 
-# Brief History of CSS
+# History of CSS
 ### - .red-text[1996]: first official version (CSS Level 1)
 ### - .red-text[1998]: CSS2 (CSS Level 2)
 ### - .red-text[2011]: CSS2.1 (CSS Level 2, Revision 1) full Recommendation
@@ -32,95 +34,6 @@ background-image: url(../assets/css3-taxonomy.svg)
 
 name: css-browser
 background-image: url(../assets/css-browser.png)
-
----
-
-# .red-text[Every] HTML Element is a Box
-### - block level elements are boxes
-
-```html
-<h1> <p> <section>
-```
-
-### - inline level elements are boxes
-
-```html
-<img> <span> <em>
-```
-
-???
-[The CSS "Ah-ha!" Moment](https://css-tricks.com/the-css-ah-ha-moment/)
-
----
-
-# Simulate Boxes in Chrome DevTools
-
-```css
-* {
-    outline: solid 1px hotpink;
-  }
-```
-
-```css
-img {
-      outline: dotted 1px lime;
-    }
-```
-
-```css
-em {
-      outline: dashed 1px tan;
-    }
-```
-
-```css
-span {
-      outline: double 1px salmon;
-    }
-```
-
-???
-[Outlined HTML Elements in Chrome DevTools](https://www.youtube.com/watch?v=4CZveCrrGS0)
-
----
-class:
-
-## CSS allows us to create rules that control the way that each individual box (and its content) is presented.
-
-```css
-h1 {
-  font-family: Arial sans-serif;
-  font-size: 2em;
-  color: tomato;
-}
-```
-
-```css
-p {
-  border-bottom: 1px solid black;
-}
-```
-
-```css
-section {
-    width: 100px;
-    height: 100px;
-    background-color: tomato;
-  }
-```
-
-???
-
-## Boxes
-* width and height
-* borders (color, with, style)
-* background color and images
-* position in browser window
-
-## Text
-* typeface
-* size
-* color
 
 ---
 class: center, middle
@@ -273,7 +186,7 @@ class:
 name: css-selectors
 class: center, middle
 
-# .red-text[CSS Selectors]
+# CSS Selectors
 
 ## - ID Selector
 ## - Class Selector
@@ -479,7 +392,7 @@ A descendant selector in CSS is any selector with white space between two select
 name: css-big-concepts
 class: center, middle
 
-# .red-text[The Big Concepts of CSS]
+# The Big Concepts of CSS
 ## - Inheritance
 ## - Cascade
 ## - Specificity
@@ -489,8 +402,8 @@ class: center, middle
 name: html-document-tree
 class: center
 
-## Visualizing Inheritance
-### .red-text[HTML Document Structure / Upside-down Family Tree]
+# Visualizing Inheritance
+### HTML Document Structure / Upside-down Family Tree
 
 ![HTML Document Tree](../assets/html-document-tree.gif)
 
@@ -505,9 +418,10 @@ class: center
 name: css-inheritance
 class:
 
-# Pass it on
+# Inheritance: pass it on
 
 ### .red-text[CSS]
+
 ```css
 p {
   font-family: Verdana, sans-serif;
@@ -516,12 +430,14 @@ p {
 ```
 
 ### .red-text[HTML]
+
 ```html
 <section>
   <h1>Headline</h1>
   <p>Something <em>very important</em> going on here!</p>
 </section>
 ```
+
 ???
 * in general, properties related to styling text are inherited
 * properties such as borders, margins, backgrounds are not inherited
@@ -530,9 +446,10 @@ p {
 name: css-font-body
 class:
 
-# Apply Font-related Properties to Body
+# Inheritance: apply font-related properties to `<body>`
 
 ### .red-text[CSS]
+
 ```css
 body {
   font-family: 'Roboto Slab', serif;
@@ -552,18 +469,29 @@ h2 {
 ```
 
 ---
+name: css-cascade-intro
+class: center
+
+# The Cascade
+
+> When everything else is equal, the last value defined for a given property wins.
+
+<cite>-- Aaron Gustafson</cite>
+
+---
 name: css-cascade
 class: center
 
-# Conflict Resolution: .red-text[The Cascade]
+#  The Cascade
 
-### - Multiple stylesheets per document
+##  *... the last value defined for a given property wins.*
 
-### - .red-text[The Cascade] assigns weights to sources of style info.
+### - the cascade assigns weights to .red-text[sources of style info]
 
-### - Style info .red-text["cascades down"] until it is overridden by a style rule with more weight.
+### - style info .red-text["cascades down"] until it is overridden by a style rule with more weight
 
-### - Generally speaking, .red-text[the closer the stylesheet is to the content , the more weight it is given.]
+### - proximity, .red-text[the closer a property is to the content , the more weight it is given]
+
 
 ???
 * CSS allows us to apply several stylesheets to the same document, which means there are bound to be conflicts.
@@ -578,39 +506,25 @@ class: center
 name: css-stylesheet-hierarchy
 class: center
 
-# .red-text[Stylesheet Hierarchy]
+# The Cascade: stylesheet hierarchy
 
-### From general to specific:
+### *from general to specific*
 
--Browser default styles (user agent stylesheet)
+-browser default styles (user agent stylesheet)
 
--User styles (reader stylesheet)
+-user styles (reader stylesheet)
 
--Linked external stylesheet (`<link>` element in `<head>`)
+-linked external stylesheet (`<link>` element in `<head>`)
 
--Imported stylesheet (`@import`)
+-imported stylesheet (`@import`)
 
--Embedded stylesheets (`<style>` element in `<head>`)
+-embedded stylesheets (`<style>` element in `<head>`)
 
--Inline style rule(s) (`style` attribute in HTML opening tag)
+-inline style rule(s) (`style` attribute in HTML opening tag)
 
--Any style rule makred `!important` by the author
+-any style rule makred `!important` by the author
 
--Any style rule marked `!important` by the reader (user)
-
----
-name: css-specificity
-class: center
-
-# Conflict Resolution: .red-text[Specificity]
-
-### -Specificity determines, which CSS rule is applied by the browsers.
-
-### - Specificity is usually the reason why your CSS rules don't apply to some elements.
-
-### - Every selector has its place in the specificity hierarchy.
-
-### -If two selectors apply to the same element, the one with higher specificity wins.
+-any style rule marked `!important` by the reader (user)
 
 ---
 name: css-specificity-101
@@ -618,7 +532,7 @@ class:
 
 # .red-text[Specificity 101]
 
-### Cascade continues at the rule level:
+### Specificity trumps proximity
 
 * When 2 rules in a single stylesheet conflict, type of selector determines winner.
 * When selectors have an equal specificity value, the latest rule wins.
@@ -636,9 +550,99 @@ class:
 
 ---
 
+# Every HTML Element is a Box
+### - block level elements are boxes
+
+```html
+<h1> <p> <section>
+```
+
+### - inline level elements are boxes
+
+```html
+<img> <span> <em>
+```
+
+???
+[The CSS "Ah-ha!" Moment](https://css-tricks.com/the-css-ah-ha-moment/)
+
+---
+
+# Simulate Boxes in Chrome DevTools
+
+```css
+* {
+    outline: solid 1px hotpink;
+  }
+```
+
+```css
+img {
+      outline: dotted 1px lime;
+    }
+```
+
+```css
+em {
+      outline: dashed 1px tan;
+    }
+```
+
+```css
+span {
+      outline: double 1px salmon;
+    }
+```
+
+???
+[Outlined HTML Elements in Chrome DevTools](https://www.youtube.com/watch?v=4CZveCrrGS0)
+
+---
+
+class:
+
+## CSS allows us to create rules that control the way that each individual box (and its content) is presented.
+
+```css
+h1 {
+  font-family: Arial sans-serif;
+  font-size: 2em;
+  color: tomato;
+}
+```
+
+```css
+p {
+  border-bottom: 1px solid black;
+}
+```
+
+```css
+section {
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+  }
+```
+
+???
+
+## Boxes
+* width and height
+* borders (color, with, style)
+* background color and images
+* position in browser window
+
+## Text
+* typeface
+* size
+* color
+
+---
+
 name: css-box-model-inline-block
 
-# .red-text[CSS Box Model:] Block-level vs. Inline Elements
+# Block-level vs. Inline Elements
 
 ### Block-level elements
 
