@@ -5,6 +5,15 @@ class: center, middle
 
 ---
 
+name: eric-meyer-css-layout-quote
+class: middle
+
+> From the very beginning of CSS, there has been a giant, layout-shaped hole at its center. We filled it with <span>table markup</span>, which was never meant for layout. After that came <span>floats</span>, which were also <span>never meant for layout</span>; we only used them because `clear` existed, so we could push footers to the bottom of the page.
+
+<cite>-- Eric Meyer</cite>
+
+---
+
 class: center
 
 # Controlling the Position of Elements
@@ -14,6 +23,9 @@ class: center
 ### - relative positioning
 ### - absolute positioning
 ### - float
+
+### (flexbox)
+### (grid layout)
 
 ---
 
