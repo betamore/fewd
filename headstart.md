@@ -53,4 +53,4 @@ permalink: /headstart
 * [Understanding the GitHub Flow](https://guides.github.com/introduction/flow/) This guide explains how and why GitHub Flow works.
 * [Git Basics - a General Workflow](http://blackfalcon.roughdraft.io/8428401-git-basics-a-general-workflow) An introduction to the feature branch workflow.
 * [Associating text editors with Git](https://help.github.com/articles/associating-text-editors-with-git/) Configure Git to use Atom or Sublime Text.
-* [Authentication with SSH Public Keys](https://www.git-tower.com/learn/git/ebook/command-line/advanced-topics/ssh-public-keysa) Access remote Git repositories securely.
+* [Authentication with SSH Public Keys](https://www.git-tower.com/learn/git/ebook/command-line/advanced-topics/ssh-public-keys) Access remote Git repositories securely.
