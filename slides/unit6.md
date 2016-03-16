@@ -1,21 +1,21 @@
 class: center, middle
 
-## Unit 7
-# .red-text[Responsive Web Design]
+## Unit 6
+# Responsive Web Design
 
 ---
 name: rwd-definition
 class: center, middle
 # What is Responsive Web Design (RWD)?
 
-![Responsive Web Design](/slides/unit/7/slides/rwd.jpg)
+![Responsive Web Design](../assets/rwd.jpg)
 
 ---
 name: rwd-ethan-marcotte
 
-# .red-text[Ethan Marcotte:]
+> The web's moved beyond the desktop, and it's not looking back. The number of devices we're designing for is growing just as quickly as mobile traffic.
 
-> ## <em>"The web's moved beyond the desktop, and it's not looking back. The number of devices we're designing for is growing just as quickly as mobile traffic."</em>
+<cite>-- Ethan Marcotte</cite>
 
 ### - .red-text[2010:] alistapart.com/article/responsive-web-design/
 ### - .red-text[2011:] Responsive Web Design (first edition)
@@ -31,20 +31,21 @@ Creative Bloq: [Ethan Marcotte on responsive web design](http://www.creativebloq
 ---
 name: rwd-timeline
 
-# .red-text[Ethan Marcotte:]
 
-> ## <em>"I think of responsive design as an alternative to mobile sites."</em>
+> I think of responsive design as an alternative to mobile sites.
 
-# Desktop & Laptop &rarr; iPhone .red-text[(2007)] &rarr; EM RWD .red-text[(2010)] &rarr;
+<cite>-- Ethan Marcotte</cite>
 
-# EM RWD Book .red-text[(2011 1st ed.)] &rarr; EM RWD Book .red-text[(2014 2nd ed.)]
+## Desktop & Laptop &rarr; iPhone .red-text[(2007)] &rarr; EM RWD .red-text[(2010)] &rarr;
+
+## EM RWD Book .red-text[(2011 1st ed.)] &rarr; EM RWD Book .red-text[(2014 2nd ed.)]
 
 ---
 
 name: rwd-principles
 class: center
 
-# .red-text[3 Core Components of RWD]
+# 3 Core Components of RWD
 
 ### - Fluid grid
 ### - Flexible images
@@ -55,21 +56,21 @@ class: center
 name: rwd-layouts
 class: center, middle
 
-# Fixed Width Layout .red-text[(rigid px)] &rarr; Liquid Layout .red-text[(arbitrary %)]
-# &rarr; Fluid Grid .red-text[(smart % proportions)]
+## Fixed Width Layout .red-text[(rigid px)] &rarr; Liquid Layout .red-text[(arbitrary %)]
+## &rarr; Fluid Grid .red-text[(smart % proportions)]
 
 ---
 
 name: rwd-fluid-grid
 class: center
 
-# .red-text[Fluid Grid]
+# Fluid Grid
 
 ## target / context = result
 
 ### 960px / 1920px = 50%
 
-.float-left[<img src="/slides/unit/7/slides/rwd-fluid-grid.png" alt="Fluid Grid" style="width: 600px;"/>]
+.float-left[<img src="../assets/rwd-fluid-grid.png" alt="Fluid Grid" style="width: 600px;"/>]
 
 ## &#9825;
 
@@ -87,7 +88,7 @@ Treehouse: [The 2014 Guide to Responsive Web Design](http://blog.teamtreehouse.c
 name: rwd-flexible-image
 class:
 
-# .red-text[Flexible Images]
+# Flexible Images
 
 ```css
 img {
@@ -105,7 +106,7 @@ img {
 name: rwd-media-query
 class:
 
-# .red-text[Media Queries]
+# Media Queries
 
 ```css
 @media screen and (max-device-width: 480px) {
@@ -129,7 +130,7 @@ screensiz.es: [screensiz.es](http://screensiz.es)
 name: rwd-media-query-anatomy
 class:
 
-# .red-text[Anatomy of a Media Query]
+# Anatomy of a Media Query
 
 ```css
 @media screen and (min-width: 768px) and (orientation: landscape) {
@@ -164,7 +165,7 @@ class: center
 name: rwd-mobile-viewport
 class:
 
-# .red-text[Mobile Browser Viewport]
+# Mobile Browser Viewport
 
 ### - mobile browsers render pages in a virtual "window" (the viewport)
 ### - this viewport is usually wider than the physical screen (e.g. .red-text[980px] for mobile Safari)
@@ -181,7 +182,7 @@ MDN: [Using the viewport meta tag to control layout on mobile browsers](https://
 name: rwd-viewport-meta-tag-history
 class:
 
-# .red-text[Viewport Meta Tag History]
+# Viewport Meta Tag History
 
 ### - mobile Safari introduced the "viewport meta tag"
 ### - to let web developers control the viewport's size and scale
@@ -199,7 +200,7 @@ quirksmode.org: [A Tale of Two Viewports](http://www.quirksmode.org/mobile/viewp
 name: rwd-viewport-meta-tag
 class:
 
-# .red-text[Viewport Meta Tag]
+# Viewport Meta Tag
 
 ### - a typical mobile-optimized page contains something like:
 
@@ -221,7 +222,7 @@ Google Developers: [Configuring the Viewport](https://developers.google.com/spee
 name: rwd-mobile-first
 class:
 
-# .red-text[Mobile First Development Approach]
+# Mobile First Development Approach
 
 ```css
 /* Extra small devices (phones, less than 768px) */
@@ -243,15 +244,3 @@ class:
 ???
 
 Luke Wroblewski: [Mobile First](http://www.lukew.com/ff/entry.asp?933)
-
----
-
-name: img-format
-class: center
-
-# .red-text[Image Formats]
-
-### - jpg (my-image.jpg)
-### - gif (my-image.gif)
-### - png (my-image.png)
-### - svg (my-image.svg)
