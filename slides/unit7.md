@@ -253,6 +253,13 @@ document.write(greeting);
 
 ---
 
+name: js-browser
+class: center, middle
+
+# JavaScript and the Browser
+## "Front-end JavaScript"
+
+---
 
 name: js-embed
 
@@ -336,17 +343,56 @@ name: dom-intro
 name: dom-node-tree
 class:
 
-# DOM Node Tree
+# Document Structure (DOM node tree)
+## Visualizing the DOM
+
+![HTML Document Tree](../assets/html-document-tree.gif)
+
+---
+
+# Document Structure (nested set of boxes)
 
 .float-left[
-![HTML Document Tree](../assets/html-document-tree.gif)
+
+```html
+<!doctype html>
+<html>
+  <head>
+    <title>My home page</title>
+  </head>
+  <body>
+    <h1>My home page</h1>
+    <p>Hello, I am Marijn and this is ...</p>
+    <p>I also wrote a book! Read it
+      <a href="#">here</a>.</p>
+  </body>
+</html>
+```
+
 ]
 
 .float-right[
-## DOM = collection of nodes
-### - element nodes
-### - attribute nodes
-### - text nodes
+![HTML Document Tree](../assets/html-boxes.svg)
+]
+
+???
+[Eloquent JavaScript: Chapter 13: The Document Object Model](http://eloquentjavascript.net/13_dom.html)
+
+---
+
+# Data Structure (nested set of boxes)
+
+.float-left[
+![HTML Document Tree](../assets/html-boxes.svg)
+]
+
+.float-right[
+### - each box is an object we can interact with
+### - what HTML tag? does it contain other boxes? which ones?
+### - global variable `document` gives us access to objects
+### - `document.documentElement` (html tag)
+### - `document.head` (head tag)
+### - `document.body` (body tag)
 ]
 
 ---
@@ -354,7 +400,11 @@ class:
 name: dom-crawling
 
 # Traversing the DOM
-### - DOM provides .red-text[variables, methods and properties] to interface with the document
+
+### DOM is a collection of nodes
+- element nodes
+- attribute nodes
+- text nodes
 
 ```html
 <p id="betamore">
