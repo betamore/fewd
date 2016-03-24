@@ -203,6 +203,89 @@ class:
 
 ---
 
+name: js-values-types
+class:
+
+# Values & Types in JavaScript
+## In programming, different representations for values are called .red-text[types].
+### primitive values in JavaScript:
+
+### - to do math, use a .red-text[number]
+### - to print a value on the screen, use a .red-text[string] (one or more characters, words, sentences)
+### - to make a decision in a program, use a .red-text[boolean] (true or false)
+
+### Beyond primitive value types, there are arrays, objects, functions, and more.
+
+---
+
+name: js-coercion
+class:
+
+# Coercion: Converting Between Types
+
+```javascript
+var a = "42";
+var b = Number( a ); // built-in function, explicit coercion
+
+console.log( a );   // "42"
+console.log( b );   // 42
+```
+
+## comparing the same value in two different representations (types)
+### equivalent, but not exactly the same
+
+```javascript
+var a = "99.99";
+var b = 99.99;
+
+a == b // "99.99" == 99.99 becomes 99.99 == 99.99, true
+```
+
+---
+
+name: js-variables
+class:
+
+# Symbolic Containers: Variables
+### track a value as it changes over the course of the program (<em>vary</em> over time)
+
+## static typing (type enforcement):
+
+### - declare a variable (container) to hold a specific type (number, sring, etc)
+
+## weak typing (dynamic typing):
+
+### - allows a variable to hold any type of value at any time
+
+---
+
+name: js-dynamic-typing-example
+
+# hold a running value that changes over time (managing state)
+
+```javascript
+var amount = 99.99; // no type information in declaration
+
+amount = amount * 2;
+
+// implicitly coerce number value to a string to print it out
+
+console.log( amount ); // 199.98
+
+
+// convert `amount` to a string, and add "$" to the beginning
+// explicit coercion
+
+amount = "$" + String( amount );
+
+console.log( amount );      // "$199.98"
+```
+
+#### flexibility of using `amount` variable for each of the 99.99, 199.98, and the "$199.98" values
+#### some prefer separate variable (`amountStr`) to hold final "$199.98" representation of value
+
+---
+
 name: js-basics
 class:
 
