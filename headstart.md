@@ -29,6 +29,10 @@ permalink: /headstart
 * [iTerm2 Keyboard Shortcut Cheat Sheet](https://gist.github.com/helger/3070258) Another cheat sheet to keep on your desk.
 * [cmder](http://cmder.net) A must for Windows users. Install it now. Full version recommended.
 
+## Tools of the Trade: Browser DevTools
+
+* [Use Safari &amp; Web Inspector to design, debug, and optimize for the web](https://developer.apple.com/videos/play/wwdc2015/505/) Video from WWDC 2015.
+
 ## Intro to the Command Line
 
 * [How the Command Line Became Mainstream Again](http://nymag.com/following/2016/01/how-the-command-line-became-mainstream-again.html) Good article in New York magazine.
