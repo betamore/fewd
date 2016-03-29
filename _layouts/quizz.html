@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Quizz {{ page.quizz }} | FEWD | {{ site.title | escape }}</title>
+    <meta name="description" content="{{ page.quizz-title | strip_html | strip_newlines | append: '.' }}">
+    <link rel="stylesheet" href="{{ "/css/remark.css" | prepend: site.baseurl }}">
+  </head>
+  <body>
+    <script src="{{ "/js/remark-latest.min.js" | prepend: site.baseurl }}" ></script>
+    <script>
+      var slideshow = remark.create({
+        sourceUrl: 'quizz{{ page.quizz }}.md',
+        ratio: '16:9'
+      });
+    </script>
+  </body>
+</html>

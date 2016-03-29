@@ -16,4 +16,10 @@ page_gen:
     name: 'unit'
     dir: 'slides/unit'
 
+page_gen:
+  - data: 'quizzes'
+    template: 'quizz'
+    name: 'quizz'
+    dir: 'quizzes'
+
 exclude: [node_modules, Gemfile, Gemfile.lock, gulpfile.js, feed.xml, LICENSE.txt, Rakefile, README.md]

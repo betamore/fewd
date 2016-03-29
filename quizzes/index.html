@@ -1,0 +1,18 @@
+---
+layout: page
+title: Quizzes
+description: Random front-end web development quizzes.
+---
+
+<div class="quizzes">
+
+  <ul class="post-list">
+    {% for quizz in site.data.quizzes %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ forloop.index }}">Quizz {{ forloop.index }}: {{ quizz.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
