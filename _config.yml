@@ -16,7 +16,6 @@ page_gen:
     name: 'unit'
     dir: 'slides/unit'
 
-page_gen:
   - data: 'quizzes'
     template: 'quizz'
     name: 'quizz'
