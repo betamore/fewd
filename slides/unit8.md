@@ -115,5 +115,6 @@ class: center, middle
 # Write Code!
 
 ## - github.com/betamore/fewd-rwd-exercise-1
+## - betamore.github.io/fewd-rwd-exercise-1
 ## - bullhorncreative.com (Contact)
 ## - present your plan
