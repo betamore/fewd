@@ -109,3 +109,11 @@ class: center, middle
 
 ### - event handler functions are passed an argument: .red-text[the event object]
 ### - this object gives us additional information about the event
+
+---
+
+# Write Code!
+
+## - github.com/betamore/fewd-rwd-exercise-1
+## - bullhorncreative.com (Contact)
+## - present your plan
