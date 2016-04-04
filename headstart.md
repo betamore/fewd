@@ -28,6 +28,7 @@ permalink: /headstart
 * [iTerm2](http://www.iterm2.com) iTerm2 is a replacement for Terminal app on OS X. Therefore, Mac only.
 * [iTerm2 Keyboard Shortcut Cheat Sheet](https://gist.github.com/helger/3070258) Another cheat sheet to keep on your desk.
 * [cmder](http://cmder.net) A must for Windows users. Install it now. Full version recommended.
+* [Bash Shell on Windows 10](http://www.hanselman.com/blog/DevelopersCanRunBashShellAndUsermodeUbuntuLinuxBinariesOnWindows10.aspx) Run native user-mode Linux shells and command-line tools unchanged on Windows.
 
 ## Tools of the Trade: Browser DevTools
 
@@ -39,6 +40,7 @@ permalink: /headstart
 * [Command Line Crash Course](http://cli.learncodethehardway.org/book/) This book is a super fast intro to the command line.
 * [Introduction to the Mac OS X Command Line](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line) Good intro for Mac users.
 * [The Designer's Guide to the OS X Command Prompt](http://wiseheartdesign.com/articles/2010/11/12/the-designers-guide-to-the-osx-command-prompt/) A tutorial for the modern web designer.
+* [Overcoming your Fear of the Command Line](http://zellwk.com/blog/fear-of-command-line/) The command line isn’t that scary.
 
 ## Intro to Git & GitHub
 
