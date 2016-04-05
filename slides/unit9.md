@@ -6,7 +6,7 @@ class: center, middle
 
 ---
 
-name: a11y-definition
+name: a11y-berners-lee-quote
 class: middle
 
 > The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.
@@ -17,6 +17,15 @@ class: middle
 [W3C Accessibility](http://www.w3.org/standards/webdesign/accessibility)
 
 [Web Accessibility Initiative (WAI)](http://www.w3.org/WAI/)
+
+---
+
+name: a11y-gustafson-quote
+class: middle
+
+> To me, accessibility is ultimately about ensuring people have equal opportunity to access your content while simultaneously recognizing that we all have special needs -- physical limitations, bandwidth limitations, device limitations -- that may require each of us to have different experiences of the same web page.
+
+<cite>-- Aaron Gustafson</cite>
 
 ---
 
