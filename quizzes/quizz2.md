@@ -8,6 +8,8 @@ class:
 
 # How do you remove the bullets from an unordered list?
 
+## (general answer :)
+
 ```html
 <ul>
   <li>Monday</li>
@@ -74,4 +76,4 @@ class: center, middle
 
 class: center, middle
 
-# What's your biggest lessson learned over the last 10 weeks?
+# What has been your biggest lessson learned<br>over the last 10 weeks?
