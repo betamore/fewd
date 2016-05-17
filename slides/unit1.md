@@ -70,6 +70,17 @@ class: center, middle
 ---
 class: center, middle
 
+# Ethical Web Development
+## ethicalweb.org
+### - web apps should work for everyone
+### - web apps should work everywhere
+### - web apps should respect a user's privacy and security
+### - web developers should be considerate of their peers
+
+
+---
+class: center, middle
+
 # Cornerstones of the Web
 ## HTML
 ## CSS
