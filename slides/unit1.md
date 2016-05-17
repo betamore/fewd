@@ -185,10 +185,21 @@ class: center
 ---
 class: center, middle
 
-# The W3C and its History
+# W3C
+## World Wide Web Consortium
 
 ???
 
 From [About W3C](http://www.w3.org/Consortium/):
 
 *"The World Wide Web Consortium (W3C) is an international community where Member organizations, a full-time staff, and the public work together to develop Web standards. Led by Web inventor Tim Berners-Lee and CEO Jeffrey Jaffe, W3C's mission is to lead the Web to its full potential."*
+---
+class: center, middle
+# WHATWG
+## Web Hypertext Application Technology Working Group
+
+???
+
+From [WHATWG FAQ](https://wiki.whatwg.org/wiki/FAQ#What_is_the_WHATWG.3F):
+
+*"The Web Hypertext Application Technology Working Group (WHATWG) is a growing community of people interested in evolving the Web. It focuses primarily on the development of HTML and APIs needed for Web applications."*
