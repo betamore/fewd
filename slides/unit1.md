@@ -153,7 +153,7 @@ class: center
     <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/safari-ios/safari-ios_64x64.png">
   </li>
   <li class="flex-item">
-    <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/chrome-android/chrome-android_64x64.png">
+    <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/chrome/chrome_64x64.png">
   </li>
   <li class="flex-item">
     <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/opera-mini/opera-mini_64x64.png">
