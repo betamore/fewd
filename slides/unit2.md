@@ -177,8 +177,12 @@ class:
 
 # Ignoring files globally
 
+### Create a .gitignore file in your home directory
+
 ```bash
-$ git config --global core.excludesfile ~/.gitignore_global
+$ cd ~
+$ ls -a
+$ atom .gitignore
 ```
 
 ### Sample .gitignore file
