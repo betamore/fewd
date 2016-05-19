@@ -47,7 +47,7 @@ permalink: /headstart
 * [Try Git](https://try.github.io) Got 15 minutes and want to learn Git?
 * [A Grip On Git](http://agripongit.vincenttunru.com) A simple, visual Git tutorial.
 * [Git Video Tutorial](https://www.youtube.com/watch?v=r63f51ce84A) Lot's of good stuff on YouTube.
-* [Git Cheat Sheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf) Commonly used Git command line instructions for quick references.
+* [Git Cheat Sheet](https://services.github.com/kit/downloads/github-git-cheat-sheet.pdf) Commonly used Git command line instructions for quick references.
 * [GitHub For Beginners: Don't Get Scared, Get Started](http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1) Getting started with GitHub.
 * [Become a Git Guru](https://www.atlassian.com/git/tutorials/) Comprehenisve Git tutorilas from Atlassian.
 * [GitHub Essentials](https://guides.github.com/activities/hello-world/) Hello World on GitHub!
