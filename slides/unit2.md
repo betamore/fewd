@@ -180,9 +180,8 @@ class:
 ### Create a .gitignore file in your home directory
 
 ```bash
-$ cd ~
-$ ls -a
-$ atom .gitignore
+~ $ ls -a
+~ $ atom .gitignore
 ```
 
 ### Sample .gitignore file
