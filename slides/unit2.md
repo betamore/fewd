@@ -90,9 +90,9 @@ class:
 ## Set user info
 
 ```bash
-$ git config --global user.name "[full name]"
+$ git config --global user.name "full name"
 
-$ git config --global user.email "[email address]"
+$ git config --global user.email "email address"
 ```
 
 ## Set default text editor
