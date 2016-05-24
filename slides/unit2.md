@@ -286,6 +286,12 @@ class: center
 
 [A comprehensive introduction to Git branches](https://www.atlassian.com/git/tutorials/using-branches)
 ---
+name: git-branches-definition
+class: center, middle
+
+# A branch is a virtual copy of your project -- a project within a project -- where you can make commits freely, in isolation from whatever else may be happening in your repository.
+
+---
 name: git-feature-branches
 class: center
 
