@@ -25,6 +25,14 @@ class:
 
 <cite>-- Stephen Hay
 ---
+
+name: stephen-hay-html-quote
+class: middle
+
+  > HTML has always been a conversation between <span>browser makers, authors, standards wonks, and other people</span> who just showed up and liked to talk about angle brackets. 
+
+<cite>-- Mark Pilgrim
+---
 name: html-status-taxonomy
 class:
 
