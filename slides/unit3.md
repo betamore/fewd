@@ -31,7 +31,7 @@ class: middle
 
   > HTML has always been a conversation between <span>browser makers, authors, standards wonks, and other people</span> who just showed up and liked to talk about angle brackets. 
 
-<cite>-- Mark Pilgrim
+<cite>-- Mark Pilgrim</cite>
 ---
 name: html-status-taxonomy
 class:
@@ -58,3 +58,62 @@ class: center
 * Two elements with the same parent are .red-text[siblings].
 
 </cite>
+---
+
+name: html-semantics
+class: middle
+
+> HTML is the worst form of markup, except for all the others that have been tried.
+
+<cite>-- Winston Churchill</cite>
+---
+
+name: html5-content-categories
+class: center
+
+# HTML5 Content Categories
+
+### - text-level semantics (formerly inline elements)
+### - grouping content (formerly block-level elements)
+### - sectioning content (totally new)
+### - embedded content (images, audio, video, canvas)
+### - form-associated content (forms)
+### ...
+
+???
+
+[HTML content categories on MDN.](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories)
+
+---
+
+name: html5-section
+class:
+
+# Grouping thematically related content
+
+```html
+<section>
+  <h1>My headline</h1>
+  <p>Summer in MD is great!</p>
+  <p>Winter not so much.</p>
+</section>
+```
+---
+name: html5-header
+class:
+
+# Grouping of introductory or navigational aids
+
+```html
+<header>
+  <nav>
+    <ul>
+      <li> ... </li>
+      <li> ... </li>
+      <li> ... </li>
+    </ul>
+  </nav>
+</header>
+```
+
+
