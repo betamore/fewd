@@ -84,6 +84,8 @@ class: center
 
 [HTML content categories on MDN.](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories)
 
+[Google Web Authoring Statistics](https://developers.google.com/webmasters/state-of-the-web/2005/#introduction)
+
 ---
 
 name: html5-section
