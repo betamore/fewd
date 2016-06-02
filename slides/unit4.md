@@ -32,6 +32,24 @@ background-image: url(../assets/css3-taxonomy.svg)
 
 ---
 
+name: css-stephen-hay-quote
+class: middle
+
+> <span>CSS is like chess:</span> easy to learn, but hard to master.
+
+<cite>-- Stephen Hay</cite>
+
+---
+
+name: css-hugo-giraudel-quote
+class: middle
+
+> <span>CSS isn’t easy.</span> Combining a very permissive (somewhat broken) syntax with <span>constantly evolving features</span> and <span>rendering inconsistencies</span> makes CSS not that easy at all. Yes, the <span>syntax is simple</span>, but a simple syntax doesn’t make an easy language.
+
+<cite>-- Hugo Giraudel</cite>
+
+---
+
 name: css-browser
 background-image: url(../assets/css-browser.png)
 
