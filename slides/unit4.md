@@ -715,7 +715,7 @@ p {
 name: css-box-model-properties
 class:
 
-# .red-text[Box Model Properties]
+# Box Model Properties
 
 Each part of the box model corresponds to a CSS property:
 * `width`
@@ -732,5 +732,55 @@ div {
   margin: 20px;
   padding: 20px;
   width: 400px;
+}
+```
+
+---
+
+name: css-box-sizing
+class:
+
+# box-sizing
+
+### The `box-sizing` property alters the default CSS box model used to calculate width and height of the elements.
+
+```css
+/* initial and default value */
+/* width / height = width / height of content only */
+/* excludes padding, border, margin */
+
+box-sizing: content-box;
+```
+
+```css
+/* most developers switch to */
+/* width = border + padding + width of the content */
+/* height = border + padding + height of the content */
+
+box-sizing: border-box;
+```
+
+???
+
+[MDN on box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
+
+[Interactive box-model diagram](http://codepen.io/carolineartz/full/ogVXZj) on CodePen
+
+---
+
+name: box-sizing-code
+class:
+
+# box-sizing in the real world
+
+```css
+/*  ================ Helpers ================ */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 ```
