@@ -8,7 +8,34 @@ class: center, middle
 name: eric-meyer-css-layout-quote
 class: middle
 
-> From the very beginning of CSS, there has been a giant, layout-shaped hole at its center. We filled it with <span>table markup</span>, which was never meant for layout. After that came <span>floats</span>, which were also <span>never meant for layout</span>; we only used them because `clear` existed, so we could push footers to the bottom of the page.
+> From the very beginning of CSS, there has been a giant, layout-shaped hole at its center. We filled it with <span>table markup</span>, which was never meant for layout.
+
+<cite>-- Eric Meyer</cite>
+
+---
+
+name: eric-meyer-css-layout-quote2
+class: middle
+
+> After that came <span>floats</span>, which were also <span>never meant for layout</span>; we only used them because `clear` existed, so we could push footers to the bottom of the page.
+
+<cite>-- Eric Meyer</cite>
+
+---
+
+name: eric-meyer-css-layout-positioning
+class: middle
+
+> For a brief period, we played with <span>positioning</span>, which <span>actually was meant for layout</span>, but was too incompletely designed to effectively serve that role.
+
+<cite>-- Eric Meyer</cite>
+
+---
+
+name: eric-meyer-css-layout-decade
+class: middle
+
+> And that’s where things have stood for well <span>more than a decade: hacking our way to layouts with floats</span>. A useful and often ingeniously adapted hack, but a hack nonetheless.
 
 <cite>-- Eric Meyer</cite>
 
@@ -24,7 +51,7 @@ class: center
 ### - absolute positioning
 ### - float
 
-### (flexbox)
+### -flexbox
 ### (grid layout)
 
 ---
