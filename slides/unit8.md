@@ -114,7 +114,8 @@ class: center, middle
 
 # Write Code!
 
-## - github.com/betamore/fewd-rwd-exercise-1
-## - betamore.github.io/fewd-rwd-exercise-1
-## - bullhorncreative.com (Contact)
-## - present your plan
+## - github.com/betamore/potato
+## - betamore.github.io/potato
+## - codepen.io/oknoblich/pen/klnjw (off canvas menu)
+## - .red-text[present your plan]
+## - write [VanillaJS](http://stackoverflow.com/questions/20435653/what-is-vanillajs) &#128540; &#128640;
