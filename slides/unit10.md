@@ -60,8 +60,8 @@ class: middle
 
 class: center, middle
 
-# Up next ... FEWD Summer 2016!
+# Up next ... FEWD Fall 2016!
 
-### - Meet &amp; Greet: Tuesday (5/10)
-### - First Day: Tuesday (5/17)
-### - Last Day: Thursday (7/21)
+### - Meet &amp; Greet: Wednesday (8/31)
+### - First Day: Tuesday (9/13)
+### - Last Day: Thursday (11/17)
