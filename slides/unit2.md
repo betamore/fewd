@@ -54,6 +54,7 @@ class: center, middle
 # Terminal Emulators
 
 ## - iTerm2 (Terminal replacement on Mac)
+## - HyperTerm (Mac only for now)
 ## - cmder (a must for Windows)
 
 ---
