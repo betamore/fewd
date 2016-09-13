@@ -8,6 +8,30 @@ class: center, middle
 ### @tkraak
 
 ---
+class: middle
+
+>  I can’t tell you the difference that course has made for me, at a very difficult point in life.  I went in there unsure if I would even be able to comprehend, much less master, the basic material. And came out confident that, <span>if I don’t know how yet to do something, I will be able to figure that out if I just put in the work and thought.</span>
+
+<cite>-- Michelle G.</cite>
+
+---
+
+class: middle
+
+> My brother, who is a software engineer, told me that I didn’t need to take a class or learn to code to build websites. That all I would be doing is taking chunks of other people’s code and fitting them together, ie using templates and frameworks.
+
+<cite>-- Michelle G.</cite>
+
+---
+
+class: middle
+
+> What I appreciate most about the approach you take is the discipline of <span>learning the pure code</span>, and using it to build / create your own unique thing. But the underlying philosophy is more important: that <span>when you create your own code, it’s not just a job — it’s your *craft*.</span>
+
+<cite>-- Michelle G.</cite>
+
+---
+
 class: center, middle
 
 # What is a web designer?
