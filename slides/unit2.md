@@ -9,9 +9,8 @@ name: text-editors
 class: center, middle
 
 # Text Editors
-### SublimeText
 ### Atom
-### Brackets
+### SublimeText
 ### Visual Studio Code
 
 ---
