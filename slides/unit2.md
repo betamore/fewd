@@ -61,7 +61,7 @@ class: center, middle
 name: version-control-with-git
 class: center, middle
 
-# Version Control with
+# Version Control with Git
 
 ## An open source program for tracking changes in text files
 
