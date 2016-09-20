@@ -366,9 +366,11 @@ name: exercise
 
 # Exercise
 
-### - start a new website project and name it "website1"
-### - create an empty `index.html` file on the command line
-### - create `main.css` and `main.js` files and organize them in appropriate directories
-### - put your project under version control using Git
-### - make arbitrary changes to all 3 files and record these changes individually
-### - push your project to GitHub
+#### - start a new website project and name it .red-text[website1]
+#### - create an empty .red-text[index.html] file on the command line
+#### - create .red-text[main.css] and .red-text[main.js] files and organize them in appropriate directories
+#### - put your project under version control using .red-text[Git]
+#### - make arbitrary .red-text[changes to all 3 files] and record these changes .red-text]individually]
+#### - create a new branch off .red-text[master] by the name of .red-text[feature1] and make .red-text[3 commits] on it
+#### - merge .red-text[feature1] into .red-text[master] and .red-text[delete the branch]
+#### - push your project to GitHub
