@@ -359,3 +359,16 @@ class: center, middle
 
 * [GitHub Help](https://help.github.com/)
 * [GitHub Glossary](https://help.github.com/articles/github-glossary/)
+
+---
+
+name: exercise
+
+# Exercise
+
+### - start a new website project and name it "website1"
+### - create an empty `index.html` file on the command line
+### - create `main.css` and `main.js` files and organize them in appropriate directories
+### - put your project under version control using Git
+### - make arbitrary changes to all 3 files and record these changes individually
+### - push your project to GitHub
