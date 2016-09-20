@@ -370,7 +370,7 @@ name: exercise
 #### - create an empty .red-text[index.html] file on the command line
 #### - create .red-text[main.css] and .red-text[main.js] files and organize them in appropriate directories
 #### - put your project under version control using .red-text[Git]
-#### - make arbitrary .red-text[changes to all 3 files] and record these changes .red-text]individually]
+#### - make arbitrary .red-text[changes to all 3 files] and record these changes .red-text[individually]
 #### - create a new branch off .red-text[master] by the name of .red-text[feature1] and make .red-text[3 commits] on it
 #### - merge .red-text[feature1] into .red-text[master] and .red-text[delete the branch]
 #### - push your project to GitHub
