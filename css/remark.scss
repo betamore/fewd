@@ -123,6 +123,21 @@ height: 50vmin;
   }
 }
 
+/*******************************************************************************
+ customaize a few slides
+*******************************************************************************/
+
+#slide-js-fn-values,
+#slide-js-fn-first-class {
+  ul {
+    line-height: 2em;
+  }
+  .remark-inline-code {
+    background: #f0f0f0;
+    padding: 5px;
+    border-radius: 3px;
+  }
+}
 
 /*******************************************************************************
  bring a few slide headlines into view

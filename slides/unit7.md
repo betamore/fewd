@@ -336,6 +336,264 @@ document.write(greeting);
 
 ---
 
+name: js-fn
+class: center, middle
+
+# JavaScript Functions
+
+---
+
+name: js-fn-why
+class: center
+
+# Why functions?
+## - wrap, bundle, group code for later reuse
+## - reduce repetition
+## - organize code / application
+## - store steps to achieve a specific task
+## - primary mechanism of scope
+
+---
+
+name: js-fn-definition
+class: middle
+
+> A funciton is generally a named section of code that can be "called" by name, and the code inside it will run each time.
+
+<cite>-- Kyle Simpson</cite>
+
+???
+
+[Kyle Simpson on functions](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md#functions)
+
+---
+
+name: js-fn-expression
+
+# Defining a function
+
+```javascript
+var doSomething = function() {
+  console.log('What do you want me to do?');
+}
+
+// anonymous function expression
+```
+
+```javascript
+var doSomething = function foo() {
+  console.log('What do you want me to do?');
+}
+
+// named function expression
+```
+
+### ES6
+
+```javascript
+var doSomething = () => { console.log('What do you want me to do?') }
+```
+
+---
+
+name: js-fn-values
+
+# Functions as values
+
+```javascript
+a = b * 2; // statement with 4 expressions
+```
+
+- `2` is a _literal value expression_
+- `b` is a _variable expression_
+- `b * 2` is an _arithmetic expression_
+- `a = b * 2` is an _assignment expression_
+
+```javascript
+var a = function(b) {
+  return b * 2;
+}
+```
+
+- `function(b) { return b * 2; }` is an _anonymous function expression_
+
+### In JavaScript, _expressions produce a value_.
+
+???
+
+[Kyle Simpson on expressions](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md#expressions)
+
+---
+
+name: js-fn-call
+
+# Calling, running or executing a function
+
+```javascript
+var doSomething = function() {
+  console.log('What do you want me to do?');
+}
+
+doSomething(); // What do you want me to do?
+```
+
+---
+
+name: js-fn-value
+
+# Side effect
+
+```javascript
+var sayHello = function() {
+  console.log('Hello there!');
+}
+
+sayHello(); // Hello there!
+```
+
+# Producing a value
+
+```javascript
+var sayHello = function() {
+  return 'Hello there!';
+}
+
+sayHello(); // Hello there!
+
+var myReturnValue = sayHello();
+```
+
+---
+
+name: js-fn-declaration
+
+# Longhand vs. Shorthand
+
+```javascript
+var doSomething = function() {
+  console.log('What do you want me to do?');
+}
+
+// function expression
+```
+
+```javascript
+function doSomething() {
+  console.log('What do you want me to do?');
+}
+
+// function declaration
+```
+
+---
+
+name: js-fn-scope
+
+# Scope
+
+```javascript
+var a = 0;
+```
+
+```javascript
+function one() {
+  var a = 1;
+  console.log(a);
+}
+```
+
+```javascript
+function two() {
+  var a = 2;
+  console.log(a);
+}
+```
+
+```javascript
+console.log(a) // 0
+one(); // 1
+two(); // 2
+
+console.log(a + one() + two()); // ?
+```
+
+???
+
+[Kyle Simpson on scope](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md#scope)
+
+---
+
+name: js-fn-arguments
+
+# Passing information to functions
+
+```javascript
+var sayHello = function() {
+  console.log('Hello there!');
+}
+
+sayHello(); // Hello there!
+```
+
+```javascript
+var sayHelloTo = function(name) {
+  console.log('Hello ' + name + '!');
+}
+
+sayHelloTo('Jake'); // Hello Jake!
+```
+
+---
+
+name: js-fn-arguments-parameters
+
+# Arguments vs. parameters
+
+> Functions are sent arguments; they receive parameters.
+
+<cite>-- Dudley Storey</cite>
+
+```javascript
+function square(x) {
+  return x * x;
+}
+
+square(4); // 16
+```
+
+???
+
+[Dudley Storey on functions](http://thenewcode.com/1033/Introduction-to-JavaScript-Functions)
+
+---
+
+name: js-fn-first-class
+
+# In JavaScript, functions are "first class (citizen)"
+
+```javascript
+function square(x) {
+  return x * x;
+}
+
+typeof(square); // function
+
+square instanceof Object; // true
+```
+
+- `function` is a subtype of `object` (a "callable object")
+- therefore, _functions_ can do things and be handled like regular JavaScript _objects_
+
+```javascript
+console.log(square.length); // 1
+
+square.description = 'I square numbers!';
+
+console.log(square.description); // I square numbers!
+```
+
+---
+
 name: js-browser
 class: center, middle
 
