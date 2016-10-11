@@ -29,7 +29,7 @@ class:
 name: stephen-hay-html-quote
 class: middle
 
-  > HTML has always been a conversation between <span>browser makers, authors, standards wonks, and other people</span> who just showed up and liked to talk about angle brackets. 
+  > HTML has always been a conversation between <span>browser makers, authors, standards wonks, and other people</span> who just showed up and liked to talk about angle brackets.
 
 <cite>-- Mark Pilgrim</cite>
 ---
@@ -137,5 +137,90 @@ class:
   </nav>
 </header>
 ```
+
+---
+
+name: img-format
+class: center
+
+# Web image formats
+
+### - jpg (my-image.jpg)
+### - gif (my-image.gif)
+### - png (my-image.png)
+### - svg (my-image.svg)
+
+---
+
+name: img-raster
+class: middle
+
+> .red-text[Raster images] are defined using a .red-text[grid of pixels] — a raster image file contains information showing exactly where each pixel is to be placed, and exactly what color it should be. Popular web raster formats include, .red_text[PNG (.png)], .red_text[JPEG (.jpg)], and .red-text[GIF (.gif.)]
+
+<cite>--Mozilla Developer Network</cite>
+
+---
+
+name: img-vector
+class: middle
+
+> .red_text[Vector images] are defined using algorithms — a vector image file contains shape and path definitions that the computer can use to work out what the image should look like when rendered on the screen. The .red_text[SVG format] allows us to create powerful vector graphics for use on the Web.
+
+<cite>--Mozilla Developer Network</cite>
+
+---
+
+name: img-gif
+
+# Graphics Interchange Format (GIF)
+
+### - maximum of 256 colors
+### - flat colors, hard edges (logos or simple illustrations)
+### - preserves transparency
+### - can be animated
+
+---
+
+name: img-jpg
+
+# Joint Photographic Experts Group (JPG or JPEG)
+
+### - photographs
+### - images with smooth color blends
+### - supports CMYK, RGB (millions of colors)
+### - does not preserve transparency
+
+---
+
+name: img-png
+
+# Portable Network Graphics (PNG)
+
+### - a little bit like the best of both worlds
+### - contain any image type
+### - but especially efficient for storing images with flat colors
+### - allows multiple levels of transparency
+
+---
+
+name: img-svg
+
+# Scalable Vector Graphics (SVG)
+
+### - markup language for describing two-dimensional vector graphics
+### - SVG is to graphics what HTML is to text
+### - can be created and edited with any text editor
+### - can be searched, indexed, scripted, and compressed
+### - scalable, very small file size
+
+---
+
+name: img-format-selection
+class: center
+
+# Which format to choose?
+
+![Image format selection](../assets/img-selection-process.png)
+
 
 
