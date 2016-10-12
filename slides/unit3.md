@@ -222,5 +222,11 @@ class: center
 
 ![Image format selection](../assets/img-selection-process.png)
 
+???
+
+[Google Web Fundamentals: Image Optimization](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization)
+
+[Sitepoint: GIF, PNG, JPG. Which One To Use?](https://www.sitepoint.com/gif-png-jpg-which-one-to-use/)
+
 
 
