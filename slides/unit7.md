@@ -30,6 +30,15 @@ class: center, middle
 
 ---
 
+name: js-name
+class: middle
+
+> .red-text[JavaScript] is as related to .red-text[Java] as .red-text[Carnival] is to .red-text[Car].
+
+<cite>-- Kyle Simpson</cite>
+
+---
+
 name: js-what-is
 
 # What is JavaScript?
