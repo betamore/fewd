@@ -91,7 +91,7 @@ permalink: /headstart
 * [The Art of the Commit](http://alistapart.com/article/the-art-of-the-commit)
   An excerpt from Chapter 5 of David Demaree's book,
   [Git for Humans](http://abookapart.com/products/git-for-humans).
-* [A Note About Git Commit Messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) Best practices for commit message formatting is one of the little details that makes Git great. 
+* [A Note About Git Commit Messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) Best practices for commit message formatting is one of the little details that makes Git great.
 * [Understanding the GitHub Flow](https://guides.github.com/introduction/flow/)
   This guide explains how and why GitHub Flow works.
 * [Git Basics - a General Workflow](http://blackfalcon.roughdraft.io/8428401-git-basics-a-general-workflow)
@@ -106,7 +106,7 @@ permalink: /headstart
   Use a credential helper to tell Git to remember your GitHub username and
   password.
 * [On undoing, fixing, or removing commits in git](http://sethrobertson.github.io/GitFixUm/fixup.html) An attempt to be a comprehensive guide to recovering from what you did not mean to do when using Git.
-  
+
 # Intro to HTML & CSS
 
 * [Have HTML and CSS under your belt and wondering what's next?](http://www.planningforaliens.com/blog/2015/03/11/after-html-and-css/) A detailed look at that vague concept web designers call "workflow."
@@ -119,3 +119,8 @@ permalink: /headstart
 
 * [JavaScript for Cats](http://jsforcats.com) An introduction for new programmers.
 * [The JavaScript Programming Language](https://www.youtube.com/watch?v=v2ifWcnQs6M) Douglas Crockford in a 2007 presentation at Yahoo!
+
+
+# Free Web Dev resources
+
+* [The Ultimate List of Best Free Tools & Resources for Front-End Web Developers](https://medium.com/wd-tips-tricks/the-ultimate-list-of-best-free-tools-resources-for-front-end-web-developers-983c65de3300#.gde2mklwk) List of free tools and resources for Front-End Developers.
