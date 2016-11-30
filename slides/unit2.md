@@ -58,6 +58,28 @@ class: center, middle
 ## - cmder (a must for Windows)
 
 ---
+name: local-server
+class: center, middle
+
+# Spinning Up a Local Server
+
+## Two Basic Methods:
+1. From your local file system:
+  * Navigate to the desired file (file could be html, css, js, img, etc.)
+  * Right click the file > Open With > Chrome/Safari/Firefox/other browser of choice
+2. From the Command Line:
+  * Install [node.js](http://nodejs.org/download/)
+  * Install npm package globally > `npm -g install node-static`
+  * Go to the directory you want to serve locally
+  * Run the server > `static`
+
+???
+## Learn More
+
+* [Intro to Web Servers by Chris Uehlinger](http://chrisuehlinger.com/StaticWebSiteTutorial/#/)
+* [NPM node-static information](https://www.npmjs.com/package/node-static)
+
+---
 name: version-control-with-git
 class: center, middle
 
