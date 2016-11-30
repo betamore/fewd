@@ -66,7 +66,7 @@ class: center, middle
 ## Two Basic Methods:
 1. From your local file system:
   * Navigate to the desired file (file could be html, css, js, img, etc.)
-  * Right click the file > Open With > Chrome/Safari/Firefox/other browser of choic
+  * Right click the file > Open With > Chrome/Safari/Firefox/other browser of choice
 2. From the Command Line:
   * Install [node.js](http://nodejs.org/download/)
   * Install npm package globally > `npm -g install node-static`
