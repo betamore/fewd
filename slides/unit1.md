@@ -2,25 +2,9 @@ class: center, middle
 
 # Unit 1
 ## Intro to Front-end Web Development
-## Tom Kraak
-### fewd@betamore.com
-### tom@backroom.io
+### Tom Kraak
+### tkraak@me.com
 ### @tkraak
-
----
-class: middle
-
->  I can’t tell you the difference that course has made for me, at a very difficult point in life.  I went in there unsure if I would even be able to comprehend, much less master, the basic material. And came out confident that, <span>if I don’t know how yet to do something, I will be able to figure that out if I just put in the work and thought.</span>
-
-<cite>-- Michelle G.</cite>
-
----
-
-class: middle
-
-> My brother, who is a software engineer, told me that I didn’t need to take a class or learn to code to build websites. That all I would be doing is taking chunks of other people’s code and fitting them together, ie using templates and frameworks.
-
-<cite>-- Michelle G.</cite>
 
 ---
 
@@ -42,6 +26,10 @@ class: center, middle
 * many early web designers came from the world of print design
 * strong grasp of color, typography, space, audience and user experience
 * Photoshop, Illustrator, InDesign, Sketch
+
+???
+
+* [Should designers learn to code?](http://www.webdesignerdepot.com/2015/04/should-designers-learn-to-code/)
 
 ---
 
@@ -69,31 +57,6 @@ class: center, middle
 
 class: center, middle
 
-# Rise of the Full Stack Designer
-
-![Is anyone a "web designer" anymore?](../assets/blumenfeld-web-designer-tweet.png)
-
-???
-
-* borders between design and front-end dev were always thin
-* but they are now getting even thinner
-* tweet from Ben Blumenfeld (former Design lead at Facebook)
-* recent development: "Web Designers" are now "Full Stack Designers"
-* designer no longer just delivers source files
-* designer understands the world of the web on technical levels
-* designer turns design into working prototype by himself
-* some say web designers taking to code
-* others point to tools like Webflow, Froont, Macaw
-
-## Learn more
-
-* [The rise of the “Full Stack” Designer and the tools they use](https://medium.com/@edenvidal/the-rise-of-the-full-stack-designer-and-the-tools-he-uses-3daf015eb3fc)
-
-* [Should designers learn to code?](http://www.webdesignerdepot.com/2015/04/should-designers-learn-to-code/)
-
----
-class: center, middle
-
 # Ethical Web Development
 ## ethicalweb.org
 ### - web apps should work for everyone
@@ -103,6 +66,7 @@ class: center, middle
 
 
 ---
+
 class: center, middle
 
 # Cornerstones of the Web
@@ -144,7 +108,7 @@ class: center, middle
 
 ???
 
-* Hypertext Transfer Protocol (HTTP)
+* hypertext transfer protocol (HTTP)
 * domain name system (DNS)
 
 ## Learn more
@@ -160,57 +124,60 @@ class: center
 
 <ul class="flex-container">
   <li class="flex-item">
-    <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/chrome/chrome_64x64.png">
+    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/39.2.5/archive/chrome_12-48/chrome_12-48_64x64.png">
   </li>
   <li class="flex-item">
-    <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/internet-explorer/internet-explorer_64x64.png">
+    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/39.2.5/archive/internet-explorer_9-11/internet-explorer_9-11_64x64.png">
   </li>
   <li class="flex-item">
-    <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/safari/safari_64x64.png">
+    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/39.2.5/archive/safari_1-7/safari_1-7_64x64.png">
   </li>
   <li class="flex-item">
-    <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/firefox/firefox_64x64.png">
+    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/39.2.5/archive/firefox_3.5-22/firefox_3.5-22_64x64.png">
   </li>
   <li class="flex-item">
-    <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/opera/opera_64x64.png">
+    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/39.2.5/archive/opera_15-32/opera_15-32_64x64.png">
   </li>
-  <li class="flex-item">v44</li>
+  <li class="flex-item">v55</li>
   <li class="flex-item">v11</li>
-  <li class="flex-item">v8</li>
-  <li class="flex-item">v40</li>
-  <li class="flex-item">v31</li>
+  <li class="flex-item">v10</li>
+  <li class="flex-item">v50</li>
+  <li class="flex-item">v42</li>
 </ul>
 
 ### Mobile
 
 <ul class="flex-container">
   <li class="flex-item">
-    <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/safari-ios/safari-ios_64x64.png">
+    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/39.2.5/archive/safari-ios_1-6/safari-ios_1-6_64x64.png">
   </li>
   <li class="flex-item">
-    <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/chrome/chrome_64x64.png">
+    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/39.2.5/archive/chrome-android_18-36/chrome-android_18-36_64x64.png">
   </li>
   <li class="flex-item">
-    <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/opera-mini/opera-mini_64x64.png">
+    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/39.2.5/archive/opera-mini_2/opera-mini_2_64x64.png">
   </li>
   <li class="flex-item">
-    <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/android/android_64x64.png">
+    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/39.2.5/android/android_64x64.png">
   </li>
   <li class="flex-item">
-    <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/firefox/firefox_64x64.png">
+    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/39.2.5/archive/firefox_3.5-22/firefox_3.5-22_64x64.png">
   </li>
-  <li class="flex-item">v8.4</li>
-  <li class="flex-item">v44</li>
-  <li class="flex-item">v8</li>
-  <li class="flex-item">v40</li>
-  <li class="flex-item">v40</li>
+  <li class="flex-item">v10</li>
+  <li class="flex-item">v55</li>
+  <li class="flex-item">v21</li>
+  <li class="flex-item">v53</li>
+  <li class="flex-item">v55</li>
 </ul>
 
 ---
-class: center, middle
+class: middle
 
 # W3C
-## World Wide Web Consortium
+
+> The World Wide Web Consortium (W3C) is an international community where Member organizations, a full-time staff, and the public work together to develop Web standards.
+
+<cite>-- w3c.org</cite>
 
 ???
 
@@ -218,9 +185,12 @@ From [About W3C](http://www.w3.org/Consortium/):
 
 *"The World Wide Web Consortium (W3C) is an international community where Member organizations, a full-time staff, and the public work together to develop Web standards. Led by Web inventor Tim Berners-Lee and CEO Jeffrey Jaffe, W3C's mission is to lead the Web to its full potential."*
 ---
-class: center, middle
+class: middle
 # WHATWG
-## Web Hypertext Application Technology Working Group
+
+> The Web Hypertext Application Technology Working Group (WHATWG) is a growing community of people interested in evolving the Web. It focuses primarily on the development of HTML and APIs needed for Web applications.
+
+<cite>-- wiki.whatwg.org/wiki/FAQ</cite> 
 
 ???
 
