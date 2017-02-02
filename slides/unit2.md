@@ -53,9 +53,9 @@ class: center, middle
 
 # Terminal Emulators
 
-## - iTerm2 (Terminal replacement on Mac)
-## - HyperTerm (Mac only for now)
-## - cmder (a must for Windows)
+## - Hyper (macOS, Windows, Linux)
+## - iTerm2 (macOS)
+## - cmder (a must on Windows)
 
 ---
 name: local-server
@@ -105,24 +105,46 @@ class: center
 Slide image by [Jonathan McGlone](http://jmcglone.com/guides/github-pages/)
 
 ---
+name: install-github
+class:
+
+# Up and running with Git
+
+```bash
+# check get version
+
+$ git --version
+```
+
+```bash
+# list content of global git configuration file (~/.gitconfig)
+
+$ git config --list
+```
+
+
+
+---
 name: configure-all-local-repositories
 class:
 
 # Configure all local repositories
 
-## Set user info
+### Set user info
 
 ```bash
-$ git config --global user.name "full name"
+$ git config --global user.name "Tom Kraak"
 
-$ git config --global user.email "email address"
+$ git config --global user.email "tkraak@me.com"
 ```
 
-## Set default text editor
+### Set default text editor
 
 ```bash
 
 $ git config --global core.editor "atom --wait"
+
+$ git config --global core.editor "code --wait"
 
 $ git config --global core.editor "subl -n -w"
 
@@ -134,30 +156,40 @@ $ git config --global core.editor "subl -n -w"
 [Associating text editors with Git](https://help.github.com/articles/associating-text-editors-with-git/)
 
 ---
-name: create-repositories
-class:
+name: create-local-repository
 
 # Create repositories
 
 ### New local repository
 
 ```bash
-$ git init [project-name]
+# create new empty repository
+
+$ git init my-project
 ```
 
 ```bash
+# turn existing project folder into a git repository
+
 $ cd path/to/project/folder
 $ git init
 ```
 
+---
+name: clone-repository
+
+# Create repositories
+
 ### Download a repository and its entire version history
 
 ```bash
-$ git clone [url]
+# clone a repository into a new directory
+
+$ git clone https://github.com/betamore/fewd.git
 ```
 
 ```bash
-$ cd ~/Desktop/betamore_projects
+$ cd ~/betamore
 $ git clone https://github.com/betamore/fewd.git
 ```
 
@@ -179,7 +211,7 @@ $ cd path/to/project/folder
 $ touch .gitignore
 ```
 
-### .gitignore is .red-text[not] recursive
+### .gitignore is not recursive
 
 ```bash
 $ git rm --cached [file name]
@@ -203,8 +235,9 @@ class:
 ### Create a .gitignore file in your home directory
 
 ```bash
-~ $ ls -a
-~ $ atom .gitignore
+$ cd ~
+$ ls -a
+$ atom .gitignore
 ```
 
 ### Sample .gitignore file
@@ -212,8 +245,6 @@ class:
 ```bash
 # OSX
 .DS_Store
-._*
-.Spotlight-V100
 .Trashes
 
 # Windows
@@ -254,22 +285,22 @@ class:
 
 # Git basic workflow
 
-### list all new or modified files
+### List all new or modified files
 
 ```bash
 $ git status
 ```
 
-### add file(s) to staging area
+### Add file(s) to staging area
 
 ```bash
-$ git add [file name]
+$ git add index.html
 ```
 
-### record project snapshot in version history
+### Record project snapshot in version history
 
 ```bash
-$ git commit -m [descriptive message]
+$ git commit -m "fix header"
 ```
 
 ???
@@ -280,7 +311,8 @@ class: center
 
 # What makes a good commit?
 
-### Commit only related changes (the staging area is your friend)
+### Commit only related changes
+#### (the staging area is your friend)
 ### Commit only completed work
 ### Commit only tested work
 ### Write good commit messages
@@ -312,36 +344,36 @@ class: center
 name: git-branches-definition
 class: center, middle
 
-# A branch is a virtual copy of your project -- a project within a project -- where you can make commits freely, in isolation from whatever else may be happening in your repository.
+## A branch is a virtual copy of your project -- a project within a project -- where you can make commits freely, in isolation from whatever else may be happening in your repository.
 
 ---
 name: git-feature-branches
 class: center
 
 ![Git Feature Branches](../assets/git-feature-branches.svg)
-## Working in different contexts
+### Working in different contexts
 ---
 name: git-branch-commands
 class:
 
 # Git branches
 
-### list all branches in current repository
+### List all branches in current repository
 
 ```bash
 $ git branch
 ```
 
-### create new branch
+### Create new branch
 
 ```bash
-$ git branch [branch-name]
+$ git branch my-new-feature
 ```
 
-### switch to branch
+### Switch to branch
 
 ```bash
-$ git checkout [branch-name]
+$ git checkout my-new-feature
 ```
 
 ???
@@ -356,7 +388,7 @@ class:
 
 # Git branches
 
-## Fast-forward merge: before merging
+### Fast-forward merge: before merging
 
 ![Git fast-forward merge before](../assets/git-merge-fast-forward-before.svg)
 ---
@@ -365,7 +397,7 @@ class:
 
 # Git branches
 
-## Fast forward merge: after merging
+### Fast forward merge: after merging
 
 ![Git fast-forwad merge after](../assets/git-merge-fast-forward-after.svg)
 ---
@@ -375,7 +407,7 @@ class: center, middle
 
 # GitHub
 
-## A social and user interface built on top of Git.
+## A social and user interface built on top of Git
 
 ???
 ## Learn more
