@@ -417,6 +417,49 @@ class: center, middle
 
 ---
 
+name: pull-request
+class: center, middle
+
+# Making a Pull Request
+
+### Developer collaboration on GitHub, GitLab, Bitbucket, ...
+
+---
+
+name: pull-request-notification
+class: middle
+
+> In their simplest form, pull requests are a mechanism for a developer to notify team members that they have completed a feature.
+
+<cite>-- Atlassian Git Tutorial</cite>
+
+???
+
+[Maing a Pull Request](https://www.atlassian.com/git/tutorials/making-a-pull-request)
+
+---
+
+name: pull-request-collaboration
+
+# More than notification
+### - discuss the proposed feature (post feedback)
+### - tweak the feature by pushing follow-up commits
+### - all tracked within the pull request
+
+---
+
+name: pull-request-antonomy
+
+# Antonomy of a Pull Request
+### Requesting that another developer (the project maintainer) <em>pulls</em> a branch from your repository into their repository 
+
+### - source repo
+### - source branch
+### - destination repo
+### - destination branch
+
+---
+
 name: exercise
 
 # Exercise
