@@ -110,6 +110,7 @@ permalink: /headstart
 # Intro to HTML & CSS
 
 * [Have HTML and CSS under your belt and wondering what's next?](http://www.planningforaliens.com/blog/2015/03/11/after-html-and-css/) A detailed look at that vague concept web designers call "workflow."
+* [HTML & CSS Is Hard (But it doesn't have to be)](https://internetingishard.com/html-and-css/) A friendly web development tutorial for complete beginners.
 
 # CSS
 
