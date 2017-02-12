@@ -120,6 +120,7 @@ permalink: /headstart
 
 * [JavaScript for Cats](http://jsforcats.com) An introduction for new programmers.
 * [The JavaScript Programming Language](https://www.youtube.com/watch?v=v2ifWcnQs6M) Douglas Crockford in a 2007 presentation at Yahoo!
+* [JavaScript Practice](https://javascript30.com/) A helpful tutorial for JavaScript.
 
 
 # Free Web Dev resources
