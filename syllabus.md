@@ -20,10 +20,10 @@ permalink: /syllabus
   * Command line basics.
 
 ## Unit 3: Version Control with Git
-  * Intro to version control.
-  * Getting started with Git and GitHub.
-  * Working with Git branches.
-  * The pull request workflow.
+  * Intro to version control 
+  * Getting started with Git and GitHub
+  * Working with Git branches
+  * The pull request workflow
 
 ## Unit 4: Basic HTML
   * What is a markup language?
