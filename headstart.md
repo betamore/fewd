@@ -116,6 +116,10 @@ permalink: /headstart
 
 * [CSS Guidelines](http://cssguidelin.es) High-level advice for writing sane, manageable, scalable CSS.
 
+#HTML
+
+* [htmlreference.io](http://htmlreference.io) Free guide to HTML that features all elements and attributes.
+
 # Intro to JavaScript
 
 * [JavaScript for Cats](http://jsforcats.com) An introduction for new programmers.
