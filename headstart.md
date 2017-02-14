@@ -118,7 +118,7 @@ permalink: /headstart
 
 #HTML
 
-* [htmlreference.io](http://htmlreference.io) Free guide to HTML that features all elements and attributes.
+* [htmlreference.io](http://htmlreference.io) Free guide to HTML which features all elements and attributes.
 
 # Intro to JavaScript
 
