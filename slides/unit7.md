@@ -227,6 +227,33 @@ class:
 
 ---
 
+name: js-primitive-types
+class: center
+
+# Primitive Types
+
+### - string
+### - number
+### - boolean
+### - null
+### - undefined
+
+---
+
+name: js-reference-types
+class: center
+
+# Reference Types / Objects
+
+### Specialized Objects / Object Sub-types
+### - Array
+### - Function
+### - Date
+### - Error 
+### - RegExp
+
+---
+
 name: js-coercion
 class:
 
