@@ -22,6 +22,7 @@ permalink: /headstart
   platform features to build my app?
 * [Domain Name System](https://webhostinggeeks.com/guides/dns/) DNS explained in
   simple terms.
+* [Understand the Basics of HTTP](https://egghead.io/courses/understand-the-basics-of-http) Learn the fundamentals of the Hypertext Transport Protcol.
 
 ## Tools of the Trade: Text Editors
 
