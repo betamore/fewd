@@ -404,12 +404,36 @@ class: middle
 
 ---
 
-name: js-fn-expression
+name: js-fn-definition
 
 # Defining a function
 
 ```javascript
-var doSomething = function() {
+function doSomething() {
+  console.log('What do you want me to do?');
+}
+
+// function declaration
+```
+
+```javascript
+const doSomething = function() {
+  console.log('What do you want me to do?');
+}
+
+// anonymous function expression
+// in JS, an expression is any reference to a variable or value
+// assign a function to a variable just like any other value
+```
+
+---
+
+name: js-fn-values
+
+# Functions as Values
+
+```javascript
+const doSomething = function() {
   console.log('What do you want me to do?');
 }
 
@@ -417,65 +441,41 @@ var doSomething = function() {
 ```
 
 ```javascript
-var doSomething = function foo() {
-  console.log('What do you want me to do?');
-}
-
-// named function expression
+element.addEventListener('click', function(event) {
+console.log(event.type);
+});
 ```
-
-### ES6
 
 ```javascript
-var doSomething = () => { console.log('What do you want me to do?') }
+element.addEventListener('click', event => { console.log(event.type) });
 ```
-
----
-
-name: js-fn-values
-
-# Functions as values
-
-```javascript
-a = b * 2; // statement with 4 expressions
-```
-
-- `2` is a _literal value expression_
-- `b` is a _variable expression_
-- `b * 2` is an _arithmetic expression_
-- `a = b * 2` is an _assignment expression_
-
-```javascript
-var a = function(b) {
-  return b * 2;
-}
-```
-
-- `function(b) { return b * 2; }` is an _anonymous function expression_
-
-### In JavaScript, _expressions produce a value_.
-
-???
-
-[Kyle Simpson on expressions](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md#expressions)
 
 ---
 
 name: js-fn-call
 
-# Calling, running or executing a function
+# Invoking, calling, running or executing a function
 
 ```javascript
 var doSomething = function() {
   console.log('What do you want me to do?');
 }
 
-doSomething(); // What do you want me to do?
+doSomething();
+```
+
+```javascript
+const doSomething = function foo() {
+  console.log('What do you want me to do?');
+}
+
+// named function expression
+doSomething();
 ```
 
 ---
 
-name: js-fn-value
+name: js-fn-effect-value
 
 # Side effect
 
@@ -497,28 +497,6 @@ var sayHello = function() {
 sayHello(); // Hello there!
 
 var myReturnValue = sayHello();
-```
-
----
-
-name: js-fn-declaration
-
-# Longhand vs. Shorthand
-
-```javascript
-var doSomething = function() {
-  console.log('What do you want me to do?');
-}
-
-// function expression
-```
-
-```javascript
-function doSomething() {
-  console.log('What do you want me to do?');
-}
-
-// function declaration
 ```
 
 ---
@@ -605,7 +583,7 @@ square(4); // 16
 
 name: js-fn-first-class
 
-# In JavaScript, functions are "first class (citizen)"
+# "First class" functions
 
 ```javascript
 function square(x) {
