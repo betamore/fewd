@@ -3,7 +3,7 @@ class: center, middle
 # Unit 1
 ## Intro to Front-end Web Development
 ### Tom Kraak
-### tkraak@me.com
+### tom.kraak@gmail.com
 ### @tkraak
 
 ---
