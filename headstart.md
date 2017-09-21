@@ -116,6 +116,7 @@ permalink: /headstart
 # CSS
 
 * [CSS Guidelines](http://cssguidelin.es) High-level advice for writing sane, manageable, scalable CSS.
+* [The benefits of learning how to code layouts with CSS](http://jensimmons.com/post/feb-28-2017/benefits-learning-how-code-layouts-css) Why you should learn to layout pages with CSS before using a framework
 
 #HTML
 
