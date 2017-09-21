@@ -116,6 +116,7 @@ permalink: /headstart
 # CSS
 
 * [CSS Guidelines](http://cssguidelin.es) High-level advice for writing sane, manageable, scalable CSS.
+* [CSS-Tricks Almanac](https://css-tricks.com/almanac/) A reference guide to the many features of CSS.
 
 #HTML
 
