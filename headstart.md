@@ -11,6 +11,8 @@ permalink: /headstart
   What is web designer? What is a web developer?
 * [So you want to be a front end developer](https://medium.com/shopify-ux/so-you-want-to-be-a-front-end-devleoper-f8be110f1d5f#.isr0nmfdd)
   A practical guide to growth for junior developers.
+* [The Practical Guide to Becoming a Professional Web Developer](https://medium.freecodecamp.com/the-practical-guide-to-becoming-a-professional-web-developer-2f255bc25c90)
+  A resourceful guide to getting started in the web development industry.
 * [Why Learning to Code is So Damn Hard](http://www.vikingcodeschool.com/posts/why-learning-to-code-is-so-damn-hard)
   What beginners need to know about the journey ahead.
 * [Intro to Web Development](https://medium.com/pragmatic-life/intro-to-web-development-65fa99b64bf7#.inld983r9) Exploring a new potential career.
