@@ -116,8 +116,9 @@ permalink: /headstart
 # CSS
 
 * [CSS Guidelines](http://cssguidelin.es) High-level advice for writing sane, manageable, scalable CSS.
-* [CSS-Tutorial](https://www.tutorialspoint.com/css/)Easy
-simple tutorial for practicing CSS 
+* [CSS-Tutorial](https://www.tutorialspoint.com/css/)
+Easy simple tutorial for practicing CSS.
+
 
 #HTML
 
