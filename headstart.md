@@ -125,8 +125,10 @@ permalink: /headstart
 # Intro to JavaScript
 
 * [JavaScript for Cats](http://jsforcats.com) An introduction for new programmers.
+* [Pure (Vanilla) JavaScript](https://medium.freecodecamp.org/is-vanilla-javascript-worth-learning-absolutely-c2c67140ac34) Why you should have a good knowledge of pure (Vanilla) JavaScript.
 * [The JavaScript Programming Language](https://www.youtube.com/watch?v=v2ifWcnQs6M) Douglas Crockford in a 2007 presentation at Yahoo!
 * [JavaScript Practice](https://javascript30.com/) A helpful tutorial for JavaScript.
+* [Learning JavaScript: 9 Common Mistakes](https://www.sitepoint.com/learning-javascript-9-common-mistakes/) The most common learning mistakes people make and how to avoid them.
 
 
 # Free Web Dev resources
