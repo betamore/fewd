@@ -127,6 +127,8 @@ permalink: /headstart
 * [JavaScript for Cats](http://jsforcats.com) An introduction for new programmers.
 * [The JavaScript Programming Language](https://www.youtube.com/watch?v=v2ifWcnQs6M) Douglas Crockford in a 2007 presentation at Yahoo!
 * [JavaScript Practice](https://javascript30.com/) A helpful tutorial for JavaScript.
+* [JavaScript Practice](https://medium.freecodecamp.org/is-vanilla-javascript-worth-learning-absolutely-c2c67140ac34) The importance of JavaScript fundamentals for every front-end developer.
+* [JavaScript Practice](https://www.sitepoint.com/learning-javascript-9-common-mistakes) Avoid common learning mistakes.
 
 
 # Free Web Dev resources
