@@ -117,6 +117,7 @@ permalink: /headstart
 
 * [CSS Guidelines](http://cssguidelin.es) High-level advice for writing sane, manageable, scalable CSS.
 * [CSS-Tricks Almanac](https://css-tricks.com/almanac/) A reference guide to the many features of CSS.
+* [CSS-Margin vs Padding](https://stackoverflow.com/questions/2189452/when-to-use-margin-vs-padding-in-css) Guide for deciding when to use margin versus padding in CSS.
 
 #HTML
 
