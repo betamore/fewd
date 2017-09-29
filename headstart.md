@@ -23,6 +23,7 @@ permalink: /headstart
 * [Domain Name System](https://webhostinggeeks.com/guides/dns/) DNS explained in
   simple terms.
 * [Understand the Basics of HTTP](https://egghead.io/courses/understand-the-basics-of-http) Learn the fundamentals of the Hypertext Transport Protcol.
+* [Essential Image Optimization](https://images.guide/) A free book on modern image optimization techniques. Formats, decoders, techniques for efficient compression and more are covered.
 
 ## Tools of the Trade: Text Editors
 
