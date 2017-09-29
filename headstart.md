@@ -135,3 +135,6 @@ permalink: /headstart
 # Free Web Dev resources
 
 * [The Ultimate List of Best Free Tools & Resources for Front-End Web Developers](https://medium.com/wd-tips-tricks/the-ultimate-list-of-best-free-tools-resources-for-front-end-web-developers-983c65de3300#.gde2mklwk) List of free tools and resources for Front-End Developers.
+
+# Images
+* [Essential Image Optimization](https://images.guide/) A free book on modern image optimization techniques. Formats, decoders, techniques for efficient compression and more are covered.
