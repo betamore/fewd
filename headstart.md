@@ -131,7 +131,6 @@ permalink: /headstart
 * [Is Vanilla JavaScript worth learning? Absolutely.](https://medium.freecodecamp.org/is-vanilla-javascript-worth-learning-absolutely-c2c67140ac34) The importance of JavaScript fundamentals for every front-end developer.
 * [Learning JavaScript: 9 Common Mistakes That Are Holding You Back](https://www.sitepoint.com/learning-javascript-9-common-mistakes) Avoid common learning mistakes.
 
-
 # Free Web Dev resources
 
 * [The Ultimate List of Best Free Tools & Resources for Front-End Web Developers](https://medium.com/wd-tips-tricks/the-ultimate-list-of-best-free-tools-resources-for-front-end-web-developers-983c65de3300#.gde2mklwk) List of free tools and resources for Front-End Developers.
