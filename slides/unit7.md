@@ -18,13 +18,15 @@ class: center, middle
 name: js-history
 class: center, middle
 # Brief History of JavaScript
-### - .red-text[1995]: created in 10 days by Brendan Eich at Netscape ("LiveScript")
-### - .red-text[December 1995]: JS server-side scripting (Netscape Enterprise Server)
-### - .red-text[1996]: standardized by ECMA ("ECMAScript")
-### - .red-text[June 2015]: ECMAScript standard 6 released ("ES6")
+### - created in 10 days by Brendan Eich at Netscape (1995)
+### - standardized by ECMA ("ECMAScript") (1996) 
+### - Node.js JavaScript runtime environment in 2008
+### - ECMAScript standard 6 released ("ES6") (2015)
 
 ???
 [Wikipedia: JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+[A Brief History of JavaScript](https://auth0.com/blog/a-brief-history-of-javascript/)
 
 [European Computer Manufacturers Association (ECMA)](https://en.wikipedia.org/wiki/Ecma_International)
 
@@ -43,10 +45,11 @@ name: js-what-is
 
 # What is JavaScript?
 
-### - client-side scripting language
-### - reliant on browser's capabilities and settings
-### - dynamic programming language (browser interprets code on the fly)
-### - loosely typed ( don't necessarily have to tell JS what a variable is)
+### - client & server-side programming language
+### - reliant on runtime capabilities and settings
+### - dynamic programming language
+### - (runtime interprets code on the fly)
+### - loosely typed ( don't have to tell JS what a variable is)
 
 ---
 
@@ -58,14 +61,6 @@ name: js-can-do
 ### - all elements, attributes, and text on a web page can be accessed by scripts via the DOM
 ### - scripts can react to user input (alter contents, styles or browser behavior "on the fly")
 ### - request content and info from server and inject into page without refresh ("ajax")
-### - test for browser features and capabilities (e.g. Modernizr.js)
-### - fill in browser functionality gaps or add modern features to old browsers (e.g html5shiv.js)
-
-???
-
-[Modernizr](https://modernizr.com/) tells you what HTML, CSS and JavaScript features the user's browser has to offer.
-
-The [HTML5 Shiv](https://github.com/afarkas/html5shiv) enables use of HTML5 sectioning elements in legacy Internet Explorer and provides basic HTML5 styling for IE 6-9, Safari 4.x (and iPhone 3.x), and Firefox 3.x.
 
 ---
 
@@ -74,9 +69,9 @@ name: js-sample-script-clean
 # Sample Script
 
 ```javascript
-var today = new Date();
-var hourNow = today.getHours();
-var greeting;
+const today = new Date();
+const hourNow = today.getHours();
+let greeting;
 
 if (hourNow > 18) {
   greeting = "Good evening";
@@ -351,9 +346,9 @@ name: js-sample-script
 # Sample Script with Comments
 
 ```javascript
-var today = new Date(); // each individual instruction is a statement
-var hourNow = today.getHours(); // each statement starts on a new line
-var greeting; // statements end with a semicolon
+const today = new Date(); // each individual instruction is a statement
+const hourNow = today.getHours(); // each statement starts on a new line
+let greeting; // statements end with a semicolon
 
 // statements enclosed in curly braces are known as code blocks
 
