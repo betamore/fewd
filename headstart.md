@@ -123,6 +123,10 @@ permalink: /headstart
 
 * [htmlreference.io](http://htmlreference.io) Free guide to HTML which features all elements and attributes.
 
+#HTML
+
+* [htmlreference.io](http://htmlreference.io) Free guide to HTML which features all elements and attributes.
+
 # Intro to JavaScript
 
 * [JavaScript for Cats](http://jsforcats.com) An introduction for new programmers.
