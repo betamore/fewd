@@ -2,9 +2,9 @@ class: center, middle
 
 # Unit 1
 ## Intro to Front-end Web Development
-### Tom Kraak
+### Tom Kraak & Michelle Gienow
 ### tom.kraak@gmail.com
-### @tkraak
+### michellegienow@gmail.com
 
 ---
 
