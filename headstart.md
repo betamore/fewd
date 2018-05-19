@@ -16,8 +16,9 @@ permalink: /headstart
 * [Intro to Web Development](https://medium.com/pragmatic-life/intro-to-web-development-65fa99b64bf7#.inld983r9) Exploring a new potential career.
 * [State of Front-end Development](http://alistapart.com/event/front-end-dev/)
   Things are changing quickly. What do we need to know now?
-* [Stack Overflow Developer Survey 2015](http://stackoverflow.com/research/developer-survey-2015)
-  Where do developers live? How much do they earn?
+* [Stack Overflow Developer Survey 2018](https://insights.stackoverflow.com/survey/2018) Over 100K developers revealed how they learn, build their careers, which tools they’re using, and what they want in a job.
+* [The 2018 Web Developer Roadmap](https://codeburst.io/the-2018-web-developer-roadmap-826b1b806e8d) An illustrated guide to becoming a frontend or backend developer with links to courses.
+* [Front-End Developer Handbook 2018](https://frontendmasters.com/books/front-end-handbook/2018/) This is a guide that anyone could use to learn about the practice of front-end development.
 * [What Web Can Do Today](https://whatwebcando.today) Can I rely on the web
   platform features to build my app?
 * [Domain Name System](https://webhostinggeeks.com/guides/dns/) DNS explained in
@@ -56,8 +57,7 @@ permalink: /headstart
 
 * [How the Command Line Became Mainstream Again](http://nymag.com/following/2016/01/how-the-command-line-became-mainstream-again.html)
   Good article in New York magazine.
-* [Command Line Crash Course](http://cli.learncodethehardway.org/book/) This
-  book is a super fast intro to the command line.
+* [Learn Command Line](https://hellowebbooks.com/learn-command-line/) This friendly introduction will go over basics for beginners in a fun, illustrated zine format and online text.
 * [Introduction to the Mac OS X Command Line](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line)
   Good intro for Mac users.
 * [The Designer's Guide to the OS X Command Prompt](http://wiseheartdesign.com/articles/2010/11/12/the-designers-guide-to-the-osx-command-prompt/)
@@ -108,10 +108,12 @@ permalink: /headstart
   password.
 * [On undoing, fixing, or removing commits in git](http://sethrobertson.github.io/GitFixUm/fixup.html) An attempt to be a comprehensive guide to recovering from what you did not mean to do when using Git.
 
-# Intro to HTML & CSS
+# HTML & CSS
 
+* [htmlreference.io](http://htmlreference.io) Free guide to HTML which features all elements and attributes.
 * [Have HTML and CSS under your belt and wondering what's next?](http://www.planningforaliens.com/blog/2015/03/11/after-html-and-css/) A detailed look at that vague concept web designers call "workflow."
 * [HTML & CSS Is Hard (But it doesn't have to be)](https://internetingishard.com/html-and-css/) A friendly web development tutorial for complete beginners.
+* [Accessibility Through Semantic HTML](https://24ways.org/2017/accessibility-through-semantic-html/) There's a greater benefit to less generic, more semantic elements.
 
 # CSS
 
@@ -119,17 +121,17 @@ permalink: /headstart
 * [CSS-Tricks Almanac](https://css-tricks.com/almanac/) A reference guide to the many features of CSS.
 * [CSS-Margin vs Padding](https://stackoverflow.com/questions/2189452/when-to-use-margin-vs-padding-in-css) Guide for deciding when to use margin versus padding in CSS.
 
-#HTML
-
-* [htmlreference.io](http://htmlreference.io) Free guide to HTML which features all elements and attributes.
-
-# Intro to JavaScript
+# JavaScript
 
 * [JavaScript for Cats](http://jsforcats.com) An introduction for new programmers.
 * [The JavaScript Programming Language](https://www.youtube.com/watch?v=v2ifWcnQs6M) Douglas Crockford in a 2007 presentation at Yahoo!
 * [JavaScript Practice](https://javascript30.com/) A helpful tutorial for JavaScript.
 * [Is Vanilla JavaScript worth learning? Absolutely.](https://medium.freecodecamp.org/is-vanilla-javascript-worth-learning-absolutely-c2c67140ac34) The importance of JavaScript fundamentals for every front-end developer.
 * [Learning JavaScript: 9 Common Mistakes That Are Holding You Back](https://www.sitepoint.com/learning-javascript-9-common-mistakes) Avoid common learning mistakes.
+* [The Document Object Model (DOM)](https://flaviocopes.com/dom/) A representation of an HTML document in nodes and objects
+* [Traversing the DOM with JavaScript](https://zellwk.com/blog/dom-traversals/) All JavaScript developers need to know how to traverse the DOM.
+* [JavaScript Tutor](http://pythontutor.com/javascript.html) Visualize JavaScript code execution for learning and debugging purposes.
+* [10 JavaScript Concepts You Need to Know for Interviews](https://codeburst.io/10-javascript-concepts-you-need-to-know-for-interviews-136df65ecce) Self-learning often leaves gaps in people's understanding of the language itself.
 
 
 # Free Web Dev resources
