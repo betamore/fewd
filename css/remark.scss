@@ -2,12 +2,16 @@
 # empty front matter for jekyll to compile into _site/css
 ---
 
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic);
+@import url(https://cdn.rawgit.com/tonsky/FiraCode/1.205/distr/fira_code.css);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
 
-body { font-family: 'Droid Serif'; }
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 h1, h2, h3 {
-  font-family: 'jaf-facitweb';
+  font-family: 'Comfortaa', cursive;
 }
 
 h1 {
@@ -16,8 +20,9 @@ h1 {
 
 .remark-code,
 .remark-inline-code {
-  font-family: 'Ubuntu Mono';
+  font-family: 'Fira Code';
   font-size: 1.2em;
+  font-feature-settings: "calt" 1;
 }
 
 blockquote {
