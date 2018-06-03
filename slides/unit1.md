@@ -135,56 +135,55 @@ class: center, middle
 ---
 class: center
 
-## Current Browser Landscape
+## Browser Landscape
 ### Desktop
 
 <ul class="flex-container">
   <li class="flex-item">
-    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/39.2.5/archive/chrome_12-48/chrome_12-48_64x64.png">
+    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.8.0/archive/chrome_12-48/chrome_12-48_64x64.png">
   </li>
   <li class="flex-item">
-    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/39.2.5/archive/internet-explorer_9-11/internet-explorer_9-11_64x64.png">
+    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.8.0/edge/edge_64x64.png">
   </li>
   <li class="flex-item">
-    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/39.2.5/archive/safari_1-7/safari_1-7_64x64.png">
+    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.8.0/safari/safari_64x64.png">
   </li>
   <li class="flex-item">
-    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/39.2.5/archive/firefox_3.5-22/firefox_3.5-22_64x64.png">
+    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.8.0/firefox/firefox_64x64.png">
   </li>
   <li class="flex-item">
-    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/39.2.5/archive/opera_15-32/opera_15-32_64x64.png">
+    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.8.0/opera/opera_64x64.png">
   </li>
-  <li class="flex-item">v55</li>
+  <li class="flex-item">v69</li>
+  <li class="flex-item">v18</li>
   <li class="flex-item">v11</li>
-  <li class="flex-item">v10</li>
-  <li class="flex-item">v50</li>
-  <li class="flex-item">v42</li>
+  <li class="flex-item">v62</li>
+  <li class="flex-item">v53</li>
 </ul>
 
 ### Mobile
 
 <ul class="flex-container">
   <li class="flex-item">
-    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/39.2.5/archive/safari-ios_1-6/safari-ios_1-6_64x64.png">
+    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.8.0/safari-ios/safari-ios_64x64.png">
   </li>
   <li class="flex-item">
-    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/39.2.5/archive/chrome-android_18-36/chrome-android_18-36_64x64.png">
+    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.8.0/archive/chrome_12-48/chrome_12-48_64x64.png">
   </li>
   <li class="flex-item">
-    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/39.2.5/archive/opera-mini_2/opera-mini_2_64x64.png">
+    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.8.0/opera-mini/opera-mini_64x64.png">
   </li>
   <li class="flex-item">
-    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/39.2.5/android/android_64x64.png">
+    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.8.0/edge-tile/edge-tile_64x64.png">
   </li>
   <li class="flex-item">
-    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/39.2.5/archive/firefox_3.5-22/firefox_3.5-22_64x64.png">
+    <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.8.0/firefox/firefox_64x64.png">
   </li>
-  <li class="flex-item">v10</li>
-  <li class="flex-item">v55</li>
-  <li class="flex-item">v21</li>
-  <li class="flex-item">v53</li>
-  <li class="flex-item">v55</li>
 </ul>
+
+???
+
+[Can I use ... browser support tables for modern web technologies](https://caniuse.com)
 
 ---
 class: middle
