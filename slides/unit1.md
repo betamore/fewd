@@ -1,18 +1,34 @@
 class: center, middle
 
 # Unit 1
-## Intro to Front-end Web Development
+## Betamore Academy
+### Intro to Front-end Web Development
 ### Tom Kraak & Michelle Gienow
-### tom.kraak@gmail.com
-### michellegienow@gmail.com
+#### tom.kraak@gmail.com
+#### michellegienow@gmail.com
 
 ---
 
 class: middle
 
-> What I appreciate most about the approach you take is the discipline of <span>learning the pure code</span>, and using it to build / create your own unique thing. But the underlying philosophy is more important: that <span>when you create your own code, it’s not just a job — it’s your *craft*.</span>
+# Expectations
 
-<cite>-- Michelle G.</cite>
+## Sincere, not serious.
+
+### This is an interactive course.
+
+### There will be uncomfortable moments.
+
+### Think critically, answer questions, ask questions.
+
+### Take responsibility for your learning!
+
+<cite>-- Bianca Gandolfo (Instructor at Frontend Masters)</cite> &#128070;
+
+???
+
+[JavaScript: From Fundamentals to Functional JS by Bianca Gandolfo](http://slides.com/bgando/f2f-final-day-1#/0/5)
+
 
 ---
 
