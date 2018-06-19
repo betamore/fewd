@@ -43,16 +43,6 @@ class: center, middle
 
 ---
 
-name: html-status-taxonomy
-class:
-
-background-image: url(../assets/html5-taxonomy-status.svg)
-
-???
-
-Slide illustration by Mercury999 (Own work) [<a href="http://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>], <a href="https://commons.wikimedia.org/wiki/File%3AHTML5_APIs_and_related_technologies_taxonomy_and_status.svg">via Wikimedia Commons</a>
-
----
 name: html-tags
 
 background-image: url(../assets/html-tags.jpg)
