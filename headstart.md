@@ -118,6 +118,7 @@ permalink: /headstart
 * [An Overview of HTML5 Semantics](https://codepen.io/mi-lee/post/an-overview-of-html5-semantics) What are HTML5 semantics and why should we use them?
 * [HTML5 Accessibility](http://html5accessibility.com/) Get the current accessibility support status of HTML5 features across major browsers.
 * [Getting Started with Web Accessibility](https://medium.com/@emilymears/getting-started-with-web-accessibility-2c7632c3a8bd) A quick introduction to the importance and implementation of accessible development for the web.
+* [HTML 5 and ARIA Landmarks](https://dequeuniversity.com/assets/html/jquery-summit/html5/slides/landmarks.html) And introduction to ARIA attributes.
 
 # CSS
 
