@@ -119,6 +119,7 @@ permalink: /headstart
 * [HTML5 Accessibility](http://html5accessibility.com/) Get the current accessibility support status of HTML5 features across major browsers.
 * [Getting Started with Web Accessibility](https://medium.com/@emilymears/getting-started-with-web-accessibility-2c7632c3a8bd) A quick introduction to the importance and implementation of accessible development for the web.
 * [HTML 5 and ARIA Landmarks](https://dequeuniversity.com/assets/html/jquery-summit/html5/slides/landmarks.html) And introduction to ARIA attributes.
+* [Accessibility according to actual people with disabilities](https://axesslab.com/accessibility-according-to-pwd/) "If you have a disability, what’s the hardest thing about browsing the web?"
 
 # CSS
 
