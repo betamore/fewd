@@ -108,12 +108,16 @@ permalink: /headstart
   password.
 * [On undoing, fixing, or removing commits in git](http://sethrobertson.github.io/GitFixUm/fixup.html) An attempt to be a comprehensive guide to recovering from what you did not mean to do when using Git.
 
-# HTML & CSS
+# HTML
 
 * [htmlreference.io](http://htmlreference.io) Free guide to HTML which features all elements and attributes.
 * [Have HTML and CSS under your belt and wondering what's next?](http://www.planningforaliens.com/blog/2015/03/11/after-html-and-css/) A detailed look at that vague concept web designers call "workflow."
 * [HTML & CSS Is Hard (But it doesn't have to be)](https://internetingishard.com/html-and-css/) A friendly web development tutorial for complete beginners.
 * [Accessibility Through Semantic HTML](https://24ways.org/2017/accessibility-through-semantic-html/) There's a greater benefit to less generic, more semantic elements.
+* [Understanding semantics](https://tink.uk/understanding-semantics/) What do we really mean by "semantic HTML"?
+* [An Overview of HTML5 Semantics](https://codepen.io/mi-lee/post/an-overview-of-html5-semantics) What are HTML5 semantics and why should we use them?
+* [HTML5 Accessibility](http://html5accessibility.com/) Get the current accessibility support status of HTML5 features across major browsers.
+* [Getting Started with Web Accessibility](https://medium.com/@emilymears/getting-started-with-web-accessibility-2c7632c3a8bd) A quick introduction to the importance and implementation of accessible development for the web.
 
 # CSS
 
