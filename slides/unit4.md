@@ -13,40 +13,12 @@ class: center, middle
 
 ---
 
-name: css-history
-class: center, middle
-
-# History of CSS
-### - .red-text[1996]: first official version (CSS Level 1)
-### - .red-text[1998]: CSS2 (CSS Level 2)
-### - .red-text[2011]: CSS2.1 (CSS Level 2, Revision 1) full Recommendation
-### - Earliest CSS 3 drafts were published in June .red-text[1999]
-
-???
-[W3C: CSS Current Work](http://www.w3.org/Style/CSS/current-work.en.html)
-
----
-
-name: css-taxonomy
-background-image: url(../assets/css3-taxonomy.svg)
-
----
-
 name: css-stephen-hay-quote
 class: middle
 
 > <span>CSS is like chess:</span> easy to learn, but hard to master.
 
 <cite>-- Stephen Hay</cite>
-
----
-
-name: css-hugo-giraudel-quote
-class: middle
-
-> <span>CSS isn’t easy.</span> Combining a very permissive (somewhat broken) syntax with <span>constantly evolving features</span> and <span>rendering inconsistencies</span> makes CSS not that easy at all. Yes, the <span>syntax is simple</span>, but a simple syntax doesn’t make an easy language.
-
-<cite>-- Hugo Giraudel</cite>
 
 ---
 
