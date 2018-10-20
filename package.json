@@ -1,0 +1,16 @@
+{
+  "name": "fewd",
+  "version": "1.0.0",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/betamore/fewd.git"
+  },
+  "keywords": [],
+  "author": "Tom Kraak",
+  "license": "MIT"
+}
