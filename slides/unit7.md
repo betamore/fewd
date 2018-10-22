@@ -210,37 +210,132 @@ class:
 name: js-values-types
 class:
 
-# Values & Types in JavaScript
+# Values & Types
 ## In programming, different representations for values are called .red-text[types].
-### primitive values in JavaScript:
 
 ### - to do math, use a .red-text[number]
-### - to print a value on the screen, use a .red-text[string] (one or more characters, words, sentences)
-### - to make a decision in a program, use a .red-text[boolean] (true or false)
+### - to print a value on the screen, use a .red-text[string]
+### - to make a decision in a program, use a .red-text[boolean]
 
-### Beyond primitive value types, there are arrays, objects, functions, and more.
+### It's common for programming languages to also provide .red-text[arrays, objects, functions], and more.
 
 ---
 
-name: js-primitive-types
+name: js-value-literals
+class:
+
+# Value Literals
+
+```javascript
+"I am a string";
+'I am also a string';
+
+42;
+
+true;
+false;
+
+[1, 2, 3]
+
+{
+  name: 'Sam',
+  age: 21,
+  citizen: true
+}
+```
+
+---
+
+name: js-built-in-types
 class: center
 
-# Primitive Types
+# JavaScript Built-in Types
 
-### - string
-### - number
-### - boolean
 ### - null
 ### - undefined
+### - boolean
+### - number
+### - string
+### - object
+### - symbol
+
+???
+
+- All built-in types except `object` are called _primitives_.
+- Primitives are values, they have no properties.
+- Primitives are immutable.
 
 ---
 
-name: js-reference-types
+name: js-typeof-operator
+
+# typeof operator
+
+```javascript
+typeof undefined        === "undefined"; // true
+typeof true             === "boolean";   // true
+typeof 42               === "number";    // true
+typeof "betamore"       === "string";    // true
+typeof { age: 21 }      === "object";    // true
+typeof Symbol()         === "symbol";    // true
+```
+
+```javascript
+typeof null             === "object";    // true
+
+```
+
+```javascript
+typeof function fn() {} === "function";  // true
+
+```
+
+```javascript
+typeof [1, 2, 3]        === 'object';    // true
+
+```
+
+???
+
+- `typeof` inspects the type of the given value, and always returns one of 7 string values
+- not an exact 1-to-1 match with the 7 built-in types
+
+---
+
+name: js-two-types-of-values
 class: center
 
-# Reference Types / Objects
+.flex[
+.l[
+# Primitives
+### null
+### undefined
+### boolean
+### string
+### number
+### symbol
+]
+.m[
+# Objects
+### Math
+### Date
+### JSON
+### window
+### document
+### objects you create
+]
+]
 
-### Specialized Objects / Object Sub-types
+???
+[What it really means when people say "Everything in JavaScript is an object."](http://radar.oreilly.com/2014/05/what-it-really-means-when-people-say-everything-in-javascript-is-an-object.html)
+
+---
+
+name: js-special-objects
+class: center
+
+# Specialized Objects /
+# Object Sub-types
 ### - Array
 ### - Function
 ### - Date
@@ -249,8 +344,95 @@ class: center
 
 ---
 
-name: js-coercion
-class:
+name: js-natives
+class: center
+
+# Common Natives / Constructor Counterparts
+.flex[
+.l[
+#### `String()`
+#### `Number()`
+#### `Boolean()`
+#### `Array()`
+#### `Object()`
+]
+.r[
+#### `Function()`
+#### `RegExp()`
+#### `Date()`
+#### `Error()`
+#### `Symbol()`
+]
+]
+
+???
+
+- except for `null` and `undefined`, all primitives have object equivalents that wrap around the primitive values
+- `new String('abc')` creates a string wrapper object around the primitive value (`'abc'`), never the primitive itself
+
+---
+
+name: js-internal-class
+
+# Internal [[Class]]
+
+```js
+Object.prototype.toString.call(() => {}); // 'object Function'
+```
+```js
+Object.prototype.toString.call([1, 2, 3]); // 'object Array'
+```
+```js
+Object.prototype.toString.call(/regex-literal/); // 'object RegExp'
+```
+
+```js
+Object.prototype.toString.call(null); // 'object Null'
+```
+
+```js
+Object.prototype.toString.call(undefined); // 'object Undefined'
+```
+
+```js
+Object.prototype.toString.call('abc'); // 'object String'
+```
+
+```js
+Object.prototype.toString.call(42); // 'object Number'
+```
+
+---
+
+name: js-boxing wrappers
+
+# Boxing Wrappers
+
+```js
+const a = 'abc';
+a.length; // 3
+```
+
+```js
+const age = 42;
+age.toString(); // '42'
+```
+
+### Unboxing
+
+```js
+const a = new String('abc');
+const b = new Number(42);
+const c = new Boolean(true);
+```
+
+```js
+a.valueOf(); // 'abc'
+b.valueOf(); // 42
+c.valueOf(); // true
+```
+
+---
 
 # Coercion: Converting Between Types
 
@@ -579,27 +761,13 @@ square(4); // 16
 name: js-fn-first-class
 
 # "First class" functions
+## functions as "first class" values
 
-```javascript
-function square(x) {
-  return x * x;
-}
+### - assign a function to a variable
+### - store a function in an array or object
+### - pass a function to another function
+### - return a function from a function
 
-typeof(square); // function
-
-square instanceof Object; // true
-```
-
-- `function` is a subtype of `object` (a "callable object")
-- therefore, _functions_ can do things and be handled like regular JavaScript _objects_
-
-```javascript
-console.log(square.length); // 1
-
-square.description = 'I square numbers!';
-
-console.log(square.description); // I square numbers!
-```
 
 ---
 
