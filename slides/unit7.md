@@ -15,23 +15,6 @@ class: center, middle
 
 ---
 
-name: js-history
-class: center, middle
-# Brief History of JavaScript
-### - created in 10 days by Brendan Eich at Netscape (1995)
-### - standardized by ECMA ("ECMAScript") (1996) 
-### - Node.js JavaScript runtime environment in 2008
-### - ECMAScript standard 6 released ("ES6") (2015)
-
-???
-[Wikipedia: JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-
-[A Brief History of JavaScript](https://auth0.com/blog/a-brief-history-of-javascript/)
-
-[European Computer Manufacturers Association (ECMA)](https://en.wikipedia.org/wiki/Ecma_International)
-
----
-
 name: js-name
 class: middle
 
@@ -43,48 +26,37 @@ class: middle
 
 name: js-what-is
 
-# What is JavaScript?
+# Nature of JavaScript
 
-### - client & server-side programming language
-### - reliant on runtime capabilities and settings
-### - dynamic programming language
-### - (runtime interprets code on the fly)
-### - loosely typed ( don't have to tell JS what a variable is)
-
----
-
-name: js-can-do
-
-# What can JavaScript do?
-
-### - controls the "behavioral" layer of web pages
-### - all elements, attributes, and text on a web page can be accessed by scripts via the DOM
-### - scripts can react to user input (alter contents, styles or browser behavior "on the fly")
-### - request content and info from server and inject into page without refresh ("ajax")
+### - most popular programming language in the world
+### - freely available (ECMA-262 is an ISO standard)
+### - evolution of JS is handled by TC39 committee
+### - dynamic and flexible programming language
+### - functional and object-oriented
+### - dynamically typed
+### - deployed as source code
 
 ---
 
-name: js-sample-script-clean
+name: js-in-browser
 
-# Sample Script
+# JavaScript in the Browser
 
-```javascript
-const today = new Date();
-const hourNow = today.getHours();
-let greeting;
+### - manipulate elements, attributes and text on web page
+### - react to user input "on the fly"
+### - request content from server and inject into page
 
-if (hourNow > 18) {
-  greeting = "Good evening";
-} else if (hourNow > 12) {
-  greeting = "Good afternoon";
-} else if (hourNow > 0) {
-  greeting = "Good morning";
-} else {
-  greeting = "Welcome";
-}
+---
 
-document.write(greeting);
-```
+name: js-outside-browser
+
+# JavaScript outside the Browser
+
+### - package management via npm or yarn
+### - developer tools
+### - command line tools
+### - server, database, desktop and mobile applications
+
 
 ---
 
@@ -118,54 +90,6 @@ class: middle
 
 ---
 
-name: js-statements
-
-# Statements
-### a group of words, numbers, and operators that performs a specific task
-
-```javascript
-a = b * 2;
-```
-
-### `a` and `b` are <em>variables</em> (symbolic containers)
-### `2` is a <em>literal value</em> (stands alone, not stored in a variable)
-### `=` and `*` are <em>operators</em> (perform actions: assignment and multiplication)
-### most statements in JavaScript end with a semicolon (;)
-
----
-
-name: js-expressions
-
-# Expressions
-### - statements are made up of one or more expressions
-### - any reference to a variable or value, or a set of variable(s) and value(s) combined with operators
-
-```javascript
-a = b * 2;
-```
-
-### 4 expressions:
-
-- `2` is a <em>literal value expression</em>
-- `b` is a <em>variable expression</em> (retrieve its current value)
-- `b * 2` is an <em>arithmetic expression</em> (do the multiplication)
-- `a = b * 2` is an <em>assignment expression</em>
-
----
-
-name: program-execution
-
-# Executing a Program
-
-### - programs are collections of statements
-### - programs need to be executed (run the program)
-### - interpreter or compiler translates statements into commands a computer can understand
-### - some programming languages are interpreting the code ever time the program runs
-### - other languages are compiling code ahead of time
-### - JavaScript engine compiles program on the fly and then immediately runs the compiled code
-
----
-
 name: js-dev-tools-console
 class: center, middle
 
@@ -181,13 +105,35 @@ class: center, middle
 
 class: center
 
+## variables
 ## operators
 ## values & types
-## variables
 ## conditionals
 ## loops
 ## functions
 ## scope
+
+---
+
+name: js-variables
+class:
+
+# Variables
+### track a value as it changes over time
+### dynamically typed: any type of value at any time
+
+```js
+const amount = 42;
+```
+
+```js
+let color;
+color = 'blue';
+```
+
+```js
+var showNav: true;
+```
 
 ---
 
@@ -196,14 +142,32 @@ class:
 
 # Common Operators in JavaScript
 
-### - assignment (`a = 2`)
-### - math (`a * 3`)
-### - compound assignment (`a += 2`) (same as `a = a + 2`)
-### - increment / decrement (`a++`) (similar to `a = a + 1`)
-### - equality (`a == b, a != b`)
-### - comparison (`a < b, a > b`)
-### - logical (`a && b, a || b`)
+```js
+let a = 42; // assignment
+a += 2;    // compound assignment, same as a = a + 2
+```
 
+```js
+a * 3; // math
+```
+
+```js
+a++; // increment, similar to a = a + 1
+```
+
+```js
+a === b; // strict equality
+a == b; // normal or "lenient" equality
+```
+
+```js
+a < b; // comparison
+```
+
+```js
+a || b; // logical OR
+a && b; // logical AND
+```
 
 ---
 
@@ -434,68 +398,23 @@ c.valueOf(); // true
 
 ---
 
-# Coercion: Converting Between Types
+# Coercion: implicit type conversion
+### Most operators coerce operands to the types they need.
 
-```javascript
-var a = "42";
-var b = Number( a ); // built-in function, explicit coercion
-
-console.log( a );   // "42"
-console.log( b );   // 42
+```js
+'3' * '4'; // 12
 ```
 
-## comparing the same value in two different representations (types)
-### equivalent, but not exactly the same
-
-```javascript
-var a = "99.99";
-var b = 99.99;
-
-a == b // "99.99" == 99.99 becomes 99.99 == 99.99, true
+```js
+3 + ' times' // '3 times'
 ```
 
----
+```js
+const a = '99.99';
+const b = 99.99;
 
-name: js-variables
-class:
-
-# Symbolic Containers: Variables
-### track a value as it changes over the course of the program (<em>vary</em> over time)
-
-## static typing (type enforcement):
-
-### - declare a variable (container) to hold a specific type (number, sring, etc)
-
-## weak typing (dynamic typing):
-
-### - allows a variable to hold any type of value at any time
-
----
-
-name: js-dynamic-typing-example
-
-# hold a running value that changes over time (managing state)
-
-```javascript
-var amount = 99.99; // no type information in declaration
-
-amount = amount * 2;
-
-// implicitly coerce number value to a string to print it out
-
-console.log( amount ); // 199.98
-
-
-// convert `amount` to a string, and add "$" to the beginning
-// explicit coercion
-
-amount = "$" + String( amount );
-
-console.log( amount );      // "$199.98"
+a == b // true
 ```
-
-#### flexibility of using `amount` variable for each of the 99.99, 199.98, and the "$199.98" values
-#### some prefer separate variable (`amountStr`) to hold final "$199.98" representation of value
 
 ---
 
@@ -504,8 +423,8 @@ class:
 
 # The Basics
 
-### - JavaScript is .red-text[case-sensitive] (`myVariable` is NOT the same as `myvariable`)
-### - whitespace such as tabs and spaces are ignored unless its part of a string enclosed in quotes
+### - case-sensitive
+### - tabs and spaces are ignored unless enclosed in quotes
 
 ```javascript
 // this is a single-line comment
@@ -519,32 +438,6 @@ completely ignored
 when the script runs.
 
 */
-```
-
----
-
-name: js-sample-script
-
-# Sample Script with Comments
-
-```javascript
-const today = new Date(); // each individual instruction is a statement
-const hourNow = today.getHours(); // each statement starts on a new line
-let greeting; // statements end with a semicolon
-
-// statements enclosed in curly braces are known as code blocks
-
-if (hourNow > 18) {
-  greeting = "Good evening";
-} else if (hourNow > 12) {
-  greeting = "Good afternoon";
-} else if (hourNow > 0) {
-  greeting = "Good morning";
-} else {
-  greeting = "Welcome";
-}
-
-document.write(greeting);
 ```
 
 ---
