@@ -7,7 +7,7 @@ permalink: /headstart
 
 ## Intro to Web Development
 
-* [Job Titles in the Web Industrie](https://css-tricks.com/job-titles-in-the-web-industry/)
+* [Job Titles in the Web Industries](https://css-tricks.com/job-titles-in-the-web-industry/)
   What is web designer? What is a web developer?
 * [So you want to be a front end developer](https://medium.com/shopify-ux/so-you-want-to-be-a-front-end-devleoper-f8be110f1d5f#.isr0nmfdd)
   A practical guide to growth for junior developers.
