@@ -3,9 +3,8 @@ class: center, middle
 # Unit 1
 ## Betamore Academy
 ### Intro to Front-end Web Development
-### Tom Kraak & Michelle Gienow
-#### tom.kraak@gmail.com
-#### michellegienow@gmail.com
+### Zac Heisey & Asa Smith
+#### zheisey@gmail.com
 
 ---
 
@@ -38,13 +37,10 @@ class: center, middle
 
 ???
 
-* tradidionally someone with a graphics design background
+* traditionally someone with a graphic design background
 * many early web designers came from the world of print design
 * strong grasp of color, typography, space, audience and user experience
 * Photoshop, Illustrator, InDesign, Sketch
-
-???
-
 * [Should designers learn to code?](http://www.webdesignerdepot.com/2015/04/should-designers-learn-to-code/)
 
 ---
@@ -65,7 +61,7 @@ class: center, middle
 
 * that's us!
 * builds websites from the ground up by hand
-* typocally self-taught or computer science background
+* typically self-taught or CS background
 * clean code and technically sound
 * HTML, CSS, JavaScript
 
@@ -80,7 +76,6 @@ class: center, middle
 ### - web apps should respect a user's privacy and security
 ### - web developers should be considerate of their peers
 
-
 ---
 
 class: center, middle
@@ -92,15 +87,16 @@ class: center, middle
 
 ???
 
-* HyperText Markup Language
+HyperText Markup Language (aka HTML -> `idex.html`)
 * HTML describes the structure of web pages semantically (giving it meaning)
 * therefore HTML is a markup language vs a programming language
 
-* Cascading Style Sheets
+Cascading Style Sheets (aka CSS -> `main.css`)
 * style sheet language for formatting markup languages
 * enables the separation of content and presentation
 
-* JavaScript: high level, interpreted programming language derived from C
+JavaScript (aka JS -> `main.js`)
+* high level, interpreted programming language derived from C
 * not to be confused with the Java programming language
 * supported by all modern web browsers without plugins
 * moved out of the browser in recent years
@@ -113,6 +109,7 @@ class: center, middle
 * [JavaScript on Wikipedia](https://en.wikipedia.org/wiki/JavaScript)
 
 ---
+
 class: center, middle
 
 # Internet Infrastructure
@@ -133,6 +130,16 @@ class: center, middle
 * [How DNS Works](https://howdns.works/)
 
 ---
+
+class: center, middle
+
+# Browser + Server Interaction
+### (In a Nutshell)
+
+![Browser Server Interaction](https://www.serverwatch.com/img/browser2server.gif)
+
+---
+
 class: center
 
 ## Browser Landscape
@@ -154,11 +161,11 @@ class: center
   <li class="flex-item">
     <img src="https://cdnjs.cloudflare.com/ajax/libs/browser-logos/45.8.0/opera/opera_64x64.png">
   </li>
-  <li class="flex-item">v69</li>
+  <li class="flex-item">v71</li>
   <li class="flex-item">v18</li>
-  <li class="flex-item">v11</li>
-  <li class="flex-item">v62</li>
-  <li class="flex-item">v53</li>
+  <li class="flex-item">v12</li>
+  <li class="flex-item">v64</li>
+  <li class="flex-item">v57</li>
 </ul>
 
 ### Mobile
@@ -183,9 +190,11 @@ class: center
 
 ???
 
-[Can I use ... browser support tables for modern web technologies](https://caniuse.com)
+* [Can I use ... browser support tables for modern web technologies](https://caniuse.com)
+* [Browser Version Check via Updatemybrowser](https://updatemybrowser.org/)
 
 ---
+
 class: middle
 
 # W3C
@@ -199,13 +208,16 @@ class: middle
 From [About W3C](http://www.w3.org/Consortium/):
 
 *"The World Wide Web Consortium (W3C) is an international community where Member organizations, a full-time staff, and the public work together to develop Web standards. Led by Web inventor Tim Berners-Lee and CEO Jeffrey Jaffe, W3C's mission is to lead the Web to its full potential."*
+
 ---
+
 class: middle
+
 # WHATWG
 
 > The Web Hypertext Application Technology Working Group (WHATWG) is a growing community of people interested in evolving the Web. It focuses primarily on the development of HTML and APIs needed for Web applications.
 
-<cite>-- wiki.whatwg.org/wiki/FAQ</cite> 
+<cite>-- wiki.whatwg.org/wiki/FAQ</cite>
 
 ???
 
