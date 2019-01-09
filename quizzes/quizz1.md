@@ -62,6 +62,10 @@ class:
 </a>
 ```
 
+???
+
+[inline vs. block-level elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements#Conceptual_differences)
+
 ---
 
 class: center, middle
@@ -84,6 +88,10 @@ class: center, middle
 # or
 
 ## typed variables?
+
+???
+
+[Javascript is dynamically typed](https://stackoverflow.com/a/9659797/6685870)
 
 ---
 
