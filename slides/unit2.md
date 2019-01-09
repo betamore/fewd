@@ -78,6 +78,7 @@ class:
 ## Learn More
 
 * [Intro to Web Servers by Chris Uehlinger](http://chrisuehlinger.com/StaticWebSiteTutorial/#/)
+* [Install node.js and npm on macOS](https://blog.teamtreehouse.com/install-node-js-npm-mac)
 * [node-static package on npm](https://www.npmjs.com/package/node-static)
 
 ---
@@ -108,7 +109,7 @@ Slide image by [Jonathan McGlone](http://jmcglone.com/guides/github-pages/)
 name: install-github
 class:
 
-# Up and running with Git
+# Up and Running with Git
 
 ```bash
 # check get version
@@ -122,7 +123,9 @@ $ git --version
 $ git config --list
 ```
 
+???
 
+[Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 ---
 name: configure-all-local-repositories
@@ -451,7 +454,7 @@ name: pull-request-collaboration
 name: pull-request-antonomy
 
 # Antonomy of a Pull Request
-### Requesting that another developer (the project maintainer) <em>pulls</em> a branch from your repository into their repository 
+### Requesting that another developer (the project maintainer) <em>pulls</em> a branch from your repository into their repository
 
 ### - source repo
 ### - source branch
