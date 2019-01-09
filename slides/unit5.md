@@ -51,8 +51,13 @@ class: center
 ### - absolute positioning
 ### - float
 
-### -flexbox
-### (grid layout)
+### - flexbox
+### - grid layout
+
+???
+
+[Learn CSS Layout](http://learnlayout.com)
+[CSS Position property](https://css-tricks.com/almanac/properties/p/position/)
 
 ---
 
