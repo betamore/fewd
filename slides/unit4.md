@@ -69,6 +69,15 @@ background-image: url(../assets/css-property-value.png)
 * values specify the settings to use for the chosen property
 
 ---
+class: center, middle
+
+# 3 Main Ways to Write CSS
+
+### 1) Inline CSS
+### 2) Internal CSS
+### 3) External CSS
+
+---
 name: css-inline
 class:
 
@@ -221,7 +230,7 @@ Matches an element whose `id` attribute has a value that matches the one specifi
 
 ???
 
-ID selectors are the most powerful type of selector in terms of CSS specificity. Meaning that they beat out other types of selectors and the styles defined within win. That sounds good, but that's typically considered bad, because it's nice to have lower-specificity selectors that are easier to override when needed.
+ID selectors are the most powerful type of selector in terms of CSS specificity, meaning that they beat out other types of selectors and the styles defined within. That sounds good, but that's typically considered bad practice. In general, it's better to have lower-specificity selectors that are easier to override when necessary.
 
 ---
 name: css-class-selector
@@ -248,7 +257,7 @@ Matches an element whose `class` attribute has a value that matches the one spec
 <div class="module"></div>
 
 <!-- WILL match -->
-<aside class="country module iceland"></aside>
+<aside class="country module iceland">We can apply multiple classes to the same element</aside>
 
 <!-- Will NOT match -->
 <div class=".module">The dot is for CSS, not HTML</div>
@@ -260,7 +269,7 @@ Matches an element whose `class` attribute has a value that matches the one spec
 
 ???
 
-Class selectors are your friend. They are probably the most useful and versatile selectors out there. In part because they are well supported in all browsers. In part because you can add multiple classes (just separated by a space) on HTML elements. In part because there are JavaScript things you can do specifically for manipulating classes.
+Class selectors are your friend and are probably the most useful and versatile selectors available to us. They are well supported in all browsers, and you can add multiple classes to a given HTML element (separated by a space). There are also some cool JavaScript things we can do specifically with manipulating classes.
 
 ---
 name: css-tag-selector
@@ -300,7 +309,7 @@ h2 {
 
 ???
 
-Tag selectors are at their most useful when changing properties that are unique to that HTML element. Like setting the list-style on a <ul> or tab-size on a <pre>. Also in reset stylesheets where you are specifically trying to unset styles that browsers apply to certain elements.
+Tag selectors are at their most useful when changing properties that are unique to that HTML element. Like setting the list-style on a `<ul>` or tab-size on a `<pre>`. They are also handy in reset stylesheets where you are specifically trying to unset styles that browsers apply to certain elements.
 
 Don't rely on the them too much though. It's typically more useful to have a class define styling that you can use on any HTML element.
 
@@ -429,8 +438,8 @@ p {
 ```
 
 ???
-* in general, properties related to styling text are inherited
-* properties such as borders, margins, backgrounds are not inherited
+* In general, properties related to styling text are inherited
+* Properties such as borders, margins, backgrounds are not inherited
 
 ---
 name: css-font-body
@@ -484,6 +493,7 @@ class: center
 
 
 ???
+
 * CSS allows us to apply several stylesheets to the same document, which means there are bound to be conflicts.
 
 * .red-text[The Cascade is a hierarchical system] that assigns different weights to the various sources of style information.
@@ -512,7 +522,7 @@ class: center
 
 -inline style rule(s) (`style` attribute in HTML opening tag)
 
--any style rule makred `!important` by the author
+-any style rule marked `!important` by the developer
 
 -any style rule marked `!important` by the reader (user)
 
@@ -525,7 +535,7 @@ class:
 ### Specificity trumps proximity
 
 * When 2 rules in a single stylesheet conflict, type of selector determines winner.
-* When selectors have an equal specificity value, the latest rule wins.
+* When selectors have an equal specificity value, the last defined rule wins.
 
 * The .red-text[more specific the selector], the more weight is given to override conflicting declarations.
   * ID selectors (`#happy-cake`)
@@ -535,6 +545,7 @@ class:
 
 
 ???
+
 * [CSS-Tricks: Specifics on CSS Specificity](https://css-tricks.com/specifics-on-css-specificity/)
 * [CSS Specificity: Things You Should Know](http://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
 
