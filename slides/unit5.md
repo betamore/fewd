@@ -47,10 +47,8 @@ class: center
 ## CSS Positioning Schemes
 
 ### - normal flow
-### - relative positioning
-### - absolute positioning
+### - relative & absolute positioning
 ### - float
-
 ### - flexbox
 ### - grid layout
 
