@@ -257,7 +257,7 @@ Matches an element whose `class` attribute has a value that matches the one spec
 <div class="module"></div>
 
 <!-- WILL match -->
-<aside class="country module iceland">We can apply multiple classes to the same element</aside>
+<aside class="country module">Multiple classes!</aside>
 
 <!-- Will NOT match -->
 <div class=".module">The dot is for CSS, not HTML</div>
@@ -407,11 +407,9 @@ class: center
 ![HTML Document Tree](../assets/html-document-tree.gif)
 
 ???
-* All elements contained within a given element are said to be its .red-text[descendants].
-* An element that's directly contained within another element is said to be a .red-text[child] of that element.
-* The containing element is the .red-text[parent].
-* All elements higher up than a particular element in the tree are its .red-text[ancestors].
-* Two elements with the same parent are .red-text[siblings].
+* The main idea of inheritance is that some property values applied to an element will be inherited by that element's children, and some won't.
+* Inheritance makes it easy for you to set a site-wide base font by applying a font-family to the `<html>` element, for example. You can then override the fonts on individual elements where needed. It would be really annoying to have to set the base font separately on every element.
+* [CSS Inheritance (MDN)](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance#Inheritance)
 
 ---
 name: css-inheritance
@@ -439,7 +437,7 @@ p {
 
 ???
 * In general, properties related to styling text are inherited
-* Properties such as borders, margins, backgrounds are not inherited
+* Properties such as margings, padding, borders, and backgrounds are not inherited
 
 ---
 name: css-font-body
@@ -476,6 +474,12 @@ class: center
 > When everything else is equal, the last value defined for a given property wins.
 
 <cite>-- Aaron Gustafson</cite>
+
+???
+
+* [CSS Cascade (MDN)](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance#The_cascade)
+* CSS stands for "Cascade Style Sheets"...\*hint hint\*, the cascade is an important concept to understand!
+* The cascade hinges on two key concepts: **Specificity** and **Source Order**
 
 ---
 name: css-cascade
