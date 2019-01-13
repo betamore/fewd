@@ -23,7 +23,7 @@ class:
 
   > <span>Structured content is semantic; it's about <em>what the individual pieces of content are.</em></span><br><br>HTML, while not perfect, is now the primary way we structure content on the web. We attempt to use the markup language semantically in order to describe what each element is.
 
-<cite>-- Stephen Hay
+<cite>-- Stephen Hay</cite>
 
 ???
 [Understanding semantics](https://tink.uk/understanding-semantics/)
@@ -71,15 +71,6 @@ class: center
 * All elements higher up than a particular element in the tree are its .red-text[ancestors].
 * Two elements with the same parent are .red-text[siblings].
 
-</cite>
----
-
-name: html-semantics
-class: middle
-
-> HTML is the worst form of markup, except for all the others that have been tried.
-
-<cite>-- Winston Churchill</cite>
 ---
 
 name: html5-content-categories
@@ -221,6 +212,3 @@ class: center
 [Google Web Fundamentals: Image Optimization](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization)
 
 [Sitepoint: GIF, PNG, JPG. Which One To Use?](https://www.sitepoint.com/gif-png-jpg-which-one-to-use/)
-
-
-
