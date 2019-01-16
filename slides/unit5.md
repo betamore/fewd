@@ -54,8 +54,8 @@ class: center
 
 ???
 
-[Learn CSS Layout](http://learnlayout.com)
-[CSS Position property](https://css-tricks.com/almanac/properties/p/position/)
+* [Learn CSS Layout](http://learnlayout.com)
+* [CSS Position property](https://css-tricks.com/almanac/properties/p/position/)
 
 ---
 
