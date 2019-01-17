@@ -179,7 +179,7 @@ class:
 
 ### - to do math, use a .red-text[number]
 ### - to print a value on the screen, use a .red-text[string]
-### - to make a decision in a program, use a .red-text[boolean]
+### - to make a decision in a program, use a .red-text[boolean] (true/false)
 
 ### It's common for programming languages to also provide .red-text[arrays, objects, functions], and more.
 
@@ -291,7 +291,9 @@ class: center
 ]
 
 ???
-[What it really means when people say "Everything in JavaScript is an object."](http://radar.oreilly.com/2014/05/what-it-really-means-when-people-say-everything-in-javascript-is-an-object.html)
+
+* [What it really means when people say "Everything in JavaScript is an object."](http://radar.oreilly.com/2014/05/what-it-really-means-when-people-say-everything-in-javascript-is-an-object.html)
+* [More on the "Everything is an Object" Concept](https://gomakethings.com/everything-is-an-object-in-javascript/)
 
 ---
 
