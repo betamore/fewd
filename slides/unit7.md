@@ -132,7 +132,7 @@ color = 'blue';
 ```
 
 ```js
-var showNav: true;
+var showNav = true;
 ```
 
 ---
@@ -303,7 +303,7 @@ class: center
 ### - Array
 ### - Function
 ### - Date
-### - Error 
+### - Error
 ### - RegExp
 
 ---
