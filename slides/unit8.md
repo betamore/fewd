@@ -28,6 +28,10 @@ class: center, middle
 
 ## - requested page has loaded
 
+???
+
+* [List of Common DOM Events](https://developer.mozilla.org/en-US/docs/Web/Events)
+
 ---
 
 class: center, middle
@@ -46,7 +50,7 @@ class: center, middle
 
 ---
 
-## The .red-text[addEventListener function] registers its second argument to be called whenever the event described by its first argument occurs.
+## The .red-text[addEventListener] function registers its second argument to be called whenever the event described by its first argument occurs.
 
 ```html
 <p>Click this document to activate the handler.</p>
@@ -60,8 +64,8 @@ class: center, middle
 </script>
 ```
 
-### - each browser event handler is registered in a context
-### - calling method on the whole window (global scope is equivalent to the window object)
+#### - each browser event handler is registered in a context
+#### - calling method on the whole window (global scope is equivalent to the window object)
 
 ---
 
@@ -81,9 +85,9 @@ class: center, middle
 </script>
 ```
 
-### - every DOM element has its own addEventListener method (listen specifically on that element)
-### - attach handler to the button node
-### - clicks on button cause handler to run (whereas clicks on the rest of the document do not)
+#### - every DOM element has its own addEventListener method (listen specifically on that element)
+#### - attach handler to the button node
+#### - clicks on button cause handler to run (whereas clicks on the rest of the document do not)
 
 ---
 
@@ -107,8 +111,8 @@ class: center, middle
 </script>
 ```
 
-### - event handler functions are passed an argument: .red-text[the event object]
-### - this object gives us additional information about the event
+#### - event handler functions are passed an argument: the .red-text[event] object
+#### - this object gives us additional information about the event
 
 ---
 
