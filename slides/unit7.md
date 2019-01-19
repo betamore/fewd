@@ -105,13 +105,15 @@ class: center, middle
 
 class: center
 
-## variables
-## operators
-## values & types
-## conditionals
-## loops
-## functions
-## scope
+# Basic JavaScript Concepts & Components
+
+### variables
+### operators
+### values & types
+### conditionals
+### loops
+### functions
+### scope
 
 ---
 
@@ -368,6 +370,10 @@ Object.prototype.toString.call('abc'); // 'object String'
 Object.prototype.toString.call(42); // 'object Number'
 ```
 
+???
+
+* [Object.prototype.constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor)
+
 ---
 
 name: js-boxing wrappers
@@ -425,8 +431,8 @@ class:
 
 # The Basics
 
-### - case-sensitive
-### - tabs and spaces are ignored unless enclosed in quotes
+### - JavaScript is case-sensitive
+### - Tabs and spaces are ignored unless enclosed in quotes
 
 ```javascript
 // this is a single-line comment
@@ -466,7 +472,7 @@ class: center
 name: js-fn-definition
 class: middle
 
-> A funciton is generally a named section of code that can be "called" by name, and the code inside it will run each time.
+> A function is generally a named section of code that can be "called" by name, and the code inside it will run each time.
 
 <cite>-- Kyle Simpson</cite>
 
@@ -485,7 +491,7 @@ function doSomething() {
   console.log('What do you want me to do?');
 }
 
-// function declaration
+// function declaration aka named function
 ```
 
 ```javascript
@@ -493,9 +499,9 @@ const doSomething = function() {
   console.log('What do you want me to do?');
 }
 
-// anonymous function expression
+// function expression aka anonymous function
 // in JS, an expression is any reference to a variable or value
-// assign a function to a variable just like any other value
+// we can assign a function to a variable just like any other value
 ```
 
 ---
@@ -533,6 +539,7 @@ var doSomething = function() {
   console.log('What do you want me to do?');
 }
 
+// anonymous function expression
 doSomething();
 ```
 
@@ -577,30 +584,25 @@ name: js-fn-scope
 
 # Scope
 
-```javascript
-var a = 0;
-```
+### JavaScript has two types of scope: global & local
 
 ```javascript
+var a = 0; // a is defined within global scope
+
 function one() {
-  var a = 1;
+  var a = 1; // a is defined within the local scope of function one
   console.log(a);
 }
-```
 
-```javascript
 function two() {
-  var a = 2;
+  var a = 2; // a is defined within the local scope of function two
   console.log(a);
 }
-```
 
-```javascript
 console.log(a) // 0
 one(); // 1
 two(); // 2
 
-console.log(a + one() + two()); // ?
 ```
 
 ???
@@ -633,7 +635,7 @@ sayHelloTo('Jake'); // Hello Jake!
 
 name: js-fn-arguments-parameters
 
-# Arguments vs. parameters
+# Arguments vs. Parameters
 
 > Functions are sent arguments; they receive parameters.
 
@@ -649,7 +651,9 @@ square(4); // 16
 
 ???
 
-[Dudley Storey on functions](http://thenewcode.com/1033/Introduction-to-JavaScript-Functions)
+* In the example function `square`, `x` is a parameter and `4` is an argument.
+* Parameters = Placeholders; Arguments = Values.
+* [Dudley Storey on functions](http://thenewcode.com/1033/Introduction-to-JavaScript-Functions)
 
 ---
 
@@ -676,27 +680,22 @@ class: center, middle
 
 name: js-embed
 
-# Adding JavaScript to a Page (embedded )
+# Adding JavaScript to a Page
+## Embedded
 
 ```html
 <script>
-
-var parent = document.querySelector("ul");
+var parent = document.querySelector('ul');
 var myNavitems = document.querySelectorAll('li a');
-
-parent.addEventListener("click", handler, false);
-
-function handler(e) {
+parent.addEventListener('click', function(e) {
   if (e.target !== e.currentTarget) {
-
     for(i = 0; i < myNavitems.length; i++) {
       myNavitems[i].classList.remove('active');
     }
     e.target.classList.add('active');
    }
   e.stopPropagation();
-}
-
+}, false);
 </script>
 ```
 
@@ -705,7 +704,6 @@ function handler(e) {
 name: js-external-script
 
 # Adding JavaScript to a Page
-
 ## External scripts
 
 ```html
@@ -744,12 +742,16 @@ name: dom-intro
 
 # Intro to the Document Object Model (DOM)
 
-### - browser builds a .red-text[model of the document's structure] and uses it to draw the page on the screen
-### - it serves as a structured map to all elements on a page
-### - this representation of the document is manipulated via JavaScript
-### - we can read from the model and write to it (change it)
-### - live data structure: when modified, the page on the screen updates to reflect the changes
-### - it's a programming interface (API) for HTML pages
+#### - browser builds a .red-text[model of the document's structure] and uses it to draw the page on the screen
+#### - it serves as a structured map to all elements on a page
+#### - this representation of the document is manipulated via JavaScript
+#### - we can read from the model and write to it (change it)
+#### - live data structure: when modified, the page on the screen updates to reflect the changes
+#### - it's a programming interface (API) for HTML pages
+
+???
+
+* [What, exactly, is the DOM?](https://bitsofco.de/what-exactly-is-the-dom/)
 
 ---
 
@@ -800,12 +802,12 @@ class:
 ]
 
 .float-right[
-### - each box is an object we can interact with
-### - what HTML tag? does it contain other boxes? which ones?
-### - global variable `document` gives us access to objects
-### - `document.documentElement` (html tag)
-### - `document.head` (head tag)
-### - `document.body` (body tag)
+#### - each box is an object we can interact with
+#### - what HTML tag? does it contain other boxes? which ones?
+#### - global variable `document` gives us access to objects
+#### - `document.documentElement` (html tag)
+#### - `document.head` (head tag)
+#### - `document.body` (body tag)
 ]
 
 ---
