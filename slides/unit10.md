@@ -27,6 +27,8 @@ class: center
 
 [Sauce Labs](https://saucelabs.com/)
 
+[Responsinator Device Testing](https://www.responsinator.com/)
+
 ---
 
 name: 10-hostile-dev-environment
@@ -34,7 +36,7 @@ class: center
 
 # The Web
 
-## a Hostile Development Environment
+## A Hostile Development Environment
 
 ### - any device
 ### - any display
@@ -55,13 +57,3 @@ class: middle
 [The Web Is Cake](http://sixtwothree.org/posts/the-web-is-cake)
 
 [Designing Experience Layers](http://sixtwothree.org/posts/designing-experience-layers)
-
----
-
-class: center, middle
-
-# Up next ... FEWD Spring 2017!
-
-### - Meet &amp; Greet: Wednesday (5/10)
-### - First Day: Tuesday (5/23)
-### - Last Day: Thursday (8/1)
