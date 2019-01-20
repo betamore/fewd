@@ -4,6 +4,10 @@ class: center, middle
 # .red-text[Accessibility]
 ## \#a11y
 
+???
+
+* [The A11y Project](https://a11yproject.com/)
+
 ---
 
 name: a11y-berners-lee-quote
@@ -87,7 +91,7 @@ class: center
 ### - reading and comprehension problems
 ### - problem solving
 ### - attention limitations
-### - desing sites simply and clearly (which benefits all uses)
+### - design sites simply and clearly (which benefits _all_ users)
 ---
 
 name: a11k-overview
@@ -97,9 +101,9 @@ class: center
 
 ### - good design
 ### - great user experience
-### - standards-complient and clean HTML
+### - standards-compliant, clean HTML
 ### - semantic HTML
-### - separation of content / structure (HTML) and presentation (CSS)
+### - separation of content/structure (HTML) and presentation (CSS)
 
 ---
 
@@ -127,3 +131,9 @@ class: center
 ## (Accessible Rich Internet Applications)
 
 ### Adding .red-text[accessibility information] to HTML elements using the<br> .red-text[Accessible Rich Internet Applications specification (WAI-ARIA]).
+
+???
+
+* [ARIA in HTML](https://www.w3.org/TR/html-aria/)
+* [ARIA | MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
+* [HTML Developers: Please Consider (native HTML5 features over ARIA attributes)](http://html5doctor.com/html-developers-please-consider/)
