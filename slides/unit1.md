@@ -7,7 +7,6 @@ class: center, middle
 #### zheisey@gmail.com
 
 ---
-
 class: middle
 
 # Expectations
@@ -30,7 +29,6 @@ class: middle
 
 
 ---
-
 class: center, middle
 
 # What is a web designer?
@@ -44,7 +42,6 @@ class: center, middle
 * [Should designers learn to code?](http://www.webdesignerdepot.com/2015/04/should-designers-learn-to-code/)
 
 ---
-
 class: center, middle
 
 # Let's get real!
@@ -52,7 +49,6 @@ class: center, middle
 ![Real web designers write code. Always have, always will.](../assets/zeldman-web-designer-tweet.png)
 
 ---
-
 class: center, middle
 
 # What is a front-end web developer?
@@ -60,13 +56,12 @@ class: center, middle
 ???
 
 * that's us!
-* builds websites from the ground up by hand
+* builds websites from the ground up, by hand
 * typically self-taught or CS background
 * clean code and technically sound
 * HTML, CSS, JavaScript
 
 ---
-
 class: center, middle
 
 # Ethical Web Development
@@ -77,7 +72,6 @@ class: center, middle
 ### - web developers should be considerate of their peers
 
 ---
-
 class: center, middle
 
 # Cornerstones of the Web
@@ -109,7 +103,11 @@ JavaScript (aka JS -> `main.js`)
 * [JavaScript on Wikipedia](https://en.wikipedia.org/wiki/JavaScript)
 
 ---
+class: center, middle
 
+# [Web Design in 4 Minutes](https://jgthms.com/web-design-in-4-minutes/)
+
+---
 class: center, middle
 
 # Internet Infrastructure
@@ -130,7 +128,6 @@ class: center, middle
 * [How DNS Works](https://howdns.works/)
 
 ---
-
 class: center, middle
 
 # Browser + Server Interaction
@@ -139,7 +136,6 @@ class: center, middle
 ![Browser Server Interaction](https://www.serverwatch.com/img/browser2server.gif)
 
 ---
-
 class: center
 
 ## Browser Landscape
@@ -190,11 +186,10 @@ class: center
 
 ???
 
-* [Can I use ... browser support tables for modern web technologies](https://caniuse.com)
+* [Can I use...browser support tables for modern web technologies](https://caniuse.com)
 * [Browser Version Check via Updatemybrowser](https://updatemybrowser.org/)
 
 ---
-
 class: middle
 
 # W3C
@@ -210,7 +205,6 @@ From [About W3C](http://www.w3.org/Consortium/):
 *"The World Wide Web Consortium (W3C) is an international community where Member organizations, a full-time staff, and the public work together to develop Web standards. Led by Web inventor Tim Berners-Lee and CEO Jeffrey Jaffe, W3C's mission is to lead the Web to its full potential."*
 
 ---
-
 class: middle
 
 # WHATWG
