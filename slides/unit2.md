@@ -40,7 +40,6 @@ class: center, middle
 ![Command Line Basics](../assets/terminal.svg)
 
 ???
-## Learn more
 
 * [Command Line 101](https://www.git-tower.com/learn/git/ebook/command-line/appendix/command-line-101)
 * [Command Line Crash Course](http://cli.learncodethehardway.org/book/)
@@ -56,30 +55,6 @@ class: center, middle
 ## - Hyper (macOS, Windows, Linux)
 ## - iTerm2 (macOS)
 ## - cmder (a must on Windows)
-
----
-name: local-server
-class:
-
-# Spinning Up a Local Server
-
-## Two Basic Methods
-1. From your local file system:
-  * Navigate to the desired file (file can be html, css, js, img, etc.)
-  * Right click the file > Open With > Chrome/Safari/Firefox/other browser of choice
-
-2. From the command line:
-  * Install `node.js`
-  * Install `node-static` globally with `npm install node-static -g`
-  * `cd` into your project directory
-  * Run the server with `static`
-
-???
-## Learn More
-
-* [Intro to Web Servers by Chris Uehlinger](http://chrisuehlinger.com/StaticWebSiteTutorial/#/)
-* [Install node.js and npm on macOS](https://blog.teamtreehouse.com/install-node-js-npm-mac)
-* [node-static package on npm](https://www.npmjs.com/package/node-static)
 
 ---
 name: version-control-with-git
