@@ -109,5 +109,5 @@ class: center, middle
 ???
 
 - `/directory-name/index.html`
-- `/directory-name/assets/main.css`
-- `/directory-name/assets/main.js`
+- `/directory-name/assets/css/main.css`
+- `/directory-name/assets/js/main.js`
