@@ -1,150 +1,113 @@
-class: center
-
-# What do the following acronyms stand for?
-
-.float-left[
-## PNG
-
-## CSS
-
-## HTML
-
-## SVG
-
-## DOM
-
-]
-
-## DNS
-
-## HTTP
-
-## W3C
-
-## Repo
-
-## RWD
-
-## PR
-
----
-
-class:
-
-# What's wrong with the following code?
-
-```html
-<article>
-  <header>Betamore Academy</header>
-  <p>This is the paragraph content.</p>
-  <sidebar>Footnotes</sidebar>
-</article>
-```
-
----
-
 class: center, middle
 
-# A paragraph is given a font size of 1.25em.
-
-##Expressed as a percentage, how much larger will paragraph text in this style be, compared to paragraphs unaffected by this rule?
-
----
-
-class:
-
-# Is this valid HTML5?
-
-```html
-<a href="/about">
-<h2>About Betamore</h2>
-<p>Betamore is a campus for technology and entrepreneurship.</p>
-</a>
-```
+# What are the main principles<br>of ethical web development?
 
 ???
 
-[inline vs. block-level elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements#Conceptual_differences)
+- Websites/apps should work for everyone
+- Websites/apps should work everywhere
+- Websites/apps should respect a user's privacy and security
+- Web developers should be considerate of their peers
 
 ---
-
 class: center, middle
 
-# What value is given for the right margin?
-
-### a) `margin: 1em;`
-### b) `margin: 1rem 2rem;`
-### c) `margin: 10px 20px 10px;`
-### d) `margin: 20% 10% 20% 10%;`
-
----
-
-class: center, middle
-
-# JavaScript has ...
-
-## typed values
-
-# or
-
-## typed variables?
+# Name the 3 main building blocks<br>of web development.
 
 ???
 
-[Javascript is dynamically typed](https://stackoverflow.com/a/9659797/6685870)
+- HTML
+- CSS
+- JavaScript
 
 ---
+class: center, middle
 
-# Evaluate the first image on who.backroom.io.
+# What are the main components<br>of the Internet infrastructure?
 
-## - Natural image size?
-## - Image size in your browser?
-## - How did you arrive at the image width?
-## - How did you arrive at the image height?
+???
+
+- HTTP(s)
+- DNS
+- Domain Names
+- Browsers
+- Servers
 
 ---
+class: center, middle
 
-```javascript
-var a;
-typeof a;
-```
+# Talk about the current browser landscape.
 
-```javascript
-a = "hello world";
-typeof a;
-```
+???
 
-```javascript
-a = 921;
-typeof a;
-```
+- Fragmented and non-standardized (different browsers have different features and functionality)
+- Browser compatibility is a major part of modern web development
 
-```javascript
-a = true;
-typeof a;
-```
+---
+class: center, middle
 
-```javascript
-a = { a: "hello world",
-      b: 921,
-      c: true
-    };
+# What does W3C stand for?
 
-typeof a;
-```
+# What about WHATWG?
+
+???
+
+- W3C = World Wide Web Consortium > Develop Web standards
+- WHATWG = Web Hypertext Application Technology Working Group > Develop HTML and APIs needed for Web applications.
+
+---
+class: center, middle
+
+# Name 3 currently popular text editors.
+
+???
+
+- Atom
+- Sublime
+- Visual Studio (VS) Code
+- Vim
+- Emacs
+- Brackets
+- Notepad++
+
+---
+class: center, middle
+
+# Explain browser developer tools<br>in your own words.
+
+???
+
+- Browser developer tools allow developers to view, test, and debug their code directly in the browser. Each browser maker has their own version of dev tools that developers can utilize.
+
+---
+class: center, middle
+
+# What's the difference between<br>the command line and a text editor?
+
+???
+
+- The command line (aka terminal) is a non-GUI interface where users can interact with files, software, etc. on their machine.
+- Text editors are computer programs that allow for plain text editing. More specifically, they are the tools that web developers use to write code.
 
 ---
 
 class: center, middle
 
-# What concept is Aaron talking about?
+# What's the difference beween<br>a directory and a folder?
 
-> When everything else is equal, the last value defined for a given property wins.
+???
 
-<cite>-- Aaron Gustafson</cite>
+- A folder is a GUI object on your machine, usually represented by a file folder icon
+- Directories are a file system concept. They refer to the way a structured list of document files and folders are stored on your machine.
 
 ---
 
 class: center, middle
 
-# Describe the "small screen first" development approach in your own words.
+# Describe the most basic directory structure<br>typically used in website development.
+
+???
+
+- `/directory-name/index.html`
+- `/directory-name/assets/main.css`
+- `/directory-name/assets/main.js`

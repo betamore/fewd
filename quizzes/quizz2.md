@@ -3,7 +3,6 @@ class: center, middle
 # What is the difference between a tag and an element?
 
 ---
-
 class:
 
 # How do you remove the bullets from an unordered list?
@@ -19,13 +18,6 @@ class:
 ```
 
 ---
-
-class: center, middle
-
-# What's the difference between a<br>`<blockquote>` and `<q>` element?
-
----
-
 class: center, middle
 
 # What might be wrong if your images don't appear when you view the page in a browser?
@@ -33,7 +25,6 @@ class: center, middle
 ### There are 3 possible explanations.
 
 ---
-
 class: center, middle
 
 # Identify the parts of this declaration.
@@ -43,12 +34,12 @@ class: center, middle
 ### `font: normal 100%/1.5 "Arimo", sans-serif;`
 
 ---
-
 class: center, middle
 
 # The box model is made up of?
 
 ---
+class:
 
 # Positioning methods?
 
@@ -62,18 +53,71 @@ class: center, middle
 ---
 class: center, middle
 
-# What is the purpose of a CSS reset?
+# What does the CSS acronym stand for?
+
+---
+
+class: center
+
+# HTML or CSS?
+
+### - content
+### - appearance
+### - “what something is”
+### - “how something looks”
+### - semantic markup of data
+### - rules for appearance of content
 
 ---
 
 class: center, middle
 
-# Is the web a hostile development environment?
-
-## If so, why?
+# Explain why CSS has several advantages over alternative methods of determining the appearance of web pages.
 
 ---
 
 class: center, middle
 
-# What has been your biggest lessson learned<br>over the last 10 weeks?
+# Talk about several ways in which styles<br>can be applied to web pages.
+
+---
+
+class: center, middle
+
+# What's wrong with this markup?
+
+```html
+<link type="stylesheet" src="css/main.css">
+```
+
+---
+
+class:
+
+# Identify all parts of the CSS syntax.
+
+![CSS Declaration](assets/css-declaration.svg)
+
+---
+
+class: center, middle
+
+# What's the syntax for CSS comments?
+
+---
+
+class: center, middle
+
+# What CSS selectors have you studied so far?
+
+---
+
+class: center, middle
+
+# Explain the concept of CSS inheritance in your own words.
+
+---
+
+class: center, middle
+
+# Discuss a practical application of CSS inheritance.
