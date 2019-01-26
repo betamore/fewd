@@ -7,7 +7,7 @@ description: The front-end web development course instructor slides by unit.
 <div class="slides">
 
   <ul class="post-list">
-    {% for unit in site.data.slides %}
+    {% for unit in site.data.slides limit: 10 %}
       <li>
         <h2>
           <a class="post-link" href="unit/{{ forloop.index }}">Unit {{ unit.unit }}: {{ unit.unit-title }}</a>
