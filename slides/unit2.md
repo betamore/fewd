@@ -24,7 +24,7 @@ class: center, middle
 ### Safari Web Inspector
 
 ???
-## Learn more
+## Learn More
 
 * [Chrome DevTools Overview](https://developer.chrome.com/devtools)
 * [Meet the Microsoft Edge Developer Tools](https://dev.windows.com/en-us/microsoft-edge/platform/documentation/f12-devtools-guide/)
@@ -65,7 +65,7 @@ class: center, middle
 ## An open source program for tracking changes in text files
 
 ???
-## Learn more
+## Learn More
 
 * [Code School: Try Git](https://try.github.io)
 
@@ -106,7 +106,7 @@ $ git config --list
 name: configure-all-local-repositories
 class:
 
-# Configure all local repositories
+# Configure Git Globally
 
 ### Set user info
 
@@ -129,19 +129,19 @@ $ git config --global core.editor "subl -n -w"
 ```
 
 ???
-## Learn more
+## Learn More
 
 [Associating text editors with Git](https://help.github.com/articles/associating-text-editors-with-git/)
 
 ---
 name: create-local-repository
 
-# Create repositories
+# Creating Git Repositories: Method 1
 
-### New local repository
+### Create a new local repository from scratch
 
 ```bash
-# create new empty repository
+# create & initialize a new empty git repository
 
 $ git init my-project
 ```
@@ -156,23 +156,26 @@ $ git init
 ---
 name: clone-repository
 
-# Create repositories
+# Creating Git Repositories: Method 2
 
 ### Download a repository and its entire version history
 
 ```bash
-# clone a repository into a new directory
+# create a new empty directory
 
-$ git clone https://github.com/betamore/fewd.git
+$ mkdir betamore
 ```
 
 ```bash
+# clone a repository into your new directory
+
 $ cd ~/betamore
 $ git clone https://github.com/betamore/fewd.git
 ```
 
 ???
-## Learn more
+
+## Learn More
 
 Think of a **repository** as a kind of database where your VCS stores all the versions and metadata that accumulate in the course of your project. In Git, the repository is just a simple hidden folder named ".git" in the root directory of your project.
 
@@ -196,7 +199,7 @@ $ git rm --cached [file name]
 ```
 
 ???
-## Learn more
+## Learn More
 
 [GitHub Help: Ignoring Files](https://help.github.com/articles/ignoring-files/)
 
@@ -239,7 +242,7 @@ class: center
 ![Git Stage and Commit](../assets/git-add-commit.png)
 
 ???
-## Learn more
+## Learn More
 
 Use the **"status"** command to get a list of all the changes you performed since the last commit: which files did you change? Did you create any new ones or deleted some old ones?
 
@@ -298,7 +301,7 @@ class: center
 # Commit often
 
 ???
-## Learn more
+## Learn More
 
 [What makes a good commit?](https://www.git-tower.com/learn/git/ebook/command-line/basics/working-on-your-project)
 
@@ -388,7 +391,7 @@ class: center, middle
 ## A social and user interface built on top of Git
 
 ???
-## Learn more
+## Learn More
 
 * [GitHub Help](https://help.github.com/)
 * [GitHub Glossary](https://help.github.com/articles/github-glossary/)
@@ -413,7 +416,7 @@ class: middle
 
 ???
 
-[Maing a Pull Request](https://www.atlassian.com/git/tutorials/making-a-pull-request)
+[Making a Pull Request](https://www.atlassian.com/git/tutorials/making-a-pull-request)
 
 ---
 
