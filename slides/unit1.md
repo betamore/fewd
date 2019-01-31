@@ -17,11 +17,9 @@ class: middle
 
 ### There will be uncomfortable moments.
 
-### Think critically, answer questions, ask questions.
+### Think critically, ask questions, and help each other.
 
 ### Take responsibility for your learning!
-
-<cite>-- Bianca Gandolfo (Instructor at Frontend Masters)</cite> &#128070;
 
 ???
 
@@ -31,34 +29,34 @@ class: middle
 ---
 class: center, middle
 
-# What is a web designer?
+# What is a Web Designer?
 
 ???
 
-* traditionally someone with a graphic design background
-* many early web designers came from the world of print design
-* strong grasp of color, typography, space, audience and user experience
+* Traditionally someone with a graphic design background
+* Many early web designers came from the world of print design
+* Strong grasp of color, typography, space, audience and user experience
 * Photoshop, Illustrator, InDesign, Sketch
 * [Should designers learn to code?](http://www.webdesignerdepot.com/2015/04/should-designers-learn-to-code/)
 
 ---
 class: center, middle
 
-# Let's get real!
+# Let's Get Real!
 
 ![Real web designers write code. Always have, always will.](../assets/zeldman-web-designer-tweet.png)
 
 ---
 class: center, middle
 
-# What is a front-end web developer?
+# What is a Front-End Web Developer?
 
 ???
 
-* that's us!
-* builds websites from the ground up, by hand
-* typically self-taught or CS background
-* clean code and technically sound
+* That's us!
+* Builds websites from the ground up, by hand
+* Typically self-taught or CS background
+* Clean code and technically sound
 * HTML, CSS, JavaScript
 
 ---
@@ -66,10 +64,10 @@ class: center, middle
 
 # Ethical Web Development
 ## ethicalweb.org
-### - web apps should work for everyone
-### - web apps should work everywhere
-### - web apps should respect a user's privacy and security
-### - web developers should be considerate of their peers
+### - Web apps should work for everyone
+### - Web apps should work everywhere
+### - Web apps should respect a user's privacy and security
+### - Web developers should be considerate of their peers
 
 ---
 class: center, middle
@@ -81,22 +79,22 @@ class: center, middle
 
 ???
 
-HyperText Markup Language (aka HTML -> `idex.html`)
+HyperText Markup Language (aka HTML -> `/index.html`)
 * HTML describes the structure of web pages semantically (giving it meaning)
-* therefore HTML is a markup language vs a programming language
+* Therefore HTML is a markup language vs a programming language
 
-Cascading Style Sheets (aka CSS -> `main.css`)
-* style sheet language for formatting markup languages
-* enables the separation of content and presentation
+Cascading Style Sheets (aka CSS -> `/main.css`)
+* Style sheet language for formatting markup languages
+* Enables the separation of content and presentation
 
-JavaScript (aka JS -> `main.js`)
-* high level, interpreted programming language derived from C
-* not to be confused with the Java programming language
-* supported by all modern web browsers without plugins
-* moved out of the browser in recent years
-* now also used for the development of desktop and mobile apps and games
+JavaScript (aka JS -> `/main.js`)
+* High level, interpreted programming language derived from C
+* Not to be confused with the Java programming language
+* Supported by all modern web browsers without plugins
+* Moved out of the browser in recent years
+* Now also used for the development of desktop and mobile apps and games
 
-## Learn more
+## Learn More
 
 * [HTML on Wikipedia](https://en.wikipedia.org/wiki/HTML)
 * [CSS on Wikipedia](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
@@ -119,10 +117,10 @@ class: center, middle
 
 ???
 
-* hypertext transfer protocol (HTTP)
-* domain name system (DNS)
+* Hypertext Transfer Protocol (HTTP)
+* Domain Name System (DNS)
 
-## Learn more
+## Learn More
 
 * [HTTP on Wikipedia](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
 * [How DNS Works](https://howdns.works/)
@@ -202,7 +200,7 @@ class: middle
 
 From [About W3C](http://www.w3.org/Consortium/):
 
-*"The World Wide Web Consortium (W3C) is an international community where Member organizations, a full-time staff, and the public work together to develop Web standards. Led by Web inventor Tim Berners-Lee and CEO Jeffrey Jaffe, W3C's mission is to lead the Web to its full potential."*
+_"The World Wide Web Consortium (W3C) is an international community where Member organizations, a full-time staff, and the public work together to develop Web standards. Led by Web inventor Tim Berners-Lee and CEO Jeffrey Jaffe, W3C's mission is to lead the Web to its full potential."_
 
 ---
 class: middle
@@ -217,4 +215,4 @@ class: middle
 
 From [WHATWG FAQ](https://wiki.whatwg.org/wiki/FAQ#What_is_the_WHATWG.3F):
 
-*"The Web Hypertext Application Technology Working Group (WHATWG) is a growing community of people interested in evolving the Web. It focuses primarily on the development of HTML and APIs needed for Web applications."*
+_"The Web Hypertext Application Technology Working Group (WHATWG) is a growing community of people interested in evolving the Web. It focuses primarily on the development of HTML and APIs needed for Web applications."_
