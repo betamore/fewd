@@ -24,6 +24,7 @@ class: center, middle
 ### Safari Web Inspector
 
 ???
+
 ## Learn More
 
 * [Chrome DevTools Overview](https://developer.chrome.com/devtools)
@@ -65,6 +66,7 @@ class: center, middle
 ## An open source program for tracking changes in text files
 
 ???
+
 ## Learn More
 
 * [Code School: Try Git](https://try.github.io)
@@ -73,11 +75,12 @@ class: center, middle
 name: tracking-changes-to-files-over-time
 class: center
 
-# Tracking changes to files over time
+# Tracking Changes to Files Over Time
 
 ![Git Basics ](../assets/git-basics.png)
 
 ???
+
 Slide image by [Jonathan McGlone](http://jmcglone.com/guides/github-pages/)
 
 ---
@@ -87,7 +90,7 @@ class:
 # Up and Running with Git
 
 ```bash
-# check get version
+# check git version
 
 $ git --version
 ```
@@ -129,6 +132,7 @@ $ git config --global core.editor "subl -n -w"
 ```
 
 ???
+
 ## Learn More
 
 [Associating text editors with Git](https://help.github.com/articles/associating-text-editors-with-git/)
@@ -173,6 +177,8 @@ $ cd ~/betamore
 $ git clone https://github.com/betamore/fewd.git
 ```
 
+### Let's try this one ☝️
+
 ???
 
 ## Learn More
@@ -183,7 +189,7 @@ Think of a **repository** as a kind of database where your VCS stores all the ve
 name: git-ignore-local
 class:
 
-# Ignoring files locally
+# Ignoring Files Locally
 
 ### Create a .gitignore file in your project root
 
@@ -199,6 +205,7 @@ $ git rm --cached [file name]
 ```
 
 ???
+
 ## Learn More
 
 [GitHub Help: Ignoring Files](https://help.github.com/articles/ignoring-files/)
@@ -211,7 +218,7 @@ $ git rm --cached [file name]
 name: git-ignore-global
 class:
 
-# Ignoring files globally
+# Ignoring Files Globally
 
 ### Create a .gitignore file in your home directory
 
@@ -237,23 +244,23 @@ Desktop.ini
 name: basic-workflow-of-version-control
 class: center
 
-# Basic workflow of version control
+# Basic Workflow of Version Control
 
 ![Git Stage and Commit](../assets/git-add-commit.png)
 
 ???
+
 ## Learn More
 
-Use the **"status"** command to get a list of all the changes you performed since the last commit: which files did you change? Did you create any new ones or deleted some old ones?
+Use the `git status` command to get a list of all changes you've made since the last commit: which files did you change? Did you create any new ones or delete some old ones?
 
-Next, you tell Git which of your local changes you want to wrap up in the next commit. **Only because a file was changed doesn't mean it will be part of the next commit!** Instead, you have to **explicitly decide which changes you want to include**. You add them to the so-called **"staging area."**
+Next, you tell Git which of your local changes you want to wrap up in the next commit. **Just because a file was changed doesn't mean it will be part of the next commit!** Instead, you have to **explicitly decide which changes you want to include**. You add changed files to the **staging area** using the `git add` command.
 
+If you feel you've reached a **noteworthy state**, it's time to wrap up your changes in a **commit** with the `git commit` command.
 
-If you feel you've reached a **noteworthy state**, then it's time to wrap up your changes in a **commit.**
+A **commit** is a wrapper for a specific set of changes. The author of a commit has to comment what he/she did in a short **commit message** like so: `git commit -m "descriptive commit message goes here"`.
 
-A **commit** is a wrapper for a specific set of changes. The author of a commit has to comment what he did in a short **"commit message."**
-
-Every set of changes implicitly creates a new, different version of your project. Therefore, **every commit also marks a specific version**. It's a **snapshot** of your complete project at that certain point in time. The commit knows exactly how all of your files and directories looked and can therefore be used to restore the project to that certain state.
+Every set of changes implicitly creates a new, different version of your project. Therefore, **every commit marks a specific version**. It's a **snapshot** of your complete project at that specific point in time. Git knows exactly how all of your files and directories looked at the point of each commit and can therefore be used to restore the project to that specific state.
 
 
 Source: [git-tower.com/learn/git](https://www.git-tower.com/learn/git/ebook/command-line/basics/basic-workflow#start)
@@ -264,7 +271,7 @@ Slide image from [devopscube.com](http://devopscube.com/git-basics-every-develop
 name: git-basic-workflow
 class:
 
-# Git basic workflow
+# Git Basic Workflow
 
 ### List all new or modified files
 
@@ -284,13 +291,11 @@ $ git add index.html
 $ git commit -m "fix header"
 ```
 
-???
-
 ---
 name:good-commit
 class: center
 
-# What makes a good commit?
+# What Makes a Good Commit?
 
 ### Commit only related changes
 #### (the staging area is your friend)
@@ -298,9 +303,10 @@ class: center
 ### Commit only tested work
 ### Write good commit messages
 
-# Commit often
+# Commit Often!
 
 ???
+
 ## Learn More
 
 [What makes a good commit?](https://www.git-tower.com/learn/git/ebook/command-line/basics/working-on-your-project)
@@ -310,8 +316,10 @@ A commit should only wrap related changes: fixing two different bugs should prod
 name: git-branches
 class: center
 
-# Git branches
+# Git Branches
+
 ![Git Branches](../assets/git-branches-hero.svg)
+
 ## A parallel version of a repository
 
 ???
@@ -337,7 +345,7 @@ class: center
 name: git-branch-commands
 class:
 
-# Git branches
+# Git Branches
 
 ### List all branches in current repository
 
@@ -367,7 +375,7 @@ $ git checkout my-new-feature
 name: git-merge-fast-forward-before
 class:
 
-# Git branches
+# Git Branches
 
 ### Fast-forward merge: before merging
 
@@ -376,13 +384,26 @@ class:
 name: git-merge-fast-forward-after
 class:
 
-# Git branches
+# Git Branches
 
 ### Fast forward merge: after merging
 
-![Git fast-forwad merge after](../assets/git-merge-fast-forward-after.svg)
----
+![Git fast-forward merge after](../assets/git-merge-fast-forward-after.svg)
 
+---
+name: git-version-control-exercise
+
+# Exercise: Version Control with Git
+
+#### 1) Create a new directory _inside_ of your `/betamore` directory (via command line) and name it .red-text[git-exercise]
+#### 2) Create an empty .red-text[index.html] file in your new directory (via command line)
+#### 3) Create .red-text[main.css] and .red-text[main.js] files and organize them into appropriate sub-directories
+#### 4) Put your project under version control using .red-text[Git]
+#### 5) Make arbitrary .red-text[changes to all 3 files] and record these changes .red-text[individually]
+#### 6) Create a new branch off .red-text[master] by the name of .red-text[feature1] and make .red-text[3 commits] on it
+#### 7) Merge .red-text[feature1] into .red-text[master] and .red-text[delete the branch]
+
+---
 name: github-intro
 class: center, middle
 
@@ -390,14 +411,16 @@ class: center, middle
 
 ## A social and user interface built on top of Git
 
+### Let's create our GitHub accounts 🤓
+
 ???
+
 ## Learn More
 
 * [GitHub Help](https://help.github.com/)
 * [GitHub Glossary](https://help.github.com/articles/github-glossary/)
 
 ---
-
 name: pull-request
 class: center, middle
 
@@ -406,7 +429,6 @@ class: center, middle
 ### Developer collaboration on GitHub, GitLab, Bitbucket, ...
 
 ---
-
 name: pull-request-notification
 class: middle
 
@@ -419,37 +441,29 @@ class: middle
 [Making a Pull Request](https://www.atlassian.com/git/tutorials/making-a-pull-request)
 
 ---
-
 name: pull-request-collaboration
 
-# More than notification
-### - discuss the proposed feature (post feedback)
-### - tweak the feature by pushing follow-up commits
-### - all tracked within the pull request
+# More Than Notification
+
+### - Discuss the proposed feature (post feedback)
+### - Tweak the feature by pushing follow-up commits
+### - All tracked within the pull request
 
 ---
-
 name: pull-request-antonomy
 
-# Antonomy of a Pull Request
-### Requesting that another developer (the project maintainer) <em>pulls</em> a branch from your repository into their repository
+# Anatomy of a Pull Request
 
-### - source repo
-### - source branch
-### - destination repo
-### - destination branch
+### Requesting that another developer (the project maintainer) _pulls_ a branch from your repository into their repository
+
+### - Source repo
+### - Source branch
+### - Destination repo
+### - Destination branch
 
 ---
+name: pull-request-exercise
 
-name: exercise
+# Exercise: GitHub Pull Request
 
-# Exercise
-
-#### - start a new website project and name it .red-text[website1]
-#### - create an empty .red-text[index.html] file on the command line
-#### - create .red-text[main.css] and .red-text[main.js] files and organize them in appropriate directories
-#### - put your project under version control using .red-text[Git]
-#### - make arbitrary .red-text[changes to all 3 files] and record these changes .red-text[individually]
-#### - create a new branch off .red-text[master] by the name of .red-text[feature1] and make .red-text[3 commits] on it
-#### - merge .red-text[feature1] into .red-text[master] and .red-text[delete the branch]
-#### - push your project to GitHub
+### https://github.com/betamore/fewd-pull-request-exercise
