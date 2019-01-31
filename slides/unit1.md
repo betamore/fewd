@@ -3,7 +3,7 @@ class: center, middle
 # Unit 1
 ## Betamore Academy
 ### Intro to Front-end Web Development
-### Zac Heisey & Asa Smith
+### Zac Heisey
 #### zheisey@gmail.com
 
 ---
