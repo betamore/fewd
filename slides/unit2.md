@@ -58,6 +58,64 @@ class: center, middle
 ## - cmder (a must on Windows)
 
 ---
+name: setting-up-dev-environment
+class:
+
+# Setting Up Your Local Dev Environment
+
+1) Open your default terminal and install Homebrew (Mac only):
+
+```bash
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+2) Install the terminal emulator of your choice via installer (e.g. https://hyper.is/).
+
+3) Open your new terminal emulator and check version / install Xcode Command Line Tools:
+
+```bash
+# check if Xcode Command Line Tools are already installed
+$ xcode-select -v
+
+# if not, install them
+$ xcode-select --install
+
+```
+
+4) Install Node and NPM:
+
+```bash
+$ brew install node
+```
+
+???
+
+[Install Homebrew (Mac only)](https://brew.sh/)
+[Install Xcode Command Line Tools](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/)
+[Install Node & NPM on Mac](https://blog.teamtreehouse.com/install-node-js-npm-mac)
+[Install Node & NPM on Windows](https://blog.teamtreehouse.com/install-node-js-npm-windows)
+
+---
+name: setting-up-dev-environment
+class:
+
+# Setting Up Your Local Dev Environment (cont.)
+
+6) Install YADR Dotfiles repo:
+
+```bash
+$ sh -c "`curl -fsSL https://raw.githubusercontent.com/skwp/dotfiles/master/install.sh `"
+```
+
+7) If necessary, update your default shell from `bash` to `zsh` (Hyper > Preferences > Shell).
+
+8) Close and restart your terminal.
+
+???
+
+[YADR Dotfiles](https://github.com/skwp/dotfiles)
+
+---
 name: version-control-with-git
 class: center, middle
 
