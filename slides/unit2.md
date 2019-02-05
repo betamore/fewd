@@ -114,9 +114,9 @@ class:
 ### Set user info
 
 ```bash
-$ git config --global user.name "Tom Kraak"
+$ git config --global user.name "Zac Heisey"
 
-$ git config --global user.email "tkraak@me.com"
+$ git config --global user.email "zheisey@gmail.com"
 ```
 
 ### Set default text editor
