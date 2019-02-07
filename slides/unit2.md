@@ -63,26 +63,26 @@ class:
 
 # Setting Up Your Local Dev Environment
 
-1) Open your default terminal and install Homebrew (Mac only):
-
-```bash
-$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
-2) Install the terminal emulator of your choice via installer (e.g. https://hyper.is/).
-
-3) Open your new terminal emulator and check version / install Xcode Command Line Tools:
+1) Open your default terminal and check version / install Xcode Command Line Tools:
 
 ```bash
 # check if Xcode Command Line Tools are already installed
-$ xcode-select -v
+$ xcode-select --version
 
 # if not, install them
 $ xcode-select --install
 
 ```
 
-4) Install Node and NPM:
+2) Install Homebrew (Mac only):
+
+```bash
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+3) Install the terminal emulator of your choice via installer (e.g. https://hyper.is/).
+
+4) Open your new terminal (Hyper, etc.) and install Node and NPM:
 
 ```bash
 $ brew install node
@@ -90,30 +90,17 @@ $ brew install node
 
 ???
 
-[Install Homebrew (Mac only)](https://brew.sh/)
-[Install Xcode Command Line Tools](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/)
-[Install Node & NPM on Mac](https://blog.teamtreehouse.com/install-node-js-npm-mac)
-[Install Node & NPM on Windows](https://blog.teamtreehouse.com/install-node-js-npm-windows)
+Install ALL the things
+* [Xcode Command Line Tools](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/)
+* [Homebrew (Mac only)](https://brew.sh/)
+* [Node & NPM on Mac](https://blog.teamtreehouse.com/install-node-js-npm-mac)
+* [Node & NPM on Windows](https://blog.teamtreehouse.com/install-node-js-npm-windows)
 
----
-name: setting-up-dev-environment
-class:
-
-# Setting Up Your Local Dev Environment (cont.)
-
-6) Install YADR Dotfiles repo:
-
-```bash
-$ sh -c "`curl -fsSL https://raw.githubusercontent.com/skwp/dotfiles/master/install.sh `"
-```
-
-7) If necessary, update your default shell from `bash` to `zsh` (Hyper > Preferences > Shell).
-
-8) Close and restart your terminal.
-
-???
-
-[YADR Dotfiles](https://github.com/skwp/dotfiles)
+Other stuff (optional)
+* [Customize your `bash` prompt](https://www.cyberciti.biz/tips/howto-linux-unix-bash-shell-setup-prompt.html)
+* [Install YADR Dotfiles (includes zsh, CL shortcuts, etc.)](https://github.com/skwp/dotfiles)
+* If necessary, update your default shell from `bash` to `zsh` (Hyper > Preferences > Shell)
+* If updates don't appear to be working, try quitting and restarting your terminal
 
 ---
 name: version-control-with-git
@@ -242,61 +229,6 @@ $ git clone https://github.com/betamore/fewd.git
 ## Learn More
 
 Think of a **repository** as a kind of database where your VCS stores all the versions and metadata that accumulate in the course of your project. In Git, the repository is just a simple hidden folder named ".git" in the root directory of your project.
-
----
-name: git-ignore-local
-class:
-
-# Ignoring Files Locally
-
-### Create a .gitignore file in your project root
-
-```bash
-$ cd path/to/project/folder
-$ touch .gitignore
-```
-
-### .gitignore is not recursive
-
-```bash
-$ git rm --cached [file name]
-```
-
-???
-
-## Learn More
-
-[GitHub Help: Ignoring Files](https://help.github.com/articles/ignoring-files/)
-
-[Common .gitignore configurations](https://gist.github.com/octocat/9257657)
-
-[Create useful .gitignore files for your project](https://www.gitignore.io)
-
----
-name: git-ignore-global
-class:
-
-# Ignoring Files Globally
-
-### Create a .gitignore file in your home directory
-
-```bash
-$ cd ~
-$ ls -a
-$ atom .gitignore
-```
-
-### Sample .gitignore file
-
-```bash
-# OSX
-.DS_Store
-.Trashes
-
-# Windows
-Thumbs.db
-Desktop.ini
-```
 
 ---
 name: basic-workflow-of-version-control
@@ -470,6 +402,8 @@ class: center, middle
 ## A social and user interface built on top of Git
 
 ### Let's create our GitHub accounts 🤓
+### (and [download GitHub Desktop too](https://desktop.github.com/))
+
 
 ???
 
@@ -518,6 +452,13 @@ name: pull-request-antonomy
 ### - Source branch
 ### - Destination repo
 ### - Destination branch
+
+---
+name: pull-request-antonomy
+
+# Anatomy of a Pull Request (cont.)
+
+### [A Visual Guide to Push/Pull Requests](http://fewd.betamore.com/assets/push-pull-graphic.jpg)
 
 ---
 name: pull-request-exercise
