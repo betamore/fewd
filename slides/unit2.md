@@ -458,7 +458,7 @@ name: pull-request-antonomy
 
 # Anatomy of a Pull Request (cont.)
 
-### [A Visual Guide to Push/Pull Requests](http://fewd.betamore.com/assets/push-pull-graphic.jpg)
+### [A Visual Guide to Push/Pull Requests](../assets/push-pull-graphic.jpg)
 
 ---
 name: pull-request-exercise
