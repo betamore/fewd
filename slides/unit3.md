@@ -41,7 +41,7 @@ class: middle
 name: html-annotate-plain-text
 class: center, middle
 
-# a markup language annotates plain text
+# A Markup Language Annotates Plain Text
 
 ## HTML is the markup language of the Web
 
