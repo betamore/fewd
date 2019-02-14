@@ -83,7 +83,6 @@ class: center
 ### - sectioning content (totally new)
 ### - embedded content (images, audio, video, canvas)
 ### - form-associated content (forms)
-### ...
 
 ???
 
