@@ -91,6 +91,10 @@ class: center
 
 [Google Web Authoring Statistics](https://developers.google.com/webmasters/state-of-the-web/2005/#introduction)
 
+[HTML5 Doctor](http://html5doctor.com/)
+
+[htmlreference.io](https://htmlreference.io/)
+
 ---
 
 name: html5-section
