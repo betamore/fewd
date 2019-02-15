@@ -86,13 +86,13 @@ class: center
 
 ???
 
-[HTML content categories on MDN.](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories)
-
-[Google Web Authoring Statistics](https://developers.google.com/webmasters/state-of-the-web/2005/#introduction)
+[HTML content categories on MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories)
 
 [HTML5 Doctor](http://html5doctor.com/)
 
 [htmlreference.io](https://htmlreference.io/)
+
+[List of HTML attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes)
 
 ---
 
