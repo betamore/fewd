@@ -7,8 +7,8 @@ class: center, middle
 
 ???
 
-* style sheet language for formatting / styling markup languages such as HTML
-* enables the separation of content (HTML) and presentation (CSS)
+* Style sheet language for formatting / styling markup languages such as HTML
+* Enables the separation of content (HTML) and presentation (CSS)
 * [Cascading Style Sheets on Wikipedia](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 
 ---
@@ -29,15 +29,16 @@ background-image: url(../assets/css-browser.png)
 class: center, middle
 
 # CSS Associates Style Rules with HTML Elements
-## Fundamental CSS syntax:
-### - rules
-### - selectors
-### - declarations
-### - properties
-### - values
+## Fundamental CSS Syntax:
+### - Rules
+### - Selectors
+### - Declarations
+### - Properties
+### - Values
 
 ???
-## Learn more
+
+## Learn More
 
 * [Getting to Know CSS](http://learn.shayhowe.com/html-css/getting-to-know-css/)
 * [The Best Way to Learn CSS](http://webdesign.tutsplus.com/tutorials/the-best-way-to-learn-css--webdesign-11906)
@@ -48,7 +49,8 @@ class:
 background-image: url(../assets/css-rule.png)
 
 ???
-* CSS rules govern how the content of the specified element should be displayed
+
+* CSS rules govern how the content of the specified element should be displayed.
 
 ---
 name: css-selector-declaration
@@ -56,8 +58,9 @@ class:
 background-image: url(../assets/css-selector-declaration.png)
 
 ???
-* selectors indicate which element the rule applies to
-* declarations indicate how the element referred to in the selector should be styled
+
+* Selectors indicate which element the rule applies to.
+* Declarations indicate how the element referred to in the selector should be styled.
 
 ---
 name: css-property-value
@@ -65,8 +68,9 @@ class:
 background-image: url(../assets/css-property-value.png)
 
 ???
-* properties indicate the aspects of the element to be changed (color, font, border, etc.)
-* values specify the settings to use for the chosen property
+
+* Properties indicate the aspects of the element to be changed (color, font, border, etc.).
+* Values specify the settings to use for the chosen property.
 
 ---
 class: center, middle
@@ -112,23 +116,15 @@ class:
   <head>
     <meta charset="utf-8">
     <title>Made in Baltimore</title>
-
     <style type="text/css">
-
       body {font: 200%/1.5 Bradley Hand, Segoe Script, cursive;}
-
-      header {
-        background-color: white;
-        padding-left: 5%;
-      }
-
+      header {background-color: yellow; padding-left: 5%;}
       h1 {font: 150%/1.5 'Yanone Kaffeesatz';}
-
     </style>
-
   </head>
   <body>
-
+    <header><h1>My Headline</h1></header>
+    <p>Lorem ipsum dolor sit amet</p>
   </body>
 </html>
 ```
@@ -387,11 +383,14 @@ div span  {  }
 
 A descendant selector in CSS is any selector with white space between two selectors without a combinator. Descendant means anywhere nested within it in the DOM tree. Could be a direct child, could be five levels deep, it is still a descendant. This is different than a child combinator (>) which requires the element to be the next nested level down.
 
+* [CSS Diner Exercise](https://flukeout.github.io/)
+
 ---
 name: css-big-concepts
 class: center, middle
 
 # The Big Concepts of CSS
+
 ## - Inheritance
 ## - Cascade
 ## - Specificity
@@ -512,23 +511,23 @@ class: center
 
 # The Cascade: stylesheet hierarchy
 
-### *from general to specific*
+### From general to specific
 
--browser default styles (user agent stylesheet)
+Browser default styles (user agent stylesheet)
 
--user styles (reader stylesheet)
+User styles (reader stylesheet)
 
--linked external stylesheet (`<link>` element in `<head>`)
+Linked external stylesheet (`<link>` element in `<head>`)
 
--imported stylesheet (`@import`)
+Imported stylesheet (`@import`)
 
--embedded stylesheets (`<style>` element in `<head>`)
+Embedded stylesheets (`<style>` element in `<head>`)
 
--inline style rule(s) (`style` attribute in HTML opening tag)
+Inline style rule(s) (`style` attribute in HTML opening tag)
 
--any style rule marked `!important` by the developer
+Any style rule marked `!important` by the developer
 
--any style rule marked `!important` by the reader (user)
+Any style rule marked `!important` by the reader (user)
 
 ---
 name: css-specificity-101
@@ -554,7 +553,6 @@ class:
 * [CSS Specificity: Things You Should Know](http://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
 
 ---
-
 # Every HTML Element is a Box
 ### - block level elements are boxes
 
@@ -572,7 +570,6 @@ class:
 [The CSS "Ah-ha!" Moment](https://css-tricks.com/the-css-ah-ha-moment/)
 
 ---
-
 # Simulate Boxes in Chrome DevTools
 
 ```css
@@ -600,45 +597,44 @@ span {
 ```
 
 ???
+
 [Outlined HTML Elements in Chrome DevTools](https://www.youtube.com/watch?v=4CZveCrrGS0)
 
 ---
-
 name: css-box-model-inline-block
 
 # Block-level vs. Inline Elements
 
 ### Block-level elements
 
-* begin on a new line
-* stacked on top of each other
-* .red-text[occupy any available width]
-* they may be nested inside one another and may wrap inline-level elements
+* Begin on a new line
+* Stacked on top of each other
+* .red-text[Occupy any available width]
+* They may be nested inside one another and may wrap inline-level elements
 
 ### Inline elements
 
-* do not begin on a new line
-* fall into the normal flow of a document
-* lining up one after the other
-* .red-text[only maintain the width of their content]
-* may be nested inside one another
-* cannot wrap block-level elements
+* Do not begin on a new line
+* Fall into the normal flow of a document
+* Lining up one after the other
+* .red-text[Only maintain the width of their content]
+* May be nested inside one another
+* Cannot wrap block-level elements
 
 ???
 
 ## Boxes
-* width and height
-* borders (color, with, style)
-* background color and images
-* position in browser window
+* Width and height
+* Borders (color, with, style)
+* Background color and images
+* Position in browser window
 
 ## Text
-* typeface
-* size
-* color
+* Typeface
+* Size
+* Color
 
 ---
-
 name: css-box-model-display
 class:
 
@@ -723,7 +719,6 @@ div {
 ```
 
 ---
-
 name: css-box-sizing
 class:
 
@@ -754,7 +749,6 @@ box-sizing: border-box;
 [Interactive box-model diagram](http://codepen.io/carolineartz/full/ogVXZj) on CodePen
 
 ---
-
 name: box-sizing-code
 class:
 
@@ -771,3 +765,11 @@ html {
   box-sizing: inherit;
 }
 ```
+
+---
+name: css-exercise
+class: left
+
+# Exercises
+
+### CSS Exercise 1: [External Stylesheet and Selector Practice](https://github.com/betamore/fewd-css-exercise-1)
