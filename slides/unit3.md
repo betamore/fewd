@@ -7,8 +7,8 @@ class: center
 ???
 
 [HTML5 on Wikipedia](https://en.wikipedia.org/wiki/HTML5)
----
 
+---
 name: jeremy-keith-html-quote
 class: middle
 
@@ -17,7 +17,6 @@ class: middle
 <cite>-- Jeremy Keith</cite>
 
 ---
-
 name: stephen-hay-html-quote
 class:
 
@@ -29,15 +28,14 @@ class:
 [Understanding semantics](https://tink.uk/understanding-semantics/)
 
 ---
-
 name: stephen-hay-html-quote
 class: middle
 
   > HTML has always been a conversation between <span>browser makers, authors, standards wonks, and other people</span> who just showed up and liked to talk about angle brackets.
 
 <cite>-- Mark Pilgrim</cite>
----
 
+---
 name: html-annotate-plain-text
 class: center, middle
 
@@ -46,7 +44,6 @@ class: center, middle
 ## HTML is the markup language of the Web
 
 ---
-
 name: html-tags
 
 background-image: url(../assets/html-tags.jpg)
@@ -56,7 +53,6 @@ background-image: url(../assets/html-tags.jpg)
 Slide image from the [HTML & CSS Book](http://www.htmlandcssbook.com/sample-chapter/)
 
 ---
-
 name: html-document-tree
 class: center
 
@@ -65,6 +61,7 @@ class: center
 ![HTML Document Tree](../assets/html-document-tree.gif)
 
 ???
+
 * All elements contained within a given element are said to be its .red-text[descendants].
 * An element that's directly contained within another element is said to be a .red-text[child] of that element.
 * The containing element is the .red-text[parent].
@@ -72,7 +69,6 @@ class: center
 * Two elements with the same parent are .red-text[siblings].
 
 ---
-
 name: html5-content-categories
 class: center
 
@@ -95,7 +91,6 @@ class: center
 [List of HTML attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes)
 
 ---
-
 name: html5-section
 class:
 
@@ -108,6 +103,7 @@ class:
   <p>Winter not so much.</p>
 </section>
 ```
+
 ---
 name: html5-header
 class:
@@ -127,7 +123,6 @@ class:
 ```
 
 ---
-
 name: img-format
 class: center
 
@@ -139,7 +134,6 @@ class: center
 ### - svg (my-image.svg)
 
 ---
-
 name: img-raster
 class: middle
 
@@ -148,7 +142,6 @@ class: middle
 <cite>--Mozilla Developer Network</cite>
 
 ---
-
 name: img-vector
 class: middle
 
@@ -157,7 +150,6 @@ class: middle
 <cite>--Mozilla Developer Network</cite>
 
 ---
-
 name: img-gif
 
 # Graphics Interchange Format (GIF)
@@ -168,7 +160,6 @@ name: img-gif
 ### - can be animated
 
 ---
-
 name: img-jpg
 
 # Joint Photographic Experts Group (JPG or JPEG)
@@ -179,7 +170,6 @@ name: img-jpg
 ### - does not preserve transparency
 
 ---
-
 name: img-png
 
 # Portable Network Graphics (PNG)
@@ -190,7 +180,6 @@ name: img-png
 ### - allows multiple levels of transparency
 
 ---
-
 name: img-svg
 
 # Scalable Vector Graphics (SVG)
@@ -202,7 +191,6 @@ name: img-svg
 ### - scalable, very small file size
 
 ---
-
 name: img-format-selection
 class: center
 
@@ -215,3 +203,13 @@ class: center
 [Google Web Fundamentals: Image Optimization](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization)
 
 [Sitepoint: GIF, PNG, JPG. Which One To Use?](https://www.sitepoint.com/gif-png-jpg-which-one-to-use/)
+
+---
+name:
+class: left
+
+# Exercises
+
+### HTML5 Exercise 1: [Zeldman Article Markup](https://github.com/betamore/fewd-html-exercise-1)
+
+### HTML5 Exercise 2: [HTML Structure, Image, and Link Pratice](https://github.com/betamore/fewd-html-exercise-2)
