@@ -29,11 +29,11 @@ name: js-what-is
 # Nature of JavaScript
 
 ### - most popular programming language in the world
-### - freely available (ECMA-262 is an ISO standard)
-### - evolution of JS is handled by TC39 committee
 ### - dynamic and flexible programming language
+### - case-sensitive (`var myName` different from `var MyName`)
+### - tabs and spaces are ignored unless enclosed in quotes
 ### - functional and object-oriented
-### - dynamically typed
+### - dynamically (loosely) typed
 ### - deployed as source code
 
 ---
@@ -146,7 +146,7 @@ class:
 
 ```js
 let a = 42; // assignment
-a += 2;    // compound assignment, same as a = a + 2
+a += 2; // compound assignment, same as a = a + 2
 ```
 
 ```js
@@ -215,7 +215,7 @@ false;
 name: js-built-in-types
 class: center
 
-# JavaScript Built-in Types
+# JavaScript Data Types
 
 ### - null
 ### - undefined
@@ -230,6 +230,7 @@ class: center
 - All built-in types except `object` are called _primitives_.
 - Primitives are values, they have no properties.
 - Primitives are immutable.
+- [Data Types and Data Structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
 
 ---
 
@@ -340,72 +341,6 @@ class: center
 
 ---
 
-name: js-internal-class
-
-# Internal [[Class]]
-
-```js
-Object.prototype.toString.call(() => {}); // 'object Function'
-```
-```js
-Object.prototype.toString.call([1, 2, 3]); // 'object Array'
-```
-```js
-Object.prototype.toString.call(/regex-literal/); // 'object RegExp'
-```
-
-```js
-Object.prototype.toString.call(null); // 'object Null'
-```
-
-```js
-Object.prototype.toString.call(undefined); // 'object Undefined'
-```
-
-```js
-Object.prototype.toString.call('abc'); // 'object String'
-```
-
-```js
-Object.prototype.toString.call(42); // 'object Number'
-```
-
-???
-
-* [Object.prototype.constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor)
-
----
-
-name: js-boxing wrappers
-
-# Boxing Wrappers
-
-```js
-const a = 'abc';
-a.length; // 3
-```
-
-```js
-const age = 42;
-age.toString(); // '42'
-```
-
-### Unboxing
-
-```js
-const a = new String('abc');
-const b = new Number(42);
-const c = new Boolean(true);
-```
-
-```js
-a.valueOf(); // 'abc'
-b.valueOf(); // 42
-c.valueOf(); // true
-```
-
----
-
 # Coercion: implicit type conversion
 ### Most operators coerce operands to the types they need.
 
@@ -426,27 +361,14 @@ a == b // true
 
 ---
 
-name: js-basics
+name: js-exercise-1
 class:
 
-# The Basics
+# Exercise: Variables & Operators
 
-### - JavaScript is case-sensitive
-### - Tabs and spaces are ignored unless enclosed in quotes
+### Let's Practice!
 
-```javascript
-// this is a single-line comment
-```
-
-```javascript
-/* This is a multi-line comment.
-
-Anything in here will be
-completely ignored
-when the script runs.
-
-*/
-```
+Work through the following exercises: https://www.teaching-materials.org/javascript/exercises/variables
 
 ---
 
