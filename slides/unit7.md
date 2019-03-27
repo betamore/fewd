@@ -223,7 +223,6 @@ class: center
 ### - number
 ### - string
 ### - object
-### - symbol
 
 ???
 
@@ -244,7 +243,6 @@ typeof true             === "boolean";   // true
 typeof 42               === "number";    // true
 typeof "betamore"       === "string";    // true
 typeof { age: 21 }      === "object";    // true
-typeof Symbol()         === "symbol";    // true
 ```
 
 ```javascript
@@ -280,7 +278,6 @@ class: center
 ### boolean
 ### string
 ### number
-### symbol
 ]
 .m[
 # Objects
@@ -330,7 +327,6 @@ class: center
 #### `RegExp()`
 #### `Date()`
 #### `Error()`
-#### `Symbol()`
 ]
 ]
 
@@ -369,6 +365,73 @@ class:
 ### Let's Practice!
 
 Work through the following exercises: https://www.teaching-materials.org/javascript/exercises/variables
+
+---
+
+name: js-conditionals
+
+# JavaScript Conditionals
+
+### Conditionals allow us to control the flow of execution in our programs by only executing blocks of code that meet certain conditions.
+
+???
+
+* [JavaScript Control Flow](https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-control-flow)
+* [JavaScript if else and else if](https://www.w3schools.com/js/js_if_else.asp)
+* [JavaScript Conditionals](https://www.javascript.com/learn/conditionals)
+
+---
+
+name: js-conditionals-types
+class:
+
+# Types of JavaScript Conditionals
+
+### `if` statement
+```js
+var today = 'Saturday';
+
+if (today === 'Saturday') {
+  console.log('Watch Cartoons!');
+}
+```
+### `if else` statement
+```js
+if (today === 'Saturday') {
+  console.log('Watch cartoons');
+} else {
+  console.log('Watch the news');
+}
+```
+
+---
+
+name: js-conditionals-types-2
+
+### `else if` statement
+```js
+if (today === 'Saturday') {
+  console.log('Watch cartoons');
+} else if (today === 'Sunday') {
+  console.log('Watch sports');
+} else {
+  console.log('Watch the news');
+}
+```
+
+### `switch` statement
+```js
+switch (today) {
+  case 'Saturday':
+    console.log('Watch cartoons');
+    break;
+  case 'Sunday':
+    console.log('Watch sports');
+    break;
+  default:
+    console.log('Watch the news');
+}
+```
 
 ---
 
