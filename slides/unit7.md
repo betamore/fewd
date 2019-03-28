@@ -60,46 +60,17 @@ name: js-outside-browser
 
 ---
 
-name: programming-basics
-class: center, middle
-
-# Basic Principles of Programming
-## JavaScript
-
----
-
-name: programming-code
-class: middle
-
-# Code
-
-> A .red-text[program], often referred to as .red-text[source code] or just .red-text[code], is a set of .red-text[special instructions] to tell the computer what tasks to perform.
-
-<cite>-- Kyle Simpson</cite>
-
----
-
-name: programming-syntax
-class: middle
-
-# Programming Language
-
-> The .red-text[rules for valid format] and combinations of instructions is called a .red-text[computer language], sometimes referred to as its .red-text[syntax], much the .red-text[same as English] tells you how to spell words and how to create valid sentences using words and punctuation.
-
-<cite>-- Kyle Simpson</cite>
-
----
-
 name: js-dev-tools-console
 class: center, middle
 
-# Start Coding!
-## Chrome Dev Tools Console
+# Let's Start Coding!
+## Open Chrome Dev Tools Console
 ### `command + option + J`
 ### `Ctrl + Shift + J`
 
 ???
-[Mastering The Developer Tools Console](http://blog.teamtreehouse.com/mastering-developer-tools-console)
+
+* [Mastering The Developer Tools Console](http://blog.teamtreehouse.com/mastering-developer-tools-console)
 
 ---
 
@@ -107,13 +78,13 @@ class: center
 
 # Basic JavaScript Concepts & Components
 
-### variables
-### operators
-### values & types
-### conditionals
-### loops
-### functions
-### scope
+#### Variables
+#### Operators
+#### Data Types
+#### Conditionals
+#### Loops
+#### Functions
+#### Scope
 
 ---
 
@@ -121,21 +92,25 @@ name: js-variables
 class:
 
 # Variables
-### track a value as it changes over time
-### dynamically typed: any type of value at any time
+### Track a value as it changes over time
+### Dynamically typed: any type of value at any time
 
-```js
+```javascript
 const amount = 42;
 ```
 
-```js
+```javascript
 let color;
 color = 'blue';
 ```
 
-```js
+```javascript
 var showNav = true;
 ```
+
+???
+
+* [`let`, `var`, and `const`](https://gomakethings.com/let-var-and-const/)
 
 ---
 
@@ -144,29 +119,29 @@ class:
 
 # Common Operators in JavaScript
 
-```js
+```javascript
 let a = 42; // assignment
 a += 2; // compound assignment, same as a = a + 2
 ```
 
-```js
+```javascript
 a * 3; // math
 ```
 
-```js
+```javascript
 a++; // increment, similar to a = a + 1
 ```
 
-```js
+```javascript
 a === b; // strict equality
 a == b; // normal or "lenient" equality
 ```
 
-```js
+```javascript
 a < b; // comparison
 ```
 
-```js
+```javascript
 a || b; // logical OR
 a && b; // logical AND
 ```
@@ -213,7 +188,7 @@ false;
 ---
 
 name: js-built-in-types
-class: center
+class:
 
 # JavaScript Data Types
 
@@ -340,15 +315,15 @@ class: center
 # Coercion: implicit type conversion
 ### Most operators coerce operands to the types they need.
 
-```js
+```javascript
 '3' * '4'; // 12
 ```
 
-```js
+```javascript
 3 + ' times' // '3 times'
 ```
 
-```js
+```javascript
 const a = '99.99';
 const b = 99.99;
 
@@ -364,15 +339,41 @@ class:
 
 ### Let's Practice!
 
-Work through the following exercises: https://www.teaching-materials.org/javascript/exercises/variables
+#### Work through the following exercises: https://www.teaching-materials.org/javascript/exercises/variables
 
 ---
 
 name: js-conditionals
+class: center, middle
 
 # JavaScript Conditionals
 
 ### Conditionals allow us to control the flow of execution in our programs by only executing blocks of code that meet certain conditions.
+
+---
+
+name: js-cond-syntax
+class:
+
+# Writing JavaScript Conditionals
+
+```javascript
+var today = 'Saturday';
+
+// if statement
+
+if (today === 'Saturday') {
+  console.log('Watch Cartoons!');
+}
+
+// if else statement
+
+if (today === 'Saturday') {
+  console.log('Watch cartoons');
+} else {
+  console.log('Watch the news');
+}
+```
 
 ???
 
@@ -382,34 +383,11 @@ name: js-conditionals
 
 ---
 
-name: js-conditionals-types
-class:
+name: js-cond-syntax-2
 
-# Types of JavaScript Conditionals
+```javascript
+// else if statement
 
-### `if` statement
-```js
-var today = 'Saturday';
-
-if (today === 'Saturday') {
-  console.log('Watch Cartoons!');
-}
-```
-### `if else` statement
-```js
-if (today === 'Saturday') {
-  console.log('Watch cartoons');
-} else {
-  console.log('Watch the news');
-}
-```
-
----
-
-name: js-conditionals-types-2
-
-### `else if` statement
-```js
 if (today === 'Saturday') {
   console.log('Watch cartoons');
 } else if (today === 'Sunday') {
@@ -417,10 +395,9 @@ if (today === 'Saturday') {
 } else {
   console.log('Watch the news');
 }
-```
 
-### `switch` statement
-```js
+// switch statement
+
 switch (today) {
   case 'Saturday':
     console.log('Watch cartoons');
@@ -440,78 +417,54 @@ class: center, middle
 
 # JavaScript Functions
 
----
-
-name: js-fn-why
-class: center
-
-# Why functions?
-## - wrap, bundle, group code for later reuse
-## - reduce repetition
-## - organize code / application
-## - store steps to achieve a specific task
-## - primary mechanism of scope
-
----
-
-name: js-fn-definition
-class: middle
-
 > A function is generally a named section of code that can be "called" by name, and the code inside it will run each time.
 
 <cite>-- Kyle Simpson</cite>
 
 ???
 
-[Kyle Simpson on functions](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md#functions)
+* [Kyle Simpson on functions](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md#functions)
 
 ---
 
-name: js-fn-definition
+name: js-fn-help
 
-# Defining a function
+# Functions Help Us:
+## - Organize and group code for re-use
+## - Reduce repetition
+## - Store steps to achieve a specific task
+## - Work with scope
+
+---
+
+name: js-fn-syntax
+
+# Writing JavaScript Functions
 
 ```javascript
+// Function Declaration aka Named Function
+
 function doSomething() {
   console.log('What do you want me to do?');
 }
 
-// function declaration aka named function
-```
+// Function Expression aka Anonymous Function
 
-```javascript
-const doSomething = function() {
+var doSomething = function() {
   console.log('What do you want me to do?');
 }
 
-// function expression aka anonymous function
-// in JS, an expression is any reference to a variable or value
-// we can assign a function to a variable just like any other value
-```
+// Immediately Invoked Function Expression aka IIFE
 
----
-
-name: js-fn-values
-
-# Functions as Values
-
-```javascript
-const doSomething = function() {
+(function() {
   console.log('What do you want me to do?');
-}
-
-// anonymous function expression
+}());
 ```
 
-```javascript
-element.addEventListener('click', function(event) {
-console.log(event.type);
-});
-```
+???
 
-```javascript
-element.addEventListener('click', event => { console.log(event.type) });
-```
+* [Function Expressions vs. Function Declarations](https://gomakethings.com/function-expressions-vs-function-declarations/)
+* [What the Heck is an IIFE?](https://codeburst.io/javascript-what-the-heck-is-an-immediately-invoked-function-expression-a0ed32b66c18)
 
 ---
 
@@ -520,28 +473,28 @@ name: js-fn-call
 # Invoking, calling, running or executing a function
 
 ```javascript
-var doSomething = function() {
+function doSomething() {
   console.log('What do you want me to do?');
 }
 
-// anonymous function expression
+// Call the doSomething function
 doSomething();
 ```
 
 ```javascript
-const doSomething = function foo() {
-  console.log('What do you want me to do?');
+var doOtherThing = function() {
+  console.log('Do this other thing please!');
 }
 
-// named function expression
-doSomething();
+// Call the doOtherThing function
+doOtherThing();
 ```
 
 ---
 
 name: js-fn-effect-value
 
-# Side effect
+# Side Effect (`console.log`)
 
 ```javascript
 var sayHello = function() {
@@ -551,17 +504,21 @@ var sayHello = function() {
 sayHello(); // Hello there!
 ```
 
-# Producing a value
+# Producing a Value (`return`)
 
 ```javascript
-var sayHello = function() {
-  return 'Hello there!';
+var sayGoodbye = function() {
+  return 'Goodbye!';
 }
 
-sayHello(); // Hello there!
-
-var myReturnValue = sayHello();
+sayGoodbye(); // Goodbye!
 ```
+
+???
+
+* Some functions produce a value, such as `sayGoodbye`, and some don’t, such as `sayHello`, whose only result is a **side effect**. A `return` statement determines the value the function returns.
+* A `return` keyword without an expression after it will cause the function to return `undefined`. Functions that don’t have a `return` statement at all, such as `sayHello`, similarly return `undefined`.
+* [Eloquent JavaScript - Functions](https://eloquentjavascript.net/03_functions.html)
 
 ---
 
@@ -642,19 +599,6 @@ square(4); // 16
 
 ---
 
-name: js-fn-first-class
-
-# "First class" functions
-## functions as "first class" values
-
-### - assign a function to a variable
-### - store a function in an array or object
-### - pass a function to another function
-### - return a function from a function
-
-
----
-
 name: js-browser
 class: center, middle
 
@@ -722,100 +666,3 @@ name: js-script-placement
 - Don't sprinkle `<script>` elements throughout the HTML document, because that makes them difficult to find and maintain.
 
 ---
-
-name: dom-intro
-
-# Intro to the Document Object Model (DOM)
-
-#### - browser builds a .red-text[model of the document's structure] and uses it to draw the page on the screen
-#### - it serves as a structured map to all elements on a page
-#### - this representation of the document is manipulated via JavaScript
-#### - we can read from the model and write to it (change it)
-#### - live data structure: when modified, the page on the screen updates to reflect the changes
-#### - it's a programming interface (API) for HTML pages
-
-???
-
-* [What, exactly, is the DOM?](https://bitsofco.de/what-exactly-is-the-dom/)
-
----
-
-name: dom-node-tree
-class:
-
-# Document Structure (DOM node tree)
-## Visualizing the DOM
-
-![HTML Document Tree](../assets/html-document-tree.gif)
-
----
-
-# Document Structure (nested set of boxes)
-
-.float-left[
-
-```html
-<!doctype html>
-<html>
-  <head>
-    <title>My home page</title>
-  </head>
-  <body>
-    <h1>My home page</h1>
-    <p>Hello, I am Marijn and this is ...</p>
-    <p>I also wrote a book! Read it
-      <a href="#">here</a>.</p>
-  </body>
-</html>
-```
-
-]
-
-.float-right[
-![HTML Document Tree](../assets/html-boxes.svg)
-]
-
-???
-[Eloquent JavaScript: Chapter 13: The Document Object Model](http://eloquentjavascript.net/13_dom.html)
-
----
-
-# Data Structure (nested set of boxes)
-
-.float-left[
-![HTML Document Tree](../assets/html-boxes.svg)
-]
-
-.float-right[
-#### - each box is an object we can interact with
-#### - what HTML tag? does it contain other boxes? which ones?
-#### - global variable `document` gives us access to objects
-#### - `document.documentElement` (html tag)
-#### - `document.head` (head tag)
-#### - `document.body` (body tag)
-]
-
----
-
-name: dom-crawling
-
-# Traversing the DOM
-
-### DOM is a collection of nodes
-- element nodes
-- attribute nodes
-- text nodes
-
-```html
-<p id="betamore">
-  Real web designers <a href="/code">write code</a>. Always have, always will.
-</p>
-```
-
-```javascript
-var elementNode = document.getElementById("betamore");
-
-var attributeNode = elementNode.getAttribute("href");
-
-var textNode = elementNode.innerHTML;
-```
