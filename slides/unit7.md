@@ -148,63 +148,64 @@ a && b; // logical AND
 
 ---
 
-name: js-values-types
-class:
-
-# Values & Types
-## In programming, different representations for values are called .red-text[types].
-
-### - to do math, use a .red-text[number]
-### - to print a value on the screen, use a .red-text[string]
-### - to make a decision in a program, use a .red-text[boolean] (true/false)
-
-### It's common for programming languages to also provide .red-text[arrays, objects, functions], and more.
-
----
-
-name: js-value-literals
-class:
-
-# Value Literals
-
-```javascript
-"I am a string";
-'I am also a string';
-
-42;
-
-true;
-false;
-
-[1, 2, 3]
-
-{
-  name: 'Sam',
-  age: 21,
-  citizen: true
-}
-```
-
----
-
-name: js-built-in-types
+name: js-data-types
 class:
 
 # JavaScript Data Types
 
-### - null
-### - undefined
-### - boolean
-### - number
-### - string
-### - object
+In programming, different representations for values are called .red-text[data types]. JavaScript has 7 built-in data types:
+
+- null
+- undefined
+- string
+- number
+- boolean
+- object
+- symbol
+
+**To do math, use a .red-text[number]**  
+**To print a value on the screen, use a .red-text[string]**  
+**To make a decision in a program, use a .red-text[boolean] (true/false)**  
+
+It's common for programming languages to also provide .red-text[arrays, objects, functions], and more.
 
 ???
 
 - All built-in types except `object` are called _primitives_.
 - Primitives are values, they have no properties.
 - Primitives are immutable.
+- [JavaScript Data Types](https://javascript.info/types)
 - [Data Types and Data Structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+
+---
+
+name: js-value-literals
+class:
+
+# JavaScript Value Literals
+
+```javascript
+// String
+"I am a string";
+'I am also a string';
+
+// Number
+42;
+
+// Boolean
+true;
+false;
+
+// Object
+{
+  name: 'Sam',
+  age: 21,
+  citizen: true
+}
+
+// Array
+[1, 2, 3]
+```
 
 ---
 
@@ -412,6 +413,70 @@ switch (today) {
 
 ---
 
+name: js-exercise-2
+class:
+
+# Exercise: Conditionals
+
+### Let's Practice!
+
+#### Work through the following exercises: https://www.teaching-materials.org/javascript/exercises/ifelse
+
+---
+
+name: js-loops
+class: center, middle
+
+# JavaScript Loops
+
+### Loops in JavaScript allow us to iterate - or repeat - the same code block multiple times until a specified condition is met.
+
+---
+
+name: js-loops-syntax
+class:
+
+# Writing JavaScript Loops
+
+```javascript
+// for loop (executes code block a known number of times)
+for (var i = 0; i < 10; i++) {
+  console.log(i);
+}
+
+// while loop (executes code block an unknown number of times)
+var i = 0;
+while (i < 3) {
+  console.log(i);
+  i++; // without this increment declaration, this loop would run FOR-EH-VUR
+}
+
+// do...while loop (executes code block at least one time)
+var i = 0;
+do {
+  console.log(i);
+  i++;
+} while (i < 3);
+```
+
+???
+
+* [Loops: while and for](https://javascript.info/while-for)
+* [Loops and iteration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
+
+---
+
+name: js-exercise-3
+class:
+
+# Exercise: Loops
+
+### Let's Practice!
+
+#### Work through the following exercises: https://www.teaching-materials.org/javascript/exercises/forloops
+
+---
+
 name: js-fn
 class: center, middle
 
@@ -470,7 +535,7 @@ var doSomething = function() {
 
 name: js-fn-call
 
-# Invoking, calling, running or executing a function
+# Invoking, Calling, Running or Executing a Function
 
 ```javascript
 function doSomething() {
@@ -526,7 +591,7 @@ name: js-fn-scope
 
 # Scope
 
-### JavaScript has two types of scope: global & local
+### JavaScript has two types of scope: **global** & **local**
 
 ```javascript
 var a = 0; // a is defined within global scope
@@ -549,13 +614,15 @@ two(); // 2
 
 ???
 
-[Kyle Simpson on scope](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md#scope)
+* [Kyle Simpson on scope](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md#scope)
+* [Understanding Scope in JavaScript](https://scotch.io/tutorials/understanding-scope-in-javascript)
+
 
 ---
 
 name: js-fn-arguments
 
-# Passing information to functions
+# Passing Information to Functions
 
 ```javascript
 var sayHello = function() {
@@ -607,33 +674,26 @@ class: center, middle
 
 ---
 
-name: js-embed
+name: js-scripts
 
 # Adding JavaScript to a Page
-## Embedded
+
+**Embedded Script**
 
 ```html
 <script>
-var parent = document.querySelector('ul');
-var myNavitems = document.querySelectorAll('li a');
-parent.addEventListener('click', function(e) {
-  if (e.target !== e.currentTarget) {
+var myNavitems = document.querySelectorAll('.nav-item');
+document.addEventListener('click', function(event) {
+  if (event.target.classList.contains('nav-item')) {
     for(i = 0; i < myNavitems.length; i++) {
       myNavitems[i].classList.remove('active');
     }
-    e.target.classList.add('active');
-   }
-  e.stopPropagation();
+    event.target.classList.add('active');
+  }
 }, false);
 </script>
 ```
-
----
-
-name: js-external-script
-
-# Adding JavaScript to a Page
-## External scripts
+**External Script**
 
 ```html
 <script src="js/main.js"></script>
@@ -641,9 +701,9 @@ name: js-external-script
 
 ???
 
-- apply the same script to multiple pages
+- Using external scripts allow us to apply the same script to multiple pages (same way we link our external CSS stylesheets).
 
-- each external script requires an additional HTTP request, which impacts performance
+- Each external script requires an additional HTTP request, which impacts performance.
 
 ---
 
@@ -666,3 +726,12 @@ name: js-script-placement
 - Don't sprinkle `<script>` elements throughout the HTML document, because that makes them difficult to find and maintain.
 
 ---
+
+name: js-exercise-3
+class:
+
+# Exercise: Functions
+
+### Let's Practice!
+
+#### Work through the following exercises: https://www.teaching-materials.org/javascript/exercises/functions
