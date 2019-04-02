@@ -105,6 +105,34 @@ var textNode = elementNode.innerText;
 
 ---
 
+# Selecting HTML DOM Elements with JavaScript
+
+```javascript
+// Select element by id
+var findId = document.getElementById('id');
+
+// Select element(s) by class
+var findClass = document.getElementsByClassName('className');
+
+// Select element(s) by tag
+var findTag = document.getElementsByTagName('tagName');
+
+// Select element(s) by CSS selector (all matching)
+var allElements = document.querySelectorAll('.className');
+// => selects ALL elements with class of className
+
+// Select element by CSS selector (first matching)
+var firstElement = document.querySelector('p');
+// => selects first <p> element
+```
+
+???
+
+* [JavaScript HTML DOM Elements](https://www.w3schools.com/js/js_htmldom_elements.asp)
+* [JavaScript Selector Performance](https://gomakethings.com/javascript-selector-performance/)
+
+---
+
 class: middle
 
 # JavaScript Event Handling
@@ -217,7 +245,7 @@ class: center, middle
 
 ---
 
-# Exercise: DOM and Events
+# Exercise: DOM and JS Events
 
 ### Let's Practice!
 
