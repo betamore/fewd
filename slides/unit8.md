@@ -96,11 +96,11 @@ name: dom-crawling
 ```
 
 ```javascript
-var elementNode = document.getElementById("betamore");
+var elementNode = document.getElementById('betamore');
 
-var attributeNode = elementNode.getAttribute("href");
+var attributeNode = elementNode.firstElementChild.getAttribute('href');
 
-var textNode = elementNode.innerHTML;
+var textNode = elementNode.innerText;
 ```
 
 ---
