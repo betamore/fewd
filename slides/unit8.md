@@ -217,10 +217,10 @@ class: center, middle
 
 ---
 
-# Write Code!
+# Exercise: DOM and Events
 
-## - github.com/betamore/potato
-## - betamore.github.io/potato
-## - codepen.io/oknoblich/pen/klnjw (off canvas menu)
-## - .red-text[present your plan]
-## - write [VanillaJS](http://stackoverflow.com/questions/20435653/what-is-vanillajs) &#128540; &#128640;
+### Let's Practice!
+
+#### JavaScript Event Exercise: https://github.com/betamore/fewd-js-event-practice
+
+#### Say Hello Exercise: https://github.com/betamore/fewd-js-say-hello
