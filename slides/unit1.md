@@ -70,6 +70,21 @@ class: left
 ---
 class: left
 
+# The Web is Cake ~
+
+> Think of your web pages as cakes. A .red-text[solid foundation of markup], a .red-text[tasteful layer of style], and an .red-text[appropriate application of JavaScript] make for a well - and responsibly - built website.
+
+<cite>-- Jason Garber (sixtwothree.org)</cite>
+
+???
+
+[The Web is Cake](http://sixtwothree.org/posts/the-web-is-cake)
+
+[Designing Experience Layers](http://sixtwothree.org/posts/designing-experience-layers)
+
+---
+class: left
+
 # Cornerstones of the Web ~
 
 ## HTML
@@ -101,21 +116,6 @@ JavaScript (aka JS -> `/main.js`)
 * [HTML on Wikipedia](https://en.wikipedia.org/wiki/HTML)
 * [CSS on Wikipedia](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 * [JavaScript on Wikipedia](https://en.wikipedia.org/wiki/JavaScript)
-
----
-class: left
-
-# The Web is Cake ~
-
-> Think of your web pages as cakes. A .red-text[solid foundation of markup], a .red-text[tasteful layer of style], and an .red-text[appropriate application of JavaScript] make for a well - and responsibly - built website.
-
-<cite>-- Jason Garber (sixtwothree.org)</cite>
-
-???
-
-[The Web is Cake](http://sixtwothree.org/posts/the-web-is-cake)
-
-[Designing Experience Layers](http://sixtwothree.org/posts/designing-experience-layers)
 
 ---
 class: left
@@ -266,6 +266,15 @@ class: left
 ---
 class: left
 
+# Terminal Emulators
+
+## [Hyper](https://hyper.is/) (macOS, Windows, Linux)
+## [iTerm2](https://www.iterm2.com/) (macOS)
+## [cmder](https://cmder.net/) (Windows)
+
+---
+class: left
+
 # Command Line Basics ~
 
 ## OUTLINE SOME BASIC COMMAND LINE STUFF HERE:
@@ -280,15 +289,6 @@ class: left
 * [Command Line Crash Course](http://cli.learncodethehardway.org/book/)
 * [The designer’s guide to the OSX command prompt](http://wiseheartdesign.com/articles/2010/11/12/the-designers-guide-to-the-osx-command-prompt/)
 * [Introduction to the Mac OS X Command Line](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line)
-
----
-class: left
-
-# Terminal Emulators
-
-## Hyper (macOS, Windows, Linux)
-## iTerm2 (macOS)
-## cmder (Windows)
 
 ---
 class: left
@@ -333,3 +333,10 @@ Other stuff (optional)
 * [Install YADR Dotfiles (includes zsh, CL shortcuts, etc.)](https://github.com/skwp/dotfiles)
 * If necessary, update your default shell from `bash` to `zsh` (Hyper > Preferences > Shell)
 * If updates don't appear to be working, try quitting and restarting your terminal
+
+---
+class: left
+
+# Exercise: Command Line Practice
+
+### TBD
