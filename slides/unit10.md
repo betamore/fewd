@@ -50,31 +50,3 @@ class:
 * [Intro to Web Servers by Chris Uehlinger](http://chrisuehlinger.com/StaticWebSiteTutorial/#/)
 * [Install node.js and npm on macOS](https://blog.teamtreehouse.com/install-node-js-npm-mac)
 * [node-static package on npm](https://www.npmjs.com/package/node-static)
-
----
-name: 10-hostile-dev-environment
-class: center
-
-# The Web
-
-## A Hostile Development Environment
-
-### - any device
-### - any display
-### - any location (language)
-### - browsing application which transmits and receives data using internet protocols
-### - cannot make assumptions about setup or technical ability
-
----
-name: 10-web-pages-cake
-class: middle
-
-> Think of your web pages  as cakes. A .red-text[solid foundation of markup], a .red-text[tasteful layer of style], and an .red-text[appropriate application of JavaScript] make for a well- and responsibly-built website.
-
-<cite>-- Jason Garber (sixtwothree.org)</cite>
-
-???
-
-[The Web Is Cake](http://sixtwothree.org/posts/the-web-is-cake)
-
-[Designing Experience Layers](http://sixtwothree.org/posts/designing-experience-layers)

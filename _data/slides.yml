@@ -1,7 +1,7 @@
 - unit: 1
-  unit-title: Intro to front-end web development
+  unit-title: Intro to Front-End Web Development
 - unit: 2
-  unit-title: The local development environment
+  unit-title: Version Control with Git & GitHub
 - unit: 3
   unit-title: Basic HTML
 - unit: 4

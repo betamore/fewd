@@ -2,119 +2,15 @@ name: unit-2
 class: center, middle
 
 # Unit 2
-## The Local Development Environment
+## Version Control with Git & GitHub
 
+<img src="https://cdn-images-1.medium.com/max/1600/1*mtsk3fQ_BRemFidhkel3dA.png" width="70%">
 ---
-name: text-editors
-class: center, middle
+class: left
 
-# Text Editors
-### Atom
-### SublimeText
-### Visual Studio Code
-
----
-name: browser-developer-tools
-class: center, middle
-
-# Browser Developer Tools
-### Chrome DevTools
-### Edge Developer Tools
-### Firefox Developer Tools
-### Safari Web Inspector
-
-???
-
-## Learn More
-
-* [Chrome DevTools Overview](https://developer.chrome.com/devtools)
-* [Meet the Microsoft Edge Developer Tools](https://dev.windows.com/en-us/microsoft-edge/platform/documentation/f12-devtools-guide/)
-* [Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools)
-* [Safari Web Inspector Guide](https://developer.apple.com/library/safari/documentation/AppleApplications/Conceptual/Safari_Developer_Guide/Introduction/Introduction.html)
-
----
-name: command-line-basics
-class: center, middle
-
-# Command Line Basics
-
-![Command Line Basics](../assets/terminal.svg)
-
-???
-
-* [Command Line 101](https://www.git-tower.com/learn/git/ebook/command-line/appendix/command-line-101)
-* [Command Line Crash Course](http://cli.learncodethehardway.org/book/)
-* [The designer’s guide to the OSX command prompt](http://wiseheartdesign.com/articles/2010/11/12/the-designers-guide-to-the-osx-command-prompt/)
-* [Introduction to the Mac OS X Command Line](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line)
-
----
-name: terminal-emulators
-class: center, middle
-
-# Terminal Emulators
-
-## - Hyper (macOS, Windows, Linux)
-## - iTerm2 (macOS)
-## - cmder (a must on Windows)
-
----
-name: setting-up-dev-environment
-class:
-
-# Setting Up Your Local Dev Environment
-
-1) Open your default terminal and check version / install Xcode Command Line Tools:
-
-```bash
-# check if Xcode Command Line Tools are already installed
-$ xcode-select --version
-
-# if not, install them
-$ xcode-select --install
-
-```
-
-2) Install Homebrew (Mac only):
-
-```bash
-$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
-3) Install the terminal emulator of your choice via installer (e.g. https://hyper.is/).
-
-4) Open your new terminal (Hyper, etc.) and install Node and NPM:
-
-```bash
-$ brew install node
-```
-
-???
-
-Install ALL the things
-* [Xcode Command Line Tools](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/)
-* [Homebrew (Mac only)](https://brew.sh/)
-* [Node & NPM on Mac](https://blog.teamtreehouse.com/install-node-js-npm-mac)
-* [Node & NPM on Windows](https://blog.teamtreehouse.com/install-node-js-npm-windows)
-
-Other stuff (optional)
-* [Customize your `bash` prompt](https://www.cyberciti.biz/tips/howto-linux-unix-bash-shell-setup-prompt.html)
-* [Install YADR Dotfiles (includes zsh, CL shortcuts, etc.)](https://github.com/skwp/dotfiles)
-* If necessary, update your default shell from `bash` to `zsh` (Hyper > Preferences > Shell)
-* If updates don't appear to be working, try quitting and restarting your terminal
-
----
-name: version-control-with-git
-class: center, middle
-
-# Version Control with Git
+# What the Heck is Git?
 
 ## An open source program for tracking changes in text files
-
-???
-
-## Learn More
-
-* [Code School: Try Git](https://try.github.io)
 
 ---
 name: tracking-changes-to-files-over-time
