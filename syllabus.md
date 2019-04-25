@@ -10,7 +10,6 @@ permalink: /syllabus
   * What is a web designer?
   * The 3 pillars of the web: HTML, CSS, JavaScript.
   * HTTP,  DNS, domain names, browsers and servers.
-  * The W3C and its history.
 
 ## Unit 2: Intro to Tools & Workflows
   * The local development environment.
@@ -20,7 +19,7 @@ permalink: /syllabus
   * Command line basics.
 
 ## Unit 3: Version Control with Git
-  * Intro to version control 
+  * Intro to version control
   * Getting started with Git and GitHub
   * Working with Git branches
   * The pull request workflow
