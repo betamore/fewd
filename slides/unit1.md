@@ -85,7 +85,7 @@ class: left
 ---
 class: left
 
-# Cornerstones of the Web ~
+# "Layers" of the Web ~
 
 ## HTML
 `Structural layer`
@@ -98,24 +98,18 @@ class: left
 
 HyperText Markup Language (aka HTML -> `/index.html`)
 * HTML describes the structure of web pages semantically (giving it meaning)
-* Therefore HTML is a markup language vs a programming language
+* HTML is a _markup_ language rather than a _programming_ language
 
 Cascading Style Sheets (aka CSS -> `/main.css`)
-* Style sheet language for formatting markup languages
-* Enables the separation of content and presentation
+* Stylesheet language for formatting markup languages
+* Enables the separation of content/structure and presentation
 
 JavaScript (aka JS -> `/main.js`)
-* High level, interpreted programming language derived from C
+* High-level, interpreted programming language derived from C
 * Not to be confused with the Java programming language
 * Supported by all modern web browsers without plugins
-* Moved out of the browser in recent years
+* Moved out of the browser in recent years (thanks to Node.js)
 * Now also used for the development of desktop and mobile apps and games
-
-## Learn More
-
-* [HTML on Wikipedia](https://en.wikipedia.org/wiki/HTML)
-* [CSS on Wikipedia](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
-* [JavaScript on Wikipedia](https://en.wikipedia.org/wiki/JavaScript)
 
 ---
 class: left
@@ -136,8 +130,6 @@ class: left
 ## Servers
 
 ???
-
-## Learn More
 
 * [HTTP on Wikipedia](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
 * [How DNS Works](https://howdns.works/)
@@ -210,26 +202,28 @@ class: left
 
 # A Hostile Development Environment
 
-### Any device
-### Any display
-### Any location (language)
-### Any connection (slow or fast)
-### Any browser
-### Cannot make assumptions about setup or technical ability
+### As front-end developers, we have to build things for the web that work on/in:
+
+* Any device
+* Any display
+* Any location (language)
+* Any connection (slow or fast)
+* Any browser
+* Cannot make assumptions about setup or technical ability
 
 ---
 class: left
 
 # So How Do We Keep Up?
 
-<iframe src="https://giphy.com/embed/JIX9t2j0ZTN9S" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/JIX9t2j0ZTN9S">via GIPHY</a></p>
+<iframe src="https://giphy.com/embed/JIX9t2j0ZTN9S" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 ---
 class: left
 
 # We Get Locked and Loaded
 
-<iframe src="https://giphy.com/embed/3ofT5CFEsj3ynCjeww" width="480" height="260" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/filmeditor-home-alone-christmas-movies-3ofT5CFEsj3ynCjeww">via GIPHY</a></p>
+<iframe src="https://giphy.com/embed/3ofT5CFEsj3ynCjeww" width="480" height="260" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 ---
 class: left
@@ -239,94 +233,77 @@ class: left
 ### [Atom](https://atom.io/)
 ### [SublimeText](https://www.sublimetext.com/)
 ### [Visual Studio Code](https://code.visualstudio.com/)
+### [And tons more...](https://kinsta.com/blog/best-text-editors/)
 
 ---
 class: left
 
-# Browser Developer Tools ~
+# Browser Developer Tools
 
-### Chrome DevTools
-### Edge Developer Tools
-### Firefox Developer Tools
-### Safari Web Inspector
+### [Chrome DevTools](https://developer.chrome.com/devtools)
+### [Edge Developer Tools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide)
+### [Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools)
+### [Safari Web Inspector](https://support.apple.com/guide/safari-developer/welcome/)
 
-**Open Up DevTools:**
-* `Command + Option + I` (on Mac) or `Control + Shift + I` (on Windows)
-* Right Click > Inspect
+---
+class: left
 
-???
+# Exercise: Exploring the Very First Website
 
-## Learn More
+1) Go to http://info.cern.ch/hypertext/WWW/TheProject.html
 
-* [Chrome DevTools Overview](https://developer.chrome.com/devtools)
-* [Meet the Microsoft Edge Developer Tools](https://dev.windows.com/en-us/microsoft-edge/platform/documentation/f12-devtools-guide/)
-* [Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools)
-* [Safari Web Inspector Guide](https://developer.apple.com/library/safari/documentation/AppleApplications/Conceptual/Safari_Developer_Guide/Introduction/Introduction.html)
+2) Open up your browser's dev tools:
+  * `Cmd + Option + I` (on Mac) or `Ctrl + Shift + I` (on Windows)
+  * Right Click > Inspect
+
+3) Change the `h1` element copy to "The World Wide Web is Awesome!"
+
+4) Set the background color of the `dl` element to `yellow`.
 
 ---
 class: left
 
 # Terminal Emulators
 
-## [Hyper](https://hyper.is/) (macOS, Windows, Linux)
-## [iTerm2](https://www.iterm2.com/) (macOS)
-## [cmder](https://cmder.net/) (Windows)
+## macOS
+### [Hyper](https://hyper.is/)
+
+## Windows
+### [Cmder](https://cmder.net/) (full version), then Hyper
 
 ---
 class: left
 
-# Command Line Basics ~
-
-## OUTLINE SOME BASIC COMMAND LINE STUFF HERE:
-- `cd`
-- `mkdir`
-- `touch`
-- etc.
-
-???
-
-* [Command Line 101](https://www.git-tower.com/learn/git/ebook/command-line/appendix/command-line-101)
-* [Command Line Crash Course](http://cli.learncodethehardway.org/book/)
-* [The designer’s guide to the OSX command prompt](http://wiseheartdesign.com/articles/2010/11/12/the-designers-guide-to-the-osx-command-prompt/)
-* [Introduction to the Mac OS X Command Line](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line)
-
----
-class: left
-
-# Setting Up Your Local Dev Environment ~
-
-1) Open your terminal and check version / install Xcode Command Line Tools:
+# Setting Up Your Local Dev Environment (macOS) ~
 
 ```bash
 # check if Xcode Command Line Tools are already installed
 $ xcode-select --version
-
 # if not, install them
 $ xcode-select --install
-
 ```
 
-2) Install Homebrew (Mac only):
-
 ```bash
+# check if Homebrew is already installed
+$ brew --version
+# if not, install it
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-3) Install the terminal emulator of your choice via installer (e.g. https://hyper.is/).
-
-4) Open your new terminal (Hyper, etc.) and install Node and NPM:
-
 ```bash
+# check if Node & npm are already installed
+$ node --version
+# if not, install it
 $ brew install node
 ```
 
 ???
 
-Install ALL the things
+Install ALL the things - Mac
 * [Xcode Command Line Tools](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/)
 * [Homebrew (Mac only)](https://brew.sh/)
 * [Node & NPM on Mac](https://blog.teamtreehouse.com/install-node-js-npm-mac)
-* [Node & NPM on Windows](https://blog.teamtreehouse.com/install-node-js-npm-windows)
+* [How to Set Up Your Mac for Web Development](https://medium.freecodecamp.org/how-to-set-up-your-mac-for-web-development-b40bebc0cac3)
 
 Other stuff (optional)
 * [Customize your `bash` prompt](https://www.cyberciti.biz/tips/howto-linux-unix-bash-shell-setup-prompt.html)
@@ -337,6 +314,65 @@ Other stuff (optional)
 ---
 class: left
 
+# Setting Up Your Local Dev Environment (Windows) ~
+
+* [Installing Cmder and Using Bash](https://medium.com/@alikingravi/installing-cmder-as-an-alternative-windows-command-line-tool-202b866115d9)
+* [Install Node & NPM](https://blog.teamtreehouse.com/install-node-js-npm-windows)
+* [Integrate Cmder in Hyper](https://frankindev.com/2018/09/06/seamless-integration-cmder-in-hyper/) (should be able to skip to #5)
+
+???
+
+Other stuff (optional)
+* [Cmder README](https://github.com/cmderdev/cmder/blob/master/README.md)
+* [Customize your `bash` prompt](https://www.cyberciti.biz/tips/howto-linux-unix-bash-shell-setup-prompt.html)
+* [How to install and run Hyper for Windows 10](https://medium.com/@myrlandnu/guide-to-install-and-configure-hyper-for-windows-10-52a829c97b25)
+* [Using Cmder with Hyper](http://blog.bsinky.com/programming/tools/2017/06/11/using-cmder-with-hyper.html)
+* [More Cmder + Hyper Integration Info](https://github.com/cmderdev/cmder/wiki/Seamless-Hyper-integration)
+* [Install YADR Dotfiles (includes zsh, CL shortcuts, etc.)](https://github.com/skwp/dotfiles) (may not work for Windows)
+* [Install and run zsh on Windows](https://gingter.org/2016/08/17/install-and-run-zsh-on-windows/)
+* If necessary, update your default shell (Hyper > Preferences > Shell)
+* If updates don't appear to be working, try quitting and restarting your terminal
+
+---
+class: left
+
+# Command Line Basics ~
+
+* `pwd` - Print Working Directory - Shows where you are in relation to your computer's directory hierarchy.
+* `cd` - Change Directory - Moves you into and out of directories.
+* `ls` - List Directory - Lists out files in the current directory.
+* `mkdir` - Make Directory - Creates a new directory on your computer.
+* `touch` or `New-Item` - Creates an empty file in the current directory.
+* `rm` - Remove - Deletes a file.
+* `rmdir` - Remove Directory - Deletes a directory.
+* `clear` - Clear - Clears the terminal of recent commands and outputs.
+
+???
+
+* [Command Line Cheatsheet](https://www.git-tower.com/learn/git/ebook/command-line/appendix/command-line-101)
+* [Command Line Crash Course](https://learnpythonthehardway.org/book/appendixa.html)
+
+---
+class: left
+
 # Exercise: Command Line Practice
 
-### TBD
+1) Start from your computer's root level by entering `cd ~` in your terminal
+
+2) Change directories so that you are at the `/Desktop` level
+
+3) Create a new directory at this level called `test-directory`
+
+4) Change directories again into your new `test-directory`
+
+5) Create a new HTML file inside your `test-directory` called `page-1.html`
+
+6) Create another HTML file called `page-2.html`
+
+7) List the files in your `test-directory`
+
+8) Delete `page-1.html`
+
+9) List the files again - notice a difference?
+
+10) Go back to the `/Desktop` level and delete your `test-directory` - run into any issues?
