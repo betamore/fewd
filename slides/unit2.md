@@ -63,13 +63,13 @@ $ git config --global user.email "zheisey@gmail.com"
 ### Set default text editor
 
 ```bash
-
 $ git config --global core.editor "atom --wait"
 
 $ git config --global core.editor "code --wait"
 
 $ git config --global core.editor "subl -n -w"
 
+$ git config --global core.editor "brackets -n -w"
 ```
 
 ???
