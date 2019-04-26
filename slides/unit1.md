@@ -137,7 +137,7 @@ class: left
 ---
 class: left
 
-# Browser + Server Interaction ~
+# Browser + Server Interaction
 ### (In a Nutshell)
 
 ![Browser Server Interaction](https://www.serverwatch.com/img/browser2server.gif)
@@ -269,7 +269,7 @@ class: left
 ### [Hyper](https://hyper.is/)
 
 ## Windows
-### [Cmder](https://cmder.net/) (full version), then Hyper
+### [Cmder](https://cmder.net/) (full version)
 
 ---
 class: left
@@ -318,19 +318,13 @@ class: left
 
 * [Installing Cmder and Using Bash](https://medium.com/@alikingravi/installing-cmder-as-an-alternative-windows-command-line-tool-202b866115d9)
 * [Install Node & NPM](https://blog.teamtreehouse.com/install-node-js-npm-windows)
-* [Integrate Cmder in Hyper](https://frankindev.com/2018/09/06/seamless-integration-cmder-in-hyper/) (should be able to skip to #5)
 
 ???
 
 Other stuff (optional)
 * [Cmder README](https://github.com/cmderdev/cmder/blob/master/README.md)
-* [Customize your `bash` prompt](https://www.cyberciti.biz/tips/howto-linux-unix-bash-shell-setup-prompt.html)
-* [How to install and run Hyper for Windows 10](https://medium.com/@myrlandnu/guide-to-install-and-configure-hyper-for-windows-10-52a829c97b25)
-* [Using Cmder with Hyper](http://blog.bsinky.com/programming/tools/2017/06/11/using-cmder-with-hyper.html)
-* [More Cmder + Hyper Integration Info](https://github.com/cmderdev/cmder/wiki/Seamless-Hyper-integration)
-* [Install YADR Dotfiles (includes zsh, CL shortcuts, etc.)](https://github.com/skwp/dotfiles) (may not work for Windows)
 * [Install and run zsh on Windows](https://gingter.org/2016/08/17/install-and-run-zsh-on-windows/)
-* If necessary, update your default shell (Hyper > Preferences > Shell)
+* If necessary, update your default shell
 * If updates don't appear to be working, try quitting and restarting your terminal
 
 ---
