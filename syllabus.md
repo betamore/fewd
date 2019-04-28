@@ -6,10 +6,12 @@ permalink: /syllabus
 ---
 
 ## Unit 1: Intro to Front-end Web Development
-  * What is a front-end web developer?
-  * What is a web designer?
-  * The 3 pillars of the web: HTML, CSS, JavaScript.
-  * HTTP,  DNS, domain names, browsers and servers.
+  * Course expectations
+  * Designer vs. Developer
+  * Layers of the Web: HTML, CSS, JavaScript
+  * HTTP, DNS, domain names, browsers and servers
+  * A hostile development environment
+  * Text editors, browser dev tools, and terminal emulators
 
 ## Unit 2: Intro to Tools & Workflows
   * The local development environment.
