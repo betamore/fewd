@@ -238,8 +238,10 @@ class: left
 name:
 class: left
 
-# Exercises
+# Exercise: Zeldman Article Markup
 
-### HTML5 Exercise 1: [Zeldman Article Markup](https://github.com/betamore/fewd-html-exercise-1)
+### ➡️ [Go to Exercise](https://github.com/betamore/fewd-html-exercise-1)
 
-### HTML5 Exercise 2: [HTML Structure, Image, and Link Practice](https://github.com/betamore/fewd-html-exercise-2)
+# Exercise: HTML Structure, Image, and Link Practice
+
+### ➡️ [Go to Exercise](https://github.com/betamore/fewd-html-exercise-2)
