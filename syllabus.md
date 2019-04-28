@@ -13,51 +13,43 @@ permalink: /syllabus
   * A hostile development environment
   * Text editors, browser dev tools, and terminal emulators
 
-## Unit 2: Intro to Tools & Workflows
-  * The local development environment.
-  * Text editors and IDEs.
-  * Browser DevTools.
-  * Local development server.
-  * Command line basics.
-
-## Unit 3: Version Control with Git
+## Unit 2: Version Control with Git & GitHub
   * Intro to version control
   * Getting started with Git and GitHub
   * Working with Git branches
   * The pull request workflow
 
-## Unit 4: Basic HTML
+## Unit 3: Basic HTML
   * What is a markup language?
   * Brief history of markup.
   * HTML5 document structure (doctype, root, head.)
   * The HTML5 outline algorithm.
   * Semantic elements in HTML5.
 
-## Unit 5: Basic CSS
+## Unit 4: Styling HTML with CSS
   * What is CSS?
-  * Brief history of CSS.
-  * CSS syntax: rules, selectors, declarations, properties and values.
-  * The cascade, specificity and inheritance.
-  * The CSS box model.
+  * Brief history of CSS
+  * CSS syntax: rules, selectors, declarations, properties and values
+  * The cascade, specificity and inheritance
+  * The CSS box model
 
-## Unit 6: Basic JavaScript
+## Unit 5: CSS Page Layout
+  * CSS display and positioning
+  * Intro to flexbox
+  * CSS page layout
+
+## Unit 6: Responsive Web Design
+  * What is Responsive Web Design (RWD)?
+  * Core components of RWD
+  * Writing media queries
+
+## Unit 7: Basic JavaScript
   * What is JavaScript?
-  * Brief history of JavaScript.
-  * Intro to the DOM.
-  * Responding to events.
+  * Brief history of JavaScript
 
-## Unit 7: Advanced HTML & CSS
-  * Intro to web forms.
-  * CSS floating and positioning.
-  * Intro to flexible box layout.
-  * CSS page layout.
-
-## Unit 8: Responsive Web Design
-  * Brief history of RWD.
-  * Flexible / fluid layout.
-  * Flexible media.
-  * Media queries.
-  * Responsive images.
+## Unit 8: The DOM and Event Handling
+  * Intro to the DOM
+  * Responding to events in JavaScript  
 
 ## Unit 9: Accessibility
   * What is web accessibility?
