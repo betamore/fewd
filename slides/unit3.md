@@ -59,6 +59,35 @@ class: left
 ---
 class: left
 
+# HTML Document Structure (cont.) ~
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Nothing written here will be visible in the browser window -->
+    <meta charset="utf-8">
+    <meta name="description" content="Your meta description should be ~160 characters">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title of My Project</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/main.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <!-- Only markup & content written here will be visible in the browser window -->
+  </body>
+</html>
+```
+
+???
+
+* [The Structure of an HTML Document](https://codetheweb.blog/2017/10/07/structure-of-an-html-document/)
+* [Complete List of HTML Meta Tags](https://gist.github.com/lancejpollard/1978404)
+* [Using the viewport meta tag](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag)
+
+---
+class: left
+
 # Block-level vs. Inline Elements ~
 
 By default, nearly all HTML elements are organized into one of two categories: **block-level** or **inline**.
@@ -101,35 +130,6 @@ We include attributes as part of the opening tag of a given element, with most a
 
 * [htmlreference.io](https://htmlreference.io/)
 * [List of HTML attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes)
-
----
-class: left
-
-# Typical HTML Document Structure ~
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Nothing written here will be visible in the browser window -->
-    <meta charset="utf-8">
-    <meta name="description" content="Your meta description should be ~160 characters">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title of My Project</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="/js/main.js" charset="utf-8"></script>
-  </head>
-  <body>
-    <!-- Only markup & content written here will be visible in the browser window -->
-  </body>
-</html>
-```
-
-???
-
-* [The Structure of an HTML Document](https://codetheweb.blog/2017/10/07/structure-of-an-html-document/)
-* [Complete List of HTML Meta Tags](https://gist.github.com/lancejpollard/1978404)
-* [Using the viewport meta tag](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag)
 
 ---
 class: left
