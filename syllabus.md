@@ -19,14 +19,14 @@ permalink: /syllabus
   * Working with Git branches
   * The pull request workflow
 
-## Unit 3: Basic HTML
+## Unit 3: HTML Basics
   * What is a markup language?
-  * Brief history of markup.
-  * HTML5 document structure (doctype, root, head.)
-  * The HTML5 outline algorithm.
-  * Semantic elements in HTML5.
+  * Basic HTML element syntax
+  * HTML document structure (doctype, html, head, body)
+  * Block-level vs. Inline Elements
+  * Web image formats
 
-## Unit 4: Styling HTML with CSS
+## Unit 4: CSS Basics
   * What is CSS?
   * Brief history of CSS
   * CSS syntax: rules, selectors, declarations, properties and values
@@ -43,7 +43,7 @@ permalink: /syllabus
   * Core components of RWD
   * Writing media queries
 
-## Unit 7: Basic JavaScript
+## Unit 7: JavaScript Basics
   * What is JavaScript?
   * Brief history of JavaScript
 
