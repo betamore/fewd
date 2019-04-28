@@ -601,40 +601,6 @@ span {
 [Outlined HTML Elements in Chrome DevTools](https://www.youtube.com/watch?v=4CZveCrrGS0)
 
 ---
-name: css-box-model-inline-block
-
-# Block-level vs. Inline Elements
-
-### Block-level elements
-
-* Begin on a new line
-* Stacked on top of each other
-* .red-text[Occupy any available width]
-* They may be nested inside one another and may wrap inline-level elements
-
-### Inline elements
-
-* Do not begin on a new line
-* Fall into the normal flow of a document
-* Lining up one after the other
-* .red-text[Only maintain the width of their content]
-* May be nested inside one another
-* Cannot wrap block-level elements
-
-???
-
-## Boxes
-* Width and height
-* Borders (color, with, style)
-* Background color and images
-* Position in browser window
-
-## Text
-* Typeface
-* Size
-* Color
-
----
 name: css-box-model-display
 class:
 
