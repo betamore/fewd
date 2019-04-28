@@ -1,47 +1,34 @@
-name: unit-3
-class: center
+class: center, middle
 
 # Unit 3
-![HTML5 Logo](../assets/html5-logo.svg)
+## HTML Basics
 
-???
-
-[HTML5 on Wikipedia](https://en.wikipedia.org/wiki/HTML5)
+<img src="http://stepanoff.org/wordpress/wp-content/uploads/html5-1920x1200.png" width="60%" alt="html5 logo">
 
 ---
-name: jeremy-keith-html-quote
-class: middle
+class: left, middle
 
 > <span>HTML is the unifying language of the World Wide Web.</span> Using just the simple tags it contains, the human race has created an astoundingly diverse network of hyperlinked documents, from Amazon, eBay, and Wikipedia, to personal blogs and websites dedicated to cats that look like Hitler.
 
 <cite>-- Jeremy Keith</cite>
 
 ---
-name: stephen-hay-html-quote
-class:
+class: left, middle
 
-  > <span>Structured content is semantic; it's about <em>what the individual pieces of content are.</em></span><br><br>HTML, while not perfect, is now the primary way we structure content on the web. We attempt to use the markup language semantically in order to describe what each element is.
+> <span>Structured content is semantic; it's about <em>what the individual pieces of content are.</em></span> HTML, while not perfect, is now the primary way we structure content on the web. We attempt to use the markup language semantically in order to describe what each element is.
 
 <cite>-- Stephen Hay</cite>
 
-???
-[Understanding semantics](https://tink.uk/understanding-semantics/)
-
 ---
-name: stephen-hay-html-quote
-class: middle
+class: left
 
-  > HTML has always been a conversation between <span>browser makers, authors, standards wonks, and other people</span> who just showed up and liked to talk about angle brackets.
+# What is a Markup Language?
 
-<cite>-- Mark Pilgrim</cite>
+> "A markup language is a system for annotating a document in a way that is <span>syntactically distinguishable</span> from the text"
 
----
-name: html-annotate-plain-text
-class: center, middle
+<cite>-- [Wikipedia](https://en.wikipedia.org/wiki/Markup_language#HTML)</cite>
 
-# A Markup Language Annotates Plain Text
-
-## HTML is the markup language of the Web
+### HTML (Hypertext Markup Language) is the markup language of the Web
 
 ---
 name: html-tags
@@ -53,148 +40,191 @@ background-image: url(../assets/html-tags.jpg)
 Slide image from the [HTML & CSS Book](http://www.htmlandcssbook.com/sample-chapter/)
 
 ---
-name: html-document-tree
-class: center
+class: left
 
-# HTML Document Structure / Upside-down Family Tree
+# HTML Document Structure ~
+
+## An upside-down family tree
 
 ![HTML Document Tree](../assets/html-document-tree.gif)
 
 ???
 
-* All elements contained within a given element are said to be its .red-text[descendants].
-* An element that's directly contained within another element is said to be a .red-text[child] of that element.
-* The containing element is the .red-text[parent].
-* All elements higher up than a particular element in the tree are its .red-text[ancestors].
-* Two elements with the same parent are .red-text[siblings].
+* All elements contained within a given element are said to be its .red-text[descendants]
+* An element that's directly contained within another element is said to be a .red-text[child] of that element
+* The containing element is the .red-text[parent]
+* All elements higher up than a particular element in the tree are its .red-text[ancestors]
+* Two elements with the same parent are .red-text[siblings]
 
 ---
-name: html5-content-categories
-class: center
+class: left
 
-# HTML5 Content Categories
+# Block-level vs. Inline Elements ~
 
-### - text-level semantics (formerly inline elements)
-### - grouping content (formerly block-level elements)
-### - sectioning content (totally new)
-### - embedded content (images, audio, video, canvas)
-### - form-associated content (forms)
+By default, nearly all HTML elements are organized into one of two categories: **block-level** or **inline**.
+
+### Block-level Elements
+
+* Begin on a new line
+* Stack on top of each other
+* May be nested inside one another and **may wrap** around inline elements
+* .red-text[Occupy the full available width]
+* Examples: `<div>`, `<body>`, `<p>`, `<header>` & `<footer>`, and all heading tags (`<h1>` through `<h6>`)
+
+### Inline Elements
+
+* Do not begin on a new line
+* Line up one after the other
+* May be nested inside each other, but **cannot wrap** around block-level elements
+* .red-text[Only occupy the width of their content]
+* Examples: `<span>`, `<a>`, `<img>`, `<input>`, etc.
 
 ???
 
-[HTML content categories on MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_categories)
-
-[HTML5 Doctor](http://html5doctor.com/)
-
-[htmlreference.io](https://htmlreference.io/)
-
-[List of HTML attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes)
+* [HTML Elements Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+* [Block-level Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements)
+* [Inline Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements)
+* [HTML5 Doctor](http://html5doctor.com/)
 
 ---
-name: html5-section
-class:
+class: left
 
-# Grouping thematically related content
+# Element Attributes ~
+
+HTML elements can have **attributes** which these are additional values that configure the elements or adjust their behavior in various ways to meet the criteria the users want.
+
+We include attributes as part of the opening tag of a given element, with most attributes written as name-value pairs in the following format: `attribute="value"`
+
+![html img element with src and alt attributes](http://web.simmons.edu/~grovesd/comm244/notes/week2/html-attributes.jpg)
+
+???
+
+* [htmlreference.io](https://htmlreference.io/)
+* [List of HTML attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes)
+
+---
+class: left
+
+# Typical HTML Document Structure ~
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Nothing written here will be visible in the browser window -->
+    <meta charset="utf-8">
+    <meta name="description" content="Your meta description should be ~160 characters">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title of My Project</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/main.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <!-- Only markup & content written here will be visible in the browser window -->
+  </body>
+</html>
+```
+
+???
+
+* [The Structure of an HTML Document](https://codetheweb.blog/2017/10/07/structure-of-an-html-document/)
+* [Complete List of HTML Meta Tags](https://gist.github.com/lancejpollard/1978404)
+* [Using the viewport meta tag](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag)
+
+---
+class: left
+
+# Grouping Thematically-Related Content
+
+```html
+<!-- Grouping header content or navigational aids -->
+<header>
+  <nav>
+    <ul>
+      <li>Nav Item 1</li>
+      <li>Nav Item 2</li>
+      <li>Nav Item 3</li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Grouping page content using <section> element -->
 <section>
   <h1>My headline</h1>
-  <p>Summer in MD is great!</p>
-  <p>Winter not so much.</p>
+  <p>Summer in Maryland is great!</p>
+  <p>Winter...not so much.</p>
 </section>
 ```
 
 ---
-name: html5-header
-class:
+class: left
 
-# Grouping of introductory or navigational aids
+# Standard Web Image Formats
 
-```html
-<header>
-  <nav>
-    <ul>
-      <li> ... </li>
-      <li> ... </li>
-      <li> ... </li>
-    </ul>
-  </nav>
-</header>
-```
+### jpg/jpeg (`my-image.jpg`)
+### gif (`my-image.gif`)
+### png (`my-image.png`)
+### svg (`my-image.svg`)
 
 ---
-name: img-format
-class: center
-
-# Web image formats
-
-### - jpg (my-image.jpg)
-### - gif (my-image.gif)
-### - png (my-image.png)
-### - svg (my-image.svg)
-
----
-name: img-raster
-class: middle
+class: left, middle
 
 > .red-text[Raster images] are defined using a .red-text[grid of pixels] — a raster image file contains information showing exactly where each pixel is to be placed, and exactly what color it should be. Popular web raster formats include, .red_text[PNG (.png)], .red_text[JPEG (.jpg)], and .red-text[GIF (.gif.)]
 
 <cite>--Mozilla Developer Network</cite>
 
 ---
-name: img-vector
-class: middle
+class: left, middle
 
 > .red_text[Vector images] are defined using algorithms — a vector image file contains shape and path definitions that the computer can use to work out what the image should look like when rendered on the screen. The .red_text[SVG format] allows us to create powerful vector graphics for use on the Web.
 
 <cite>--Mozilla Developer Network</cite>
 
 ---
-name: img-gif
+class: left
 
 # Graphics Interchange Format (GIF)
 
-### - maximum of 256 colors
-### - flat colors, hard edges (logos or simple illustrations)
-### - preserves transparency
-### - can be animated
+### Maximum of 256 colors
+### Flat colors, hard edges (logos or simple illustrations)
+### Preserves transparency
+### Can be animated
 
 ---
-name: img-jpg
+class: left
 
 # Joint Photographic Experts Group (JPG or JPEG)
 
-### - photographs
-### - images with smooth color blends
-### - supports CMYK, RGB (millions of colors)
-### - does not preserve transparency
+### Photographs
+### Images with smooth color blends
+### Supports CMYK, RGB (millions of colors)
+### Does NOT preserve transparency
 
 ---
-name: img-png
+class: left
 
 # Portable Network Graphics (PNG)
 
-### - a little bit like the best of both worlds
-### - contain any image type
-### - but especially efficient for storing images with flat colors
-### - allows multiple levels of transparency
+### Happy medium between GIF and JPG
+### Contain any image type (photos, logos, illustrations, etc.)
+### Especially efficient for storing images with flat colors
+### Allows multiple levels of transparency
 
 ---
 name: img-svg
 
 # Scalable Vector Graphics (SVG)
 
-### - markup language for describing two-dimensional vector graphics
-### - SVG is to graphics what HTML is to text
-### - can be created and edited with any text editor
-### - can be searched, indexed, scripted, and compressed
-### - scalable, very small file size
+### Markup language for describing two-dimensional vector graphics
+### SVG is to graphics what HTML is to text
+### Can be created and edited with any text editor
+### Can be searched, indexed, scripted, and compressed
+### Scalable, very small file size
 
 ---
-name: img-format-selection
-class: center
+class: left
 
-# Which format to choose?
+# Which Format to Choose?
 
 ![Image format selection](../assets/img-selection-process.png)
 
@@ -212,4 +242,4 @@ class: left
 
 ### HTML5 Exercise 1: [Zeldman Article Markup](https://github.com/betamore/fewd-html-exercise-1)
 
-### HTML5 Exercise 2: [HTML Structure, Image, and Link Pratice](https://github.com/betamore/fewd-html-exercise-2)
+### HTML5 Exercise 2: [HTML Structure, Image, and Link Practice](https://github.com/betamore/fewd-html-exercise-2)
