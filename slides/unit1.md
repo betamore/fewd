@@ -78,9 +78,9 @@ class: left
 
 ???
 
-[The Web is Cake](http://sixtwothree.org/posts/the-web-is-cake)
+* [The Web is Cake](http://sixtwothree.org/posts/the-web-is-cake)
 
-[Designing Experience Layers](http://sixtwothree.org/posts/designing-experience-layers)
+* [Designing Experience Layers](http://sixtwothree.org/posts/designing-experience-layers)
 
 ---
 class: left
