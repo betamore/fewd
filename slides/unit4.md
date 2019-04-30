@@ -1,44 +1,37 @@
-name: unit-4
 class: center, middle
 
-# Unit 4: Cascading Style Sheets (CSS)
-![CSS3 Logo](../assets/css3-logo.svg)
-### Styling Markup (HTML) Documents
+# Unit 4
+### CSS Basics
 
-???
-
-* Style sheet language for formatting / styling markup languages such as HTML
-* Enables the separation of content (HTML) and presentation (CSS)
-* [Cascading Style Sheets on Wikipedia](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+<img src="../assets/css3-logo.svg" alt="CSS3 logo" width="35%">
 
 ---
-
-name: css-stephen-hay-quote
-class: middle
+class: left
 
 > <span>CSS is like chess:</span> easy to learn, but hard to master.
 
 <cite>-- Stephen Hay</cite>
 
----
+### CSS stands for .red-text[Cascading Style Sheets]. It is a stylesheet language used to format and style markup languages such as HTML. It also enables the separation of structure (HTML) from presentation (CSS).
 
+---
 name: css-browser
 background-image: url(../assets/css-browser.png)
 
 ---
-class: center, middle
+class: left
 
-# CSS Associates Style Rules with HTML Elements
-## Fundamental CSS Syntax:
-### - Rules
-### - Selectors
-### - Declarations
-### - Properties
-### - Values
+# CSS Associates Style Rules with HTML Elements ~
+
+## Basic CSS Syntax Components:
+
+### Rules
+### Selectors
+### Declarations
+### Properties
+### Values
 
 ???
-
-## Learn More
 
 * [Getting to Know CSS](http://learn.shayhowe.com/html-css/getting-to-know-css/)
 * [The Best Way to Learn CSS](http://webdesign.tutsplus.com/tutorials/the-best-way-to-learn-css--webdesign-11906)
@@ -59,7 +52,7 @@ background-image: url(../assets/css-selector-declaration.png)
 
 ???
 
-* Selectors indicate which element the rule applies to.
+* Selectors indicate which HTML element(s) the rule applies to.
 * Declarations indicate how the element referred to in the selector should be styled.
 
 ---
@@ -73,7 +66,7 @@ background-image: url(../assets/css-property-value.png)
 * Values specify the settings to use for the chosen property.
 
 ---
-class: center, middle
+class: left
 
 # 3 Main Ways to Write CSS
 
@@ -82,10 +75,11 @@ class: center, middle
 ### 3) External CSS
 
 ---
-name: css-inline
-class:
+class: left
 
 ## Inline CSS
+
+Styles are applied in-line to individual elements. This approach is considered the **least ideal of the three**.
 
 ```html
 <!DOCTYPE html>
@@ -95,7 +89,7 @@ class:
     <title>Made in Baltimore</title>
   </head>
   <body>
-
+    <!-- Styles are applied in-line to individual elements -->
     <h1 style="color: red;">Welcome to Thimble</h1>
 
     <p>Make something <span style="font-weight: bold;">amazing</span>!</p>
@@ -105,10 +99,11 @@ class:
 ```
 
 ---
-name: css-internal
-class:
+class: left
 
 ## Internal CSS
+
+Styles are written between `<style>` tags inside of the HTML document's `<head>` element. This is **better than inline CSS, but still not the best approach**.
 
 ```html
 <!DOCTYPE html>
@@ -116,6 +111,7 @@ class:
   <head>
     <meta charset="utf-8">
     <title>Made in Baltimore</title>
+    <!-- Styles are written here and apply to the HTML in the document -->
     <style type="text/css">
       body {font: 200%/1.5 Bradley Hand, Segoe Script, cursive;}
       header {background-color: yellow; padding-left: 5%;}
@@ -130,20 +126,20 @@ class:
 ```
 
 ---
-name: css-external
-class:
+class: left
 
 ## External CSS
 
+Styles are written in an external CSS file (e.g. `style.css`) and linked to from the `<head>` of the HTML document. This approach is considered **best practice**.
+
 ```html
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Made in Baltimore</title>
-
+    <!-- The <link> tag references the external CSS stylesheet -->
     <link rel="stylesheet" href="css/style.css">
-
   </head>
   <body>
     <h1>Welcome to Thimble</h1>
@@ -153,22 +149,22 @@ class:
 ```
 
 ---
-name: css-external
-class:
+class: left
 
 ## Multiple External Stylesheets
 
+You can reference multiple external stylesheets, which will be applied to your markup in the order of the `<link>` tags listed.
+
 ```html
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Made in Baltimore</title>
-
+    <!-- These external stylesheets will be applied in descending order -->
     <link rel="stylesheet" href="reset/normalize.css">
     <link rel="stylesheet" href="bootstrap/main.css">
     <link rel="stylesheet" href="css/custom.css">
-
   </head>
   <body>
     <h1>Welcome to Thimble</h1>
@@ -178,22 +174,21 @@ class:
 ```
 
 ---
-name: css-selectors
-class: center, middle
+class: left
 
 # CSS Selectors
 
-## - ID Selector
-## - Class Selector
-## - Tag Selector
-## - Child Selector
-## - Descendant Selector
+## ID Selector
+## Class Selector
+## Tag Selector
+## Child Selector
+## Descendant Selector
 
 ---
-name: css-id-selector
-class:
+class: left
 
-## ID Selector
+## ID Selector ~
+
 Matches an element whose `id` attribute has a value that matches the one specified after the pound or hash symbol.
 
 .float-left[
@@ -229,10 +224,10 @@ Matches an element whose `id` attribute has a value that matches the one specifi
 ID selectors are the most powerful type of selector in terms of CSS specificity, meaning that they beat out other types of selectors and the styles defined within. That sounds good, but that's typically considered bad practice. In general, it's better to have lower-specificity selectors that are easier to override when necessary.
 
 ---
-name: css-class-selector
-class:
+class: left
 
-## Class Selector
+## Class Selector ~
+
 Matches an element whose `class` attribute has a value that matches the one specified after the period symbol.
 
 .float-left[
@@ -268,11 +263,11 @@ Matches an element whose `class` attribute has a value that matches the one spec
 Class selectors are your friend and are probably the most useful and versatile selectors available to us. They are well supported in all browsers, and you can add multiple classes to a given HTML element (separated by a space). There are also some cool JavaScript things we can do specifically with manipulating classes.
 
 ---
-name: css-tag-selector
-class:
+class: left
 
-## Tag Selector
-Matches HTML element names.
+## Element/Tag Selector ~
+
+Matches HTML element/tag names.
 
 .float-left[
 
@@ -305,15 +300,15 @@ h2 {
 
 ???
 
-Tag selectors are at their most useful when changing properties that are unique to that HTML element. Like setting the list-style on a `<ul>` or tab-size on a `<pre>`. They are also handy in reset stylesheets where you are specifically trying to unset styles that browsers apply to certain elements.
+Element selectors are at their most useful when changing properties that are unique to that HTML element. Like setting the list-style on a `<ul>` or tab-size on a `<pre>`. They are also handy in reset stylesheets where you are specifically trying to unset styles that browsers apply to certain elements.
 
-Don't rely on the them too much though. It's typically more useful to have a class define styling that you can use on any HTML element.
+Don't rely on the them too much though. It's typically more useful to have class-defined styles that you can use on any HTML element.
 
 ---
-name: css-child-selector
-class:
+class: left
 
-## Child Selector
+## Child Selector ~
+
 Matches an element that is a direct child of another.
 
 .float-left[
@@ -341,12 +336,10 @@ li > a {
 
 ???
 
-A child selector in CSS is the "greater than" symbol. It means "select elements that are direct descendants only". In this case: "select list items that are direct descendants of an ordered list".
-
+A child selector in CSS is the "greater than" (`>`) symbol. It means "select elements that are direct descendants only". In this case: "select anchor tags (`a`) that are direct descendants of list items (`li`)".
 
 ---
-name: css-descendant-selector
-class:
+class: left
 
 ## Descendant Selector
 Matches an element that is a descendant of another specified element (not just a direct child of that element.)
@@ -381,31 +374,34 @@ div span  {  }
 
 ???
 
-A descendant selector in CSS is any selector with white space between two selectors without a combinator. Descendant means anywhere nested within it in the DOM tree. Could be a direct child, could be five levels deep, it is still a descendant. This is different than a child combinator (>) which requires the element to be the next nested level down.
-
-* [CSS Diner Exercise](https://flukeout.github.io/)
+A descendant selector in CSS is any selector with white space between two selectors without a combinator. Descendant means anywhere nested within it in the DOM tree. Could be a direct child, could be five levels deep, it is still a descendant. This is different than a child combinator (`>`) which requires the element to be the next nested level down.
 
 ---
-name: css-big-concepts
-class: center, middle
+# Exercise: CSS Diner
+
+### ➡️ [Go to Exercise](https://flukeout.github.io/)
+
+---
+class: left
 
 # The Big Concepts of CSS
 
-## - Inheritance
-## - Cascade
-## - Specificity
-## - Box Model
+## Inheritance
+## Cascade
+## Specificity
+## Box Model
 
 ---
-name: html-document-tree
-class: center
+class: left
 
-# Visualizing Inheritance
+# Visualizing Inheritance ~
+
 ### HTML Document Structure / Upside-down Family Tree
 
 ![HTML Document Tree](../assets/html-document-tree.gif)
 
 ???
+
 * The main idea of inheritance is that some property values applied to an element will be inherited by that element's children, and some won't.
 * Inheritance makes it easy for you to set a site-wide base font by applying a font-family to the `<html>` element, for example. You can then override the fonts on individual elements where needed. It would be really annoying to have to set the base font separately on every element.
 * [CSS Inheritance (MDN)](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance#Inheritance)
@@ -414,14 +410,14 @@ class: center
 name: css-inheritance
 class:
 
-# Inheritance: pass it on
+# Inheritance: Pass It On
 
 ### .red-text[CSS]
 
 ```css
-p {
+body {
   font-family: Verdana, sans-serif;
-  font-size: 1em;
+  color: green;
 }
 ```
 
@@ -429,40 +425,15 @@ p {
 
 ```html
 <section>
-  <h1>Headline</h1>
-  <p>Something <em>very important</em> going on here!</p>
+  <h1>This Heading will be Verdana and Green</h1>
+  <p>So will this paragraph content.</p>
+  <span>And this span text as well!</span>
 </section>
 ```
 
 ???
 * In general, properties related to styling text are inherited
-* Properties such as margings, padding, borders, and backgrounds are not inherited
-
----
-name: css-font-body
-class:
-
-# Inheritance: apply font-related properties to `<body>`
-
-### .red-text[CSS]
-
-```css
-body {
-  font-family: 'Roboto Slab', serif;
-  font-size: 1em; /* equivalent to 16px */
-  line-height: 1.25; /* equivalent to 20px */
-}
-
-h1 {
-  font-size: 2em;
-  line-height: 1.25;
-}
-
-h2 {
-  font-size: 1.625em;
-  line-height: 1.15384615;
-}
-```
+* Properties such as margins, padding, borders, and backgrounds are not inherited
 
 ---
 name: css-cascade-intro
@@ -733,9 +704,8 @@ html {
 ```
 
 ---
-name: css-exercise
 class: left
 
-# Exercises
+# Exercise
 
 ### CSS Exercise 1: [External Stylesheet and Selector Practice](https://github.com/betamore/fewd-css-exercise-1)
