@@ -38,7 +38,7 @@ class: left
 
 ---
 name: css-rule
-class:
+class: center
 background-image: url(../assets/css-rule.png)
 
 ???
@@ -47,7 +47,7 @@ background-image: url(../assets/css-rule.png)
 
 ---
 name: css-selector-declaration
-class:
+class: center
 background-image: url(../assets/css-selector-declaration.png)
 
 ???
@@ -57,7 +57,7 @@ background-image: url(../assets/css-selector-declaration.png)
 
 ---
 name: css-property-value
-class:
+class: center
 background-image: url(../assets/css-property-value.png)
 
 ???
@@ -79,7 +79,7 @@ class: left
 
 ## Inline CSS
 
-Styles are applied in-line to individual elements. This approach is considered the **least ideal of the three**.
+Styles are applied inline to individual elements. This approach is considered the **least ideal of the three**.
 
 ```html
 <!DOCTYPE html>
@@ -89,7 +89,7 @@ Styles are applied in-line to individual elements. This approach is considered t
     <title>Made in Baltimore</title>
   </head>
   <body>
-    <!-- Styles are applied in-line to individual elements -->
+    <!-- Styles are applied inline to individual elements -->
     <h1 style="color: red;">Welcome to Thimble</h1>
 
     <p>Make something <span style="font-weight: bold;">amazing</span>!</p>
@@ -341,7 +341,7 @@ A child selector in CSS is the "greater than" (`>`) symbol. It means "select ele
 ---
 class: left
 
-## Descendant Selector
+## Descendant Selector ~
 Matches an element that is a descendant of another specified element (not just a direct child of that element.)
 
 .float-left[
@@ -412,7 +412,7 @@ class:
 
 # Inheritance: Pass It On
 
-### .red-text[CSS]
+### CSS
 
 ```css
 body {
@@ -421,7 +421,7 @@ body {
 }
 ```
 
-### .red-text[HTML]
+### HTML
 
 ```html
 <section>
@@ -432,91 +432,78 @@ body {
 ```
 
 ???
+
 * In general, properties related to styling text are inherited
 * Properties such as margins, padding, borders, and backgrounds are not inherited
 
 ---
-name: css-cascade-intro
-class: center
+class: left
 
-# The Cascade
+# The Cascade ~
 
 > When everything else is equal, the last value defined for a given property wins.
 
 <cite>-- Aaron Gustafson</cite>
 
+### Basics of The Cascade
+
+* The last value defined for a given property wins.
+* The cascade assigns weights to .red-text[sources of style info]
+* Style info .red-text["cascades down"] until it is overridden by a style rule with more weight
+* Proximity matters! .red-text[The closer a property is to the content , the more weight it is given]
+
 ???
 
 * [CSS Cascade (MDN)](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance#The_cascade)
-* CSS stands for "Cascade Style Sheets"...\*hint hint\*, the cascade is an important concept to understand!
+* CSS stands for "Cascade Style Sheets"...**hint hint**, the cascade is an important concept to understand!
 * The cascade hinges on two key concepts: **Specificity** and **Source Order**
-
----
-name: css-cascade
-class: center
-
-#  The Cascade
-
-##  *... the last value defined for a given property wins.*
-
-### - the cascade assigns weights to .red-text[sources of style info]
-
-### - style info .red-text["cascades down"] until it is overridden by a style rule with more weight
-
-### - proximity, .red-text[the closer a property is to the content , the more weight it is given]
-
-
-???
-
 * CSS allows us to apply several stylesheets to the same document, which means there are bound to be conflicts.
-
 * .red-text[The Cascade is a hierarchical system] that assigns different weights to the various sources of style information.
-
 * When several sources of style info vie for control of HTML elements, style info is passed down .red-text[("cascades down")] until it is overridden by a style rule with more weight.
-
 * Generally speaking, .red-text[the closer the stylesheet is to the content , the more weight it is given.]
 
 ---
-name: css-stylesheet-hierarchy
-class: center
+class: left
 
-# The Cascade: stylesheet hierarchy
+# Cascading Stylesheet Hierarchy ~
 
-### From general to specific
+### From General to Specific
 
-Browser default styles (user agent stylesheet)
+Browser default styles (**user agent stylesheet**)
 
-User styles (reader stylesheet)
+Linked external stylesheet (`<link rel="stylesheet">` element in `<head>`)
 
-Linked external stylesheet (`<link>` element in `<head>`)
-
-Imported stylesheet (`@import`)
+Imported stylesheet (`@import` rule at top of CSS file)
 
 Embedded stylesheets (`<style>` element in `<head>`)
 
-Inline style rule(s) (`style` attribute in HTML opening tag)
+Inline style rule(s) (`style` attribute in opening HTML tags)
 
 Any style rule marked `!important` by the developer
 
-Any style rule marked `!important` by the reader (user)
+???
+
+* [CSS Inheritance, Cascade, and Specificity](http://web.simmons.edu/~grovesd/comm244/notes/week4/css-concepts)
+* [@import vs link](https://stackoverflow.com/questions/7199364/import-vs-link)
 
 ---
-name: css-specificity-101
-class:
+class: left
 
-# .red-text[Specificity 101]
+# Specificity 101 ~
 
-### Specificity trumps proximity
+### Specificity Trumps Proximity
 
 * When 2 rules in a single stylesheet conflict, type of selector determines winner.
-* When selectors have an equal specificity value, the last defined rule wins.
+
+* When selectors have an equal degree of specificity, the last defined rule wins.
 
 * The .red-text[more specific the selector], the more weight is given to override conflicting declarations.
-  * ID selectors (`#happy-cake`)
-  * class selectors (`.happy-cake`)
-  * contextual element selectors (`nav ul`)
-  * individual element selectors (`ul`)
 
+* Selector specifity from general to specific:
+  * Individual element selectors (e.g. `ul`, `h1`, etc.)
+  * Contextual element selectors (e.g. `nav ul`, `p > a`, etc.)
+  * Class selectors (e.g. `.happy-cake`)
+  * ID selectors (e.g. `#happy-cake`)
 
 ???
 
@@ -524,188 +511,98 @@ class:
 * [CSS Specificity: Things You Should Know](http://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
 
 ---
-# Every HTML Element is a Box
-### - block level elements are boxes
+class: left
+
+# The Box Model ~
+
+### [The CSS "Ah-ha!" Moment](https://css-tricks.com/the-css-ah-ha-moment/): _Every HTML Element is a Box_
+
+**Block level elements are boxes**
 
 ```html
 <h1> <p> <section>
 ```
 
-### - inline level elements are boxes
+**Inline level elements are boxes too!**
 
 ```html
 <img> <span> <em>
 ```
 
-???
-[The CSS "Ah-ha!" Moment](https://css-tricks.com/the-css-ah-ha-moment/)
+**Simulate Boxes in Chrome DevTools**
 
----
-# Simulate Boxes in Chrome DevTools
+Go to [Google News](https://news.google.com) and create the following CSS rule:
 
 ```css
 * {
-    outline: solid 1px hotpink;
+    outline: 1px solid hotpink;
   }
-```
-
-```css
-img {
-      outline: dotted 1px lime;
-    }
-```
-
-```css
-em {
-      outline: dashed 1px tan;
-    }
-```
-
-```css
-span {
-      outline: double 1px salmon;
-    }
 ```
 
 ???
 
-[Outlined HTML Elements in Chrome DevTools](https://www.youtube.com/watch?v=4CZveCrrGS0)
+* [The CSS Box Model](https://css-tricks.com/the-css-box-model/)
 
 ---
-name: css-box-model-display
-class:
-
-# .red-text[Display Property]
-
-.float-left[
-
-```css
-p {
-    display: block;
-}
-```
-
-```css
-p {
-    display: inline;
-}
-```
-
-```css
-p {
-    display: inline-block;
-}
-```
-
-```css
-p {
-    display: none;
-}
-```
-]
-
-.float-right[
-
-```css
-p {
-    display: flex;
-}
-```
-
-```css
-p {
-    display: inline-flex;
-}
-```
-
-```css
-p {
-    display: table;
-}
-```
-
-```css
-p {
-    display: table-cell;
-}
-```
-]
-
----
-name: css-box-model-properties
-class:
+class: left
 
 # Box Model Properties
 
 Each part of the box model corresponds to a CSS property:
+* `margin`
+* `border`
+* `padding`
 * `width`
 * `height`
-* `padding`
-* `border`
-* `margin`
 
-
-```css
-div {
-  border: 6px solid #949599;
-  height: 100px;
-  margin: 20px;
-  padding: 20px;
-  width: 400px;
-}
-```
+<img src="https://cdn-images-1.medium.com/max/800/1*7qqR-jXp35fOjOIIfHVUHA.png" alt="css box model" width="45%">
 
 ---
-name: css-box-sizing
-class:
+class: left
 
-# box-sizing
+# Box-sizing ~
 
 ### The `box-sizing` property alters the default CSS box model used to calculate width and height of the elements.
 
 ```css
-/* initial and default value */
-/* width / height = width / height of content only */
-/* excludes padding, border, margin */
+/* content-box is the default box-sizing value */
+/* width and height = width and height of content only */
+/* excludes padding, border, and margin values */
 
 box-sizing: content-box;
 ```
 
 ```css
-/* most developers switch to */
-/* width = border + padding + width of the content */
-/* height = border + padding + height of the content */
+/* most developers switch to border-box */
+/* width and height = width/height of content + border and padding values */
+/* excludes margin values */
 
 box-sizing: border-box;
 ```
 
 ???
 
-[MDN on box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
-
-[Interactive box-model diagram](http://codepen.io/carolineartz/full/ogVXZj) on CodePen
+* [MDN on box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
+* [Interactive Box Model Diagram](http://codepen.io/carolineartz/full/ogVXZj) on CodePen
 
 ---
-name: box-sizing-code
-class:
+class: left
 
-# box-sizing in the real world
+# Box-sizing in the real world
+
+To make our lives easier when working with the box model (and decrease the amount of math we have to do), the best practice is to declare box-sizing: border-box; for _all_ elements in our project using the universal selector (*) like so:
 
 ```css
-/*  ================ Helpers ================ */
+/* CSS Box Model and Universal box-sizing Setting */
 
-html {
+* {
   box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
 }
 ```
 
 ---
 class: left
 
-# Exercise
+# Exercise: External Stylesheet and Selector Practice
 
-### CSS Exercise 1: [External Stylesheet and Selector Practice](https://github.com/betamore/fewd-css-exercise-1)
+### ➡️ [Go to Exercise](https://github.com/betamore/fewd-css-exercise-1)
