@@ -40,7 +40,114 @@ class: middle
 <cite>-- Eric Meyer</cite>
 
 ---
+# Every HTML Element is a Box
+### - block level elements are boxes
 
+```html
+<h1> <p> <section>
+```
+
+### - inline level elements are boxes
+
+```html
+<img> <span> <em>
+```
+
+???
+[The CSS "Ah-ha!" Moment](https://css-tricks.com/the-css-ah-ha-moment/)
+
+---
+# Simulate Boxes in Chrome DevTools
+
+```css
+* {
+    outline: solid 1px hotpink;
+  }
+```
+
+```css
+img {
+      outline: dotted 1px lime;
+    }
+```
+
+```css
+em {
+      outline: dashed 1px tan;
+    }
+```
+
+```css
+span {
+      outline: double 1px salmon;
+    }
+```
+
+???
+
+[Outlined HTML Elements in Chrome DevTools](https://www.youtube.com/watch?v=4CZveCrrGS0)
+
+---
+name: css-box-model-display
+class:
+
+# Display Property
+
+.float-left[
+
+```css
+p {
+    display: block;
+}
+```
+
+```css
+p {
+    display: inline;
+}
+```
+
+```css
+p {
+    display: inline-block;
+}
+```
+
+```css
+p {
+    display: none;
+}
+```
+]
+
+.float-right[
+
+```css
+p {
+    display: flex;
+}
+```
+
+```css
+p {
+    display: inline-flex;
+}
+```
+
+```css
+p {
+    display: table;
+}
+```
+
+```css
+p {
+    display: table-cell;
+}
+```
+]
+
+---
 class: center
 
 # Controlling the Position of Elements
