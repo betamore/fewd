@@ -11,6 +11,8 @@ class: left
 # Welcome to Betamore FEWD Spring 2019 🙌
 ### Zac Heisey
 ### zheisey@gmail.com
+### (408) 444-0546
+### fewd-spring19
 
 ---
 class: left
