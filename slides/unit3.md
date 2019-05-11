@@ -120,7 +120,7 @@ class: left
 
 # Element Attributes ~
 
-HTML elements can have **attributes** which these are additional values that configure the elements or adjust their behavior in various ways to meet the criteria the users want.
+HTML elements can have **attributes** which are additional values that meaning or functionality to elements.
 
 We include attributes as part of the opening tag of a given element, with most attributes written as name-value pairs in the following format: `attribute="value"`
 
