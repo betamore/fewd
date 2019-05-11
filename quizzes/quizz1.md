@@ -12,7 +12,7 @@ class: center, middle
 ---
 class: center, middle
 
-# Name the 3 main building blocks<br>of web development.
+# Name the 3 layers of the "web cake"
 
 ???
 
@@ -23,7 +23,7 @@ class: center, middle
 ---
 class: center, middle
 
-# What are the main components<br>of the Internet infrastructure?
+# What are the main components of the Internet infrastructure?
 
 ???
 
@@ -32,43 +32,6 @@ class: center, middle
 - Domain Names
 - Browsers
 - Servers
-
----
-class: center, middle
-
-# Talk about the current browser landscape.
-
-???
-
-- Fragmented and non-standardized (different browsers have different features and functionality)
-- Browser compatibility is a major part of modern web development
-
----
-class: center, middle
-
-# What does W3C stand for?
-
-# What about WHATWG?
-
-???
-
-- W3C = World Wide Web Consortium > Develop Web standards
-- WHATWG = Web Hypertext Application Technology Working Group > Develop HTML and APIs needed for Web applications.
-
----
-class: center, middle
-
-# Name 3 currently popular text editors.
-
-???
-
-- Atom
-- Sublime
-- Visual Studio (VS) Code
-- Vim
-- Emacs
-- Brackets
-- Notepad++
 
 ---
 class: center, middle
@@ -82,7 +45,7 @@ class: center, middle
 ---
 class: center, middle
 
-# What's the difference between<br>the command line and a text editor?
+# What's the difference between the command line and a text editor?
 
 ???
 
@@ -93,7 +56,7 @@ class: center, middle
 
 class: center, middle
 
-# What's the difference beween<br>a directory and a folder?
+# What's the difference between a directory and a folder?
 
 ???
 
@@ -101,13 +64,51 @@ class: center, middle
 - Directories are a file system concept. They refer to the way a structured list of document files and folders are stored on your machine.
 
 ---
-
 class: center, middle
 
-# Describe the most basic directory structure<br>typically used in website development.
+# Name 3 Command Line commands
+
+???
+
+* `pwd` - Print Working Directory - Shows where you are in relation to your computer's directory hierarchy.
+* `cd` - Change Directory - Moves you into and out of directories.
+* `ls` - List Directory - Lists out files in the current directory.
+* `mkdir` - Make Directory - Creates a new directory on your computer.
+* `touch` or `New-Item` - Creates an empty file in the current directory.
+* `rm` - Remove - Deletes a file.
+* `rmdir` - Remove Directory - Deletes a directory.
+* `clear` - Clear - Clears the terminal of recent commands and outputs.
+
+---
+class: center, middle
+
+# Describe the most basic directory structure typically used in website development.
 
 ???
 
 - `/directory-name/index.html`
 - `/directory-name/assets/css/main.css`
 - `/directory-name/assets/js/main.js`
+
+---
+class: center
+
+# What do the following `git` commands do?
+
+### `git init`
+### `git add`
+### `git commit`
+### `git clone`
+### `git status`
+
+---
+class: center, middle
+
+# Describe the basic `git` workflow
+
+???
+
+* `git status` to list all modified files
+* `git add` to add file(s) to staging
+* `git commit` to commit your changes
+* `git push` to sync local repo with GitHub repo
