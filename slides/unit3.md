@@ -120,7 +120,7 @@ class: left
 
 # Element Attributes ~
 
-HTML elements can have **attributes** which are additional values that meaning or functionality to elements.
+HTML elements can have **attributes** which are additional values that add meaning or functionality to elements.
 
 We include attributes as part of the opening tag of a given element, with most attributes written as name-value pairs in the following format: `attribute="value"`
 
@@ -137,20 +137,20 @@ class: left
 # Grouping Thematically-Related Content
 
 ```html
-<!-- Grouping header content or navigational aids -->
+<!-- Grouping header content or navigational links -->
 <header>
   <nav>
     <ul>
-      <li>Nav Item 1</li>
-      <li>Nav Item 2</li>
-      <li>Nav Item 3</li>
+      <li><a href="#">Nav Item 1</a></li>
+      <li><a href="#">Nav Item 2</a></li>
+      <li><a href="#">Nav Item 3</a></li>
     </ul>
   </nav>
 </header>
 
 <!-- Grouping page content using <section> element -->
 <section>
-  <h1>My headline</h1>
+  <h1>MD Seasons</h1>
   <p>Summer in Maryland is great!</p>
   <p>Winter...not so much.</p>
 </section>
