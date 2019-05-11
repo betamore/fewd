@@ -4,6 +4,7 @@ class: center, middle
 ## Version Control with Git & GitHub
 
 <img src="https://cdn-images-1.medium.com/max/1600/1*mtsk3fQ_BRemFidhkel3dA.png" width="70%">
+
 ---
 class: left
 
