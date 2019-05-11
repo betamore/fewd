@@ -33,15 +33,14 @@ permalink: /syllabus
   * The cascade, specificity and inheritance
   * The CSS box model
 
-## Unit 5: CSS Page Layout
+## Unit 5: Page Layout & Responsive Web Design
   * CSS display and positioning
-  * Intro to flexbox
-  * CSS page layout
-
-## Unit 6: Responsive Web Design
   * What is Responsive Web Design (RWD)?
-  * Core components of RWD
-  * Writing media queries
+  * Media Queries
+  * Intro to Flexbox
+
+## Unit 6: TBD
+  * TBD
 
 ## Unit 7: JavaScript Basics
   * What is JavaScript?
