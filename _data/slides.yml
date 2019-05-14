@@ -9,14 +9,10 @@
 - unit: 5
   unit-title: Page Layout & Responsive Web Design
 - unit: 6
-  unit-title: TBD
-- unit: 7
   unit-title: JavaScript Basics
-- unit: 8
+- unit: 7
   unit-title: The DOM and Event Handling
-- unit: 9
+- unit: 8
   unit-title: Accessibility
-- unit: 10
+- unit: 9
   unit-title: Optimization &amp; Deployment
-- unit: 11
-  unit-title: Front End Build Tools

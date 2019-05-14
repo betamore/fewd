@@ -39,23 +39,20 @@ permalink: /syllabus
   * Media Queries
   * Intro to Flexbox
 
-## Unit 6: TBD
-  * TBD
-
-## Unit 7: JavaScript Basics
+## Unit 6: JavaScript Basics
   * What is JavaScript?
   * Brief history of JavaScript
 
-## Unit 8: The DOM and Event Handling
+## Unit 7: The DOM and Event Handling
   * Intro to the DOM
   * Responding to events in JavaScript  
 
-## Unit 9: Accessibility
+## Unit 8: Accessibility
   * What is web accessibility?
   * Accessible HTML and ARIA landmark roles.
   * Accessible CSS and JavaScript.
 
-## Unit 10: Optimization & Deployment
+## Unit 9: Optimization & Deployment
   * Browser and device testing.
   * Intro to web performance.
   * Modern deployment workflow with GitHub Pages.

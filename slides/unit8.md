@@ -1,254 +1,139 @@
 class: center, middle
 
-# JavaScript
-
-## The DOM and Handling Events
-
----
-
-name: dom-intro
-
-# Intro to the Document Object Model (DOM)
-
-#### - browser builds a .red-text[model of the document's structure] and uses it to draw the page on the screen
-#### - it serves as a structured map to all elements on a page
-#### - this representation of the document is manipulated via JavaScript
-#### - we can read from the model and write to it (change it)
-#### - live data structure: when modified, the page on the screen updates to reflect the changes
-#### - it's a programming interface (API) for HTML pages
+## Unit 9
+# .red-text[Accessibility]
+## \#a11y
 
 ???
 
-* [What, exactly, is the DOM?](https://bitsofco.de/what-exactly-is-the-dom/)
+* [The A11y Project](https://a11yproject.com/)
 
 ---
 
-name: dom-node-tree
-class:
-
-# Document Structure (DOM node tree)
-## Visualizing the DOM
-
-![HTML Document Tree](../assets/html-document-tree.gif)
-
----
-
-# Document Structure (nested set of boxes)
-
-.float-left[
-
-```html
-<!doctype html>
-<html>
-  <head>
-    <title>My home page</title>
-  </head>
-  <body>
-    <h1>My home page</h1>
-    <p>Hello, I am Marijn and this is ...</p>
-    <p>I also wrote a book! Read it
-      <a href="#">here</a>.</p>
-  </body>
-</html>
-```
-
-]
-
-.float-right[
-![HTML Document Tree](../assets/html-boxes.svg)
-]
-
-???
-[Eloquent JavaScript: Chapter 13: The Document Object Model](http://eloquentjavascript.net/13_dom.html)
-
----
-
-# Data Structure (nested set of boxes)
-
-.float-left[
-![HTML Document Tree](../assets/html-boxes.svg)
-]
-
-.float-right[
-#### - each box is an object we can interact with
-#### - what HTML tag? does it contain other boxes? which ones?
-#### - global variable `document` gives us access to objects
-#### - `document.documentElement` (html tag)
-#### - `document.head` (head tag)
-#### - `document.body` (body tag)
-]
-
----
-
-name: dom-crawling
-
-# Traversing the DOM
-
-### DOM is a collection of nodes
-- element nodes
-- attribute nodes
-- text nodes
-
-```html
-<p id="betamore">
-  Real web designers <a href="/code">write code</a>. Always have, always will.
-</p>
-```
-
-```javascript
-var elementNode = document.getElementById('betamore');
-
-var attributeNode = elementNode.firstElementChild.getAttribute('href');
-
-var textNode = elementNode.innerText;
-```
-
----
-
-# Selecting HTML DOM Elements with JavaScript
-
-```javascript
-// Select element by id
-var findId = document.getElementById('id');
-
-// Select element(s) by class
-var findClass = document.getElementsByClassName('className');
-
-// Select element(s) by tag
-var findTag = document.getElementsByTagName('tagName');
-
-// Select element(s) by CSS selector (all matching)
-var allElements = document.querySelectorAll('.className');
-// => selects ALL elements with class of className
-
-// Select element by CSS selector (first matching)
-var firstElement = document.querySelector('p');
-// => selects first <p> element
-```
-
-???
-
-* [JavaScript HTML DOM Elements](https://www.w3schools.com/js/js_htmldom_elements.asp)
-* [JavaScript Selector Performance](https://gomakethings.com/javascript-selector-performance/)
-
----
-
+name: a11y-berners-lee-quote
 class: middle
 
-# JavaScript Event Handling
+> The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.
 
-## Browser:
+<cite>-- Tim Berners-Lee, W3C Director and inventor of the World Wide Web</cite>
 
-> X just happened, so we need to execute Y and Z!
+???
+[W3C Accessibility](http://www.w3.org/standards/webdesign/accessibility)
+
+[Web Accessibility Initiative (WAI)](http://www.w3.org/WAI/)
 
 ---
 
-class: center, middle
+name: a11y-gustafson-quote
+class: middle
 
-# Interactions Create Events
+> To me, accessibility is ultimately about ensuring people have equal opportunity to access your content while simultaneously recognizing that we all have special needs -- physical limitations, bandwidth limitations, device limitations -- that may require each of us to have different experiences of the same web page.
 
-## - click or tap
+<cite>-- Aaron Gustafson</cite>
 
-## - hover or swipe
+---
 
-## - type on the keyboard
+name: a11y-disabilities
+class: center
 
-## - resize the window
+# Broad Categories of Disabilities
 
-## - requested page has loaded
+### - vision impairment
+### - mobility impairment
+### - auditory impairment
+### - cognitive impairment
+
+---
+
+name: a11y-vision
+class: center
+
+# Vision Impairment
+
+### - low or no vision
+### - screen reader
+### - Braille display
+### - screen magnifier
+### - browser text zoom
+
+---
+
+name: a11y-mobility
+class: center
+
+# Mobility Impairment
+
+### - limited or no use of hands
+### - modified mice and keyboards
+### - foot pedals
+### - joysticks
+### - assistive voice software
+
+---
+
+name: a11y-audio
+class: center
+
+# Auditory Impairment
+
+### - limited or no hearing
+### - miss out on multimedia audio
+### - provide alternatives (transcripts, video captions)
+
+---
+
+name: a11k-cognitive
+class: center
+
+# Cognitive Impairment
+
+### - memory problems
+### - reading and comprehension problems
+### - problem solving
+### - attention limitations
+### - design sites simply and clearly (which benefits _all_ users)
+---
+
+name: a11k-overview
+class: center
+
+# Accessibility 101
+
+### - good design
+### - great user experience
+### - standards-compliant, clean HTML
+### - semantic HTML
+### - separation of content/structure (HTML) and presentation (CSS)
+
+---
+
+
+name: a11y-wai
+class: center
+
+# Web Accessibility Initiative (WAI)
+
+ ### - created by W3C to make the Web usable for everyone (w3.org/WAI)
+ ### - Web Content Accessibility Guidelines (w3.org/WAI/intro/wcag)
+ ### - US government used WCAG as basis for Section 508 accessibility guidelines
+ ### - section508.gov
 
 ???
 
-* [List of Common DOM Events](https://developer.mozilla.org/en-US/docs/Web/Events)
+[US Government Section 508](http://section508.gov)
 
 ---
 
-class: center, middle
+name: a11y-aria
+class: center
 
-# Events Trigger Code
+# ARIA
+## (Accessible Rich Internet Applications)
 
-## - register functions as .red-text[handlers] for specific events
+### Adding .red-text[accessibility information] to HTML elements using the<br> .red-text[Accessible Rich Internet Applications specification (WAI-ARIA]).
 
----
+???
 
-class: center, middle
-
-# Code Responds to Users
-
-## - "live" page updates via DOM manipulation
-
----
-
-## The .red-text[addEventListener] function registers its second argument to be called whenever the event described by its first argument occurs.
-
-```html
-<p>Click this document to activate the handler.</p>
-```
-
-```javascript
-<script>
-  addEventListener("click", function() {
-    console.log("You clicked!");
-  });
-</script>
-```
-
-#### - each browser event handler is registered in a context
-#### - calling method on the whole window (global scope is equivalent to the window object)
-
----
-
-# Events & DOM Nodes
-
-```html
-<button>Click me</button>
-<p>No handler here.</p>
-```
-
-```javascript
-<script>
-  var button = document.querySelector("button");
-  button.addEventListener("click", function() {
-    console.log("Button clicked.");
-  });
-</script>
-```
-
-#### - every DOM element has its own addEventListener method (listen specifically on that element)
-#### - attach handler to the button node
-#### - clicks on button cause handler to run (whereas clicks on the rest of the document do not)
-
----
-
-# Event Objects
-
-```html
-<button>Click me any way you want</button>
-```
-
-```javascript
-<script>
-  var button = document.querySelector("button");
-  button.addEventListener("mousedown", function(event) {
-    if (event.which == 1)
-      console.log("Left button");
-    else if (event.which == 2)
-      console.log("Middle button");
-    else if (event.which == 3)
-      console.log("Right button");
-  });
-</script>
-```
-
-#### - event handler functions are passed an argument: the .red-text[event] object
-#### - this object gives us additional information about the event
-
----
-
-# Exercise: DOM and JS Events
-
-### Let's Practice!
-
-#### JavaScript Event Exercise: https://github.com/betamore/fewd-js-event-practice
-
-#### Say Hello Exercise: https://github.com/betamore/fewd-js-say-hello
+* [ARIA in HTML](https://www.w3.org/TR/html-aria/)
+* [ARIA | MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)
+* [HTML Developers: Please Consider (native HTML5 features over ARIA attributes)](http://html5doctor.com/html-developers-please-consider/)
