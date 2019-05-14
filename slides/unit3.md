@@ -79,6 +79,8 @@ class: left
 </html>
 ```
 
+### 💻 Let's practice! Open your text editor and create an HTML file with the basic document structure.
+
 ???
 
 * [The Structure of an HTML Document](https://codetheweb.blog/2017/10/07/structure-of-an-html-document/)
