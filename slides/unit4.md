@@ -1,7 +1,7 @@
 class: center, middle
 
 # Unit 4
-### CSS Basics
+## CSS Basics
 
 <img src="../assets/css3-logo.svg" alt="CSS3 logo" width="35%">
 
