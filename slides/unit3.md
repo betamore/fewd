@@ -213,7 +213,7 @@ class: left
 ### Allows multiple levels of transparency
 
 ---
-name: img-svg
+class: left
 
 # Scalable Vector Graphics (SVG)
 
@@ -237,7 +237,6 @@ class: left
 [Sitepoint: GIF, PNG, JPG. Which One To Use?](https://www.sitepoint.com/gif-png-jpg-which-one-to-use/)
 
 ---
-name:
 class: left
 
 # Exercise: Zeldman Article Markup
