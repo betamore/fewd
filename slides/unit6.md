@@ -148,25 +148,25 @@ class: left
 
 ```javascript
 // String
-"I am a string";
-'I am also a string';
+var string = "I am a string";
+var anotherString = 'I am also a string';
 
 // Number
-42;
+var num = 42;
 
 // Boolean
-true;
-false;
+var isTrue = true;
+var isFalse = false;
 
 // Object (represent "things" in our code - a person, car, building, etc.)
-{
+var person = {
   name: 'Sam',
   age: 21,
   citizen: true
-}
+};
 
 // Array (create and store a list of multiple items in a single variable)
-[1, 2, 3]
+var arr = [1, 2, 3, 'red', 'blue', true]
 ```
 
 ???
