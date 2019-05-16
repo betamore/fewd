@@ -544,10 +544,7 @@ class: left
   2) Check if it needs to do anything
 
 * This has implications for `<script>` placement, and can affect the loading time of pages.
-
-???
-
-- Don't sprinkle `<script>` elements throughout the HTML document, because that makes them difficult to find and maintain.
+* Don't sprinkle `<script>` elements throughout the HTML document, because that makes them difficult to find and maintain.
 
 ---
 class: left
