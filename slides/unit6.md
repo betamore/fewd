@@ -179,25 +179,25 @@ class: left
 # typeof Operator ~
 
 ```javascript
-typeof undefined        === "undefined"; // true
-typeof true             === "boolean";   // true
-typeof 42               === "number";    // true
-typeof "betamore"       === "string";    // true
-typeof { age: 21 }      === "object";    // true
+typeof undefined        // returns "undefined"
+typeof true             // returns "boolean"
+typeof 42               // returns "number"
+typeof "betamore"       // returns "string"
+typeof { age: 21 }      // returns "object"
 ```
 
 ```javascript
-typeof null             === "object";    // true
-
-```
-
-```javascript
-typeof function fn() {} === "function";  // true
+typeof null             // returns "object"
 
 ```
 
 ```javascript
-typeof [1, 2, 3]        === 'object';    // true
+typeof function fn() {} // returns "function"
+
+```
+
+```javascript
+typeof [1, 2, 3]        // returns "object"
 
 ```
 
@@ -364,19 +364,16 @@ class: left
 
 ```javascript
 // Function Declaration aka Named Function
-
 function doSomething() {
   console.log('What do you want me to do?');
 }
 
 // Function Expression aka Anonymous Function
-
 var doSomething = function() {
   console.log('What do you want me to do?');
-}
+};
 
 // Immediately Invoked Function Expression aka IIFE
-
 (function() {
   console.log('What do you want me to do?');
 }());
@@ -411,10 +408,9 @@ doOtherThing();
 ```
 
 ---
+class: left
 
-name: js-fn-effect-value
-
-# Side Effect (`console.log`)
+# Side Effect (`console.log`) ~
 
 ```javascript
 var sayHello = function() {
@@ -441,10 +437,9 @@ sayGoodbye(); // Goodbye!
 * [Eloquent JavaScript - Functions](https://eloquentjavascript.net/03_functions.html)
 
 ---
+class: left
 
-name: js-fn-scope
-
-# Scope
+# Scope ~
 
 ### JavaScript has two types of scope: **global** & **local**
 
@@ -472,19 +467,21 @@ two(); // 2
 * [Kyle Simpson on scope](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md#scope)
 * [Understanding Scope in JavaScript](https://scotch.io/tutorials/understanding-scope-in-javascript)
 
-
 ---
+class: left
 
-name: js-fn-arguments
+# Passing Information to Functions ~
 
-# Passing Information to Functions
+### Arguments vs. Parameters
+
+Functions are sent arguments; they receive parameters.
 
 ```javascript
-var sayHello = function() {
-  console.log('Hello there!');
+function square(x) {
+  return x * x;
 }
 
-sayHello(); // Hello there!
+square(4); // 16
 ```
 
 ```javascript
@@ -495,43 +492,17 @@ var sayHelloTo = function(name) {
 sayHelloTo('Jake'); // Hello Jake!
 ```
 
----
-
-name: js-fn-arguments-parameters
-
-# Arguments vs. Parameters
-
-> Functions are sent arguments; they receive parameters.
-
-<cite>-- Dudley Storey</cite>
-
-```javascript
-function square(x) {
-  return x * x;
-}
-
-square(4); // 16
-```
-
 ???
 
-* In the example function `square`, `x` is a parameter and `4` is an argument.
+* In the `square` function, `x` is a parameter and `4` is an argument.
+* In the `sayHelloTo` function, `name` is a parameter and `Jake` is an argument.
 * Parameters = Placeholders; Arguments = Values.
 * [Dudley Storey on functions](http://thenewcode.com/1033/Introduction-to-JavaScript-Functions)
 
 ---
+class: left
 
-name: js-browser
-class: center, middle
-
-# JavaScript and the Browser
-## "Front-end JavaScript"
-
----
-
-name: js-scripts
-
-# Adding JavaScript to a Page
+# Adding JavaScript to a Page ~
 
 **Embedded Script**
 
@@ -556,37 +527,31 @@ document.addEventListener('click', function(event) {
 
 ???
 
-- Using external scripts allow us to apply the same script to multiple pages (same way we link our external CSS stylesheets).
-
-- Each external script requires an additional HTTP request, which impacts performance.
+* Using external scripts allow us to apply the same script to multiple pages (same way we link our external CSS stylesheets).
+* Each external script requires an additional HTTP request, which impacts performance.
 
 ---
-
-name: js-script-placement
+class: left
 
 # Script Placement
 
-### JavaScript runs where it's found in the HTML
-### `<script>` element can go anywhere in the document
-### Most common places are in `<head>` and just before `</body>`
+* JavaScript runs where it's found in the HTML
+* `<script>` element can go anywhere in the document
+* Most common places are in `<head>` and just before `</body>`
+* When the browser encounters a `<script>` element, it will:
 
-- Browser encounters a `<script>` element
-- stops to load the script
-- then checks if it needs to do anything
+  1) Stop to load the script  
+  2) Check if it needs to do anything
 
-### This has implications for `<script>` placement, and can affect the loading time of pages.
+* This has implications for `<script>` placement, and can affect the loading time of pages.
 
 ???
 
 - Don't sprinkle `<script>` elements throughout the HTML document, because that makes them difficult to find and maintain.
 
 ---
-
-name: js-exercise-3
-class:
+class: left
 
 # Exercise: Functions
 
-### Let's Practice!
-
-#### Work through the following exercises: https://www.teaching-materials.org/javascript/exercises/functions
+### ➡️ [Go to Exercise](https://www.teaching-materials.org/javascript/exercises/functions)
