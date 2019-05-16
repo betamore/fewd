@@ -33,6 +33,7 @@ class: left
 
 ???
 
+* [9 Important CSS Properties to Know](https://zellwk.com/blog/9-important-css-properties-you-must-know/)
 * [Getting to Know CSS](http://learn.shayhowe.com/html-css/getting-to-know-css/)
 * [The Best Way to Learn CSS](http://webdesign.tutsplus.com/tutorials/the-best-way-to-learn-css--webdesign-11906)
 
@@ -196,7 +197,7 @@ Matches an element whose `id` attribute has a value that matches the one specifi
 ### .red-text[CSS]
 ```css
 #happy-cake {
-
+  color: purple;
 }
 ```
 ]
@@ -235,7 +236,8 @@ Matches an element whose `class` attribute has a value that matches the one spec
 ### .red-text[CSS]
 ```css
 .module {
-
+  background-color: gray;
+  border: 1px solid red;
 }
 ```
 ]
@@ -274,7 +276,8 @@ Matches HTML element/tag names.
 ### .red-text[CSS]
 ```css
 h2 {
-
+  font-size: 1.75rem;
+  font-family: 'Lato';
 }
 ```
 ]
@@ -590,7 +593,7 @@ class: left
 
 # Box-sizing in the real world
 
-To make our lives easier when working with the box model (and decrease the amount of math we have to do), the best practice is to declare box-sizing: border-box; for _all_ elements in our project using the universal selector (*) like so:
+To make our lives easier when working with the box model (and decrease the amount of math we have to do), the best practice is to declare `box-sizing: border-box;` for _all_ elements in our project using the universal selector (*) like so:
 
 ```css
 /* CSS Box Model and Universal box-sizing Setting */
