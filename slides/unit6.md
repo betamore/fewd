@@ -28,12 +28,12 @@ class: left
 ---
 class: left
 
-# JavaScript can be run...
+# JavaScript can run...
 
 ### in the browser
 
-- Manipulate elements, attributes and text on web page
-- React to user input "on the fly"
+- Manipulate elements, attributes, and text on a web page
+- React to user input on the fly
 - Request content from server and inject into page
 
 ### outside of the browser
@@ -137,7 +137,7 @@ It's common for programming languages to also provide .red-text[arrays, objects,
 
 - All built-in types except `object` are called _primitives_.
 - Primitives are values, they have no properties.
-- Primitives are immutable.
+- Primitives are [immutable](https://gomakethings.com/immutability-in-javascript/).
 - [JavaScript Data Types](https://javascript.info/types)
 - [Data Types and Data Structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
 
