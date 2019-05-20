@@ -297,13 +297,6 @@ switch (today) {
 ---
 class: left
 
-# Exercise: Conditionals
-
-### ➡️ [Go to Exercise](https://www.teaching-materials.org/javascript/exercises/ifelse)
-
----
-class: left
-
 # JavaScript Loops ~
 
 **Loops in JavaScript allow us to iterate - or repeat - the same code block multiple times until a specified condition is met.**
@@ -552,3 +545,7 @@ class: left
 # Exercise: Functions
 
 ### ➡️ [Go to Exercise](https://www.teaching-materials.org/javascript/exercises/functions)
+
+# Exercise: Conditionals
+
+### ➡️ [Go to Exercise](https://www.teaching-materials.org/javascript/exercises/ifelse)
