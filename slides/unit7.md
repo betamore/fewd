@@ -3,36 +3,28 @@ class: center, middle
 # Unit 7
 ## The DOM and Event Handling
 
+![the DOM tree](../assets/html-document-tree.gif)
+
 ---
+class: left
 
-name: dom-intro
+# Intro to the Document Object Model (DOM) ~
 
-# Intro to the Document Object Model (DOM)
-
-#### - browser builds a .red-text[model of the document's structure] and uses it to draw the page on the screen
-#### - it serves as a structured map to all elements on a page
-#### - this representation of the document is manipulated via JavaScript
-#### - we can read from the model and write to it (change it)
-#### - live data structure: when modified, the page on the screen updates to reflect the changes
-#### - it's a programming interface (API) for HTML pages
+* Browser builds a .red-text[model of the document's structure] and uses it to draw the page on the screen
+* It serves as a structured map to all elements on a page
+* This representation of the document is manipulated via JavaScript
+* We can read from the model and write to it (change it)
+* Live data structure: when modified, the page on the screen updates to reflect the changes
+* It's a programming interface (API) for HTML pages
 
 ???
 
 * [What, exactly, is the DOM?](https://bitsofco.de/what-exactly-is-the-dom/)
 
 ---
+class: left
 
-name: dom-node-tree
-class:
-
-# Document Structure (DOM node tree)
-## Visualizing the DOM
-
-![HTML Document Tree](../assets/html-document-tree.gif)
-
----
-
-# Document Structure (nested set of boxes)
+# Document Structure (nested set of boxes) ~
 
 .float-left[
 
@@ -50,7 +42,6 @@ class:
   </body>
 </html>
 ```
-
 ]
 
 .float-right[
@@ -58,9 +49,11 @@ class:
 ]
 
 ???
-[Eloquent JavaScript: Chapter 13: The Document Object Model](http://eloquentjavascript.net/13_dom.html)
+
+* [Eloquent JavaScript: Chapter 13: The Document Object Model](http://eloquentjavascript.net/13_dom.html)
 
 ---
+class: left
 
 # Data Structure (nested set of boxes)
 
@@ -69,21 +62,20 @@ class:
 ]
 
 .float-right[
-#### - each box is an object we can interact with
-#### - what HTML tag? does it contain other boxes? which ones?
-#### - global variable `document` gives us access to objects
+#### - Each box is an object we can interact with
+#### - What HTML tag? Does it contain other boxes? Which ones?
+#### - Global `document` variable gives us access to objects
 #### - `document.documentElement` (html tag)
 #### - `document.head` (head tag)
 #### - `document.body` (body tag)
 ]
 
 ---
-
-name: dom-crawling
+class: left
 
 # Traversing the DOM
 
-### DOM is a collection of nodes
+### The DOM is a collection of nodes
 - element nodes
 - attribute nodes
 - text nodes
@@ -103,8 +95,9 @@ var textNode = elementNode.innerText;
 ```
 
 ---
+class: left
 
-# Selecting HTML DOM Elements with JavaScript
+# Selecting HTML DOM Elements with JavaScript ~
 
 ```javascript
 // Select element by id
@@ -131,54 +124,32 @@ var firstElement = document.querySelector('p');
 * [JavaScript Selector Performance](https://gomakethings.com/javascript-selector-performance/)
 
 ---
+class: left
 
-class: middle
+# Event Handling with JavaScript ~
 
-# JavaScript Event Handling
-
-## Browser:
+### The browser "listens" for an event, then does something:
 
 > X just happened, so we need to execute Y and Z!
 
----
+### Interactions create events:
 
-class: center, middle
-
-# Interactions Create Events
-
-## - click or tap
-
-## - hover or swipe
-
-## - type on the keyboard
-
-## - resize the window
-
-## - requested page has loaded
+* Click or tap
+* Hover or swipe
+* Type on the keyboard
+* Resize the window
+* Requested page has loaded
 
 ???
 
 * [List of Common DOM Events](https://developer.mozilla.org/en-US/docs/Web/Events)
 
 ---
+class: left
 
-class: center, middle
+# Events trigger code, and code responds to users ~
 
-# Events Trigger Code
-
-## - register functions as .red-text[handlers] for specific events
-
----
-
-class: center, middle
-
-# Code Responds to Users
-
-## - "live" page updates via DOM manipulation
-
----
-
-## The .red-text[addEventListener] function registers its second argument to be called whenever the event described by its first argument occurs.
+The .red-text[addEventListener] function registers its second argument to be called whenever the event described by its first argument occurs.
 
 ```html
 <p>Click this document to activate the handler.</p>
@@ -186,40 +157,71 @@ class: center, middle
 
 ```javascript
 <script>
-  addEventListener("click", function() {
+  document.addEventListener("click", function() {
     console.log("You clicked!");
   });
 </script>
 ```
 
-#### - each browser event handler is registered in a context
-#### - calling method on the whole window (global scope is equivalent to the window object)
+???
+
+* [Introduction to Events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
 
 ---
+class: left
 
-# Events & DOM Nodes
+# Listening for Events On a Single Element
 
 ```html
-<button>Click me</button>
-<p>No handler here.</p>
+<button>Click Me 🙋</button>
+<p>No handler here 🤷</p>
 ```
 
 ```javascript
 <script>
-  var button = document.querySelector("button");
-  button.addEventListener("click", function() {
-    console.log("Button clicked.");
-  });
+  var button = document.querySelector('button');
+  button.addEventListener('click', function() {
+    console.log('Button clicked.');
+  }, false);
 </script>
 ```
 
-#### - every DOM element has its own addEventListener method (listen specifically on that element)
-#### - attach handler to the button node
-#### - clicks on button cause handler to run (whereas clicks on the rest of the document do not)
+**What's Going On Here?**
+
+* Every DOM element has its own addEventListener method (listen specifically on that element)
+* Attach handler to the button node
+* Clicks on button cause handler to run (whereas clicks on the rest of the document do not)
 
 ---
+class: left
 
-# Event Objects
+# Listening for Events On the Entire Document aka "Event Delegation" ~
+
+```js
+document.addEventListener('click', function(event) {
+	if (event.target.matches('.modal-open')) {
+		// Run your code to open a modal
+	}
+	if (event.target.matches('.close')) {
+		// Run your code to close a modal
+	}
+}, false);
+```
+
+**What's Going On Here?**
+
+* TBD
+
+???
+
+* [How JavaScript Event Delegation Works](https://davidwalsh.name/event-delegate)
+* [Event Delegation](https://javascript.info/event-delegation)
+* [Why Event Delegation is a Better Way to Listen for Events](https://gomakethings.com/why-event-delegation-is-a-better-way-to-listen-for-events-in-vanilla-js/)
+
+---
+class: left
+
+# The `Event` Object
 
 ```html
 <button>Click me any way you want</button>
@@ -235,7 +237,7 @@ class: center, middle
       console.log("Middle button");
     else if (event.which == 3)
       console.log("Right button");
-  });
+  }, false);
 </script>
 ```
 
