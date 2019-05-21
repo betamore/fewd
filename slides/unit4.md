@@ -532,9 +532,9 @@ class: left
 <img> <span> <em>
 ```
 
-**Simulate Boxes in Chrome DevTools**
+**Simulate Boxes in Chrome DevTools 👇**
 
-Go to [Google News](https://news.google.com) and create the following CSS rule:
+Go to [Google News](https://news.google.com) and create the following CSS rule in DevTools:
 
 ```css
 * {
@@ -565,7 +565,7 @@ class: left
 
 # Box-sizing ~
 
-### The `box-sizing` property alters the default CSS box model used to calculate width and height of the elements.
+### The `box-sizing` property alters the default CSS box model used to calculate width and height of elements.
 
 ```css
 /* content-box is the default box-sizing value */
