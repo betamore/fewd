@@ -142,12 +142,15 @@ class: left
 
 ???
 
+* [Introduction to Events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
 * [List of Common DOM Events](https://developer.mozilla.org/en-US/docs/Web/Events)
 
 ---
 class: left
 
-# Events trigger code, and code responds to users ~
+# Event Handling with JavaScript (cont.)
+
+### Users trigger events -> Events trigger code -> Code does stuff
 
 The .red-text[addEventListener] function registers its second argument to be called whenever the event described by its first argument occurs.
 
@@ -156,16 +159,10 @@ The .red-text[addEventListener] function registers its second argument to be cal
 ```
 
 ```javascript
-<script>
-  document.addEventListener("click", function() {
-    console.log("You clicked!");
-  });
-</script>
+document.addEventListener("click", function() {
+  console.log("You clicked!");
+});
 ```
-
-???
-
-* [Introduction to Events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
 
 ---
 class: left
@@ -178,39 +175,41 @@ class: left
 ```
 
 ```javascript
-<script>
-  var button = document.querySelector('button');
-  button.addEventListener('click', function() {
-    console.log('Button clicked.');
-  }, false);
-</script>
+var button = document.querySelector('button');
+button.addEventListener('click', function() {
+  console.log('Button clicked.');
+}, false);
 ```
 
 **What's Going On Here?**
 
-* Every DOM element has its own addEventListener method (listen specifically on that element)
-* Attach handler to the button node
-* Clicks on button cause handler to run (whereas clicks on the rest of the document do not)
+* The `addEventListener` method has been attached to the `button` element node
+* We are listening for click events on the `button` node
+* Clicks on the `button` will cause the event handler to run (whereas clicks on the rest of the document do not)
 
 ---
 class: left
 
 # Listening for Events On the Entire Document aka "Event Delegation" ~
 
+```html
+<button>Click Me 🙋</button>
+<p>No handler here 🤷</p>
+```
+
 ```js
 document.addEventListener('click', function(event) {
-	if (event.target.matches('.modal-open')) {
-		// Run your code to open a modal
-	}
-	if (event.target.matches('.close')) {
-		// Run your code to close a modal
+	if (event.target.matches('button')) {
+    console.log('Button clicked.');
 	}
 }, false);
 ```
 
 **What's Going On Here?**
 
-* TBD
+* The `addEventListener` method has been attached to the `document` DOM node
+* We are listening for click events on the _entire document_
+* When a click event occurs, the `if` statement in our event handler will check whether the click was on a `button` element node (if not, nothing happens)
 
 ???
 
@@ -228,28 +227,33 @@ class: left
 ```
 
 ```javascript
-<script>
-  var button = document.querySelector("button");
-  button.addEventListener("mousedown", function(event) {
-    if (event.which == 1)
-      console.log("Left button");
-    else if (event.which == 2)
-      console.log("Middle button");
-    else if (event.which == 3)
-      console.log("Right button");
-  }, false);
-</script>
+var button = document.querySelector("button");
+button.addEventListener("mousedown", function(event) {
+  if (event.button == 0) {
+    console.log("Left button");
+  }
+  if (event.button == 2) {
+    console.log("Right button");
+  }
+}, false);
 ```
 
-#### - event handler functions are passed an argument: the .red-text[event] object
-#### - this object gives us additional information about the event
+* Event handler functions are passed the `event` object as an argument by default
+* The `event` object provides additional information about the event (what type of event occurred, what DOM node did the event occur on, etc.)
+
+???
+
+* [The Event Object](https://javascript.info/introduction-browser-events#event-object)
+* [MouseEvent.button](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/button)
+* [JavaScript Event Keycodes](http://keycode.info/)
 
 ---
+class: left
 
-# Exercise: DOM and JS Events
+# Exercise: JavaScript Event Practice
 
-### Let's Practice!
+### ➡️ [Go to Exercise](https://github.com/betamore/fewd-js-event-practice)
 
-#### JavaScript Event Exercise: https://github.com/betamore/fewd-js-event-practice
+# Exercise: Say Hello
 
-#### Say Hello Exercise: https://github.com/betamore/fewd-js-say-hello
+### ➡️ [Go to Exercise](https://github.com/betamore/fewd-js-say-hello)
