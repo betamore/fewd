@@ -220,7 +220,7 @@ document.addEventListener('click', function(event) {
 ---
 class: left
 
-# The `Event` Object
+# The `Event` Object ~
 
 ```html
 <button>Click me any way you want</button>
