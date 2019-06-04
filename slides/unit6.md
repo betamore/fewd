@@ -53,10 +53,10 @@ class: left
 - **Variables**
 - **Operators**
 - **Data Types**
-- **Conditionals**
 - **Loops**
 - **Functions**
 - **Scope**
+- **Conditionals**
 
 ---
 class: left
@@ -238,65 +238,6 @@ class: left
 ---
 class: left
 
-# JavaScript Conditionals ~
-
-**Conditionals allow us to control the flow of execution in our programs by only executing blocks of code that meet certain conditions.**
-
-```javascript
-var today = 'Saturday';
-
-// if statement
-
-if (today === 'Saturday') {
-  console.log('Watch Cartoons!');
-}
-
-// if else statement
-
-if (today === 'Saturday') {
-  console.log('Watch cartoons');
-} else {
-  console.log('Watch the news');
-}
-```
-
-???
-
-* [JavaScript Control Flow](https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-control-flow)
-* [JavaScript if else and else if](https://www.w3schools.com/js/js_if_else.asp)
-* [JavaScript Conditionals](https://www.javascript.com/learn/conditionals)
-
----
-class: left
-
-```javascript
-// else if statement
-
-if (today === 'Saturday') {
-  console.log('Watch cartoons');
-} else if (today === 'Sunday') {
-  console.log('Watch sports');
-} else {
-  console.log('Watch the news');
-}
-
-// switch statement
-
-switch (today) {
-  case 'Saturday':
-    console.log('Watch cartoons');
-    break;
-  case 'Sunday':
-    console.log('Watch sports');
-    break;
-  default:
-    console.log('Watch the news');
-}
-```
-
----
-class: left
-
 # JavaScript Loops ~
 
 **Loops in JavaScript allow us to iterate - or repeat - the same code block multiple times until a specified condition is met.**
@@ -432,6 +373,38 @@ sayGoodbye(); // Goodbye!
 ---
 class: left
 
+# Passing Information to Functions ~
+
+### Arguments vs. Parameters
+
+Functions are sent arguments; they receive parameters.
+
+```javascript
+function square(x) {
+  return x * x;
+}
+
+square(4); // 16
+```
+
+```javascript
+var sayHelloTo = function(name) {
+  console.log('Hello ' + name + '!');
+}
+
+sayHelloTo('Jake'); // Hello Jake!
+```
+
+???
+
+* In the `square` function, `x` is a parameter and `4` is an argument.
+* In the `sayHelloTo` function, `name` is a parameter and `Jake` is an argument.
+* Parameters = Placeholders; Arguments = Values.
+* [Dudley Storey on functions](http://thenewcode.com/1033/Introduction-to-JavaScript-Functions)
+
+---
+class: left
+
 # Scope ~
 
 ### JavaScript has two types of scope: **global** & **local**
@@ -463,34 +436,61 @@ two(); // 2
 ---
 class: left
 
-# Passing Information to Functions ~
+# JavaScript Conditionals ~
 
-### Arguments vs. Parameters
-
-Functions are sent arguments; they receive parameters.
+**Conditionals allow us to control the flow of execution in our programs by only executing blocks of code that meet certain conditions.**
 
 ```javascript
-function square(x) {
-  return x * x;
+var today = 'Saturday';
+
+// if statement
+
+if (today === 'Saturday') {
+  console.log('Watch Cartoons!');
 }
 
-square(4); // 16
-```
+// if else statement
 
-```javascript
-var sayHelloTo = function(name) {
-  console.log('Hello ' + name + '!');
+if (today === 'Saturday') {
+  console.log('Watch cartoons');
+} else {
+  console.log('Watch the news');
 }
-
-sayHelloTo('Jake'); // Hello Jake!
 ```
 
 ???
 
-* In the `square` function, `x` is a parameter and `4` is an argument.
-* In the `sayHelloTo` function, `name` is a parameter and `Jake` is an argument.
-* Parameters = Placeholders; Arguments = Values.
-* [Dudley Storey on functions](http://thenewcode.com/1033/Introduction-to-JavaScript-Functions)
+* [JavaScript Control Flow](https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-control-flow)
+* [JavaScript if else and else if](https://www.w3schools.com/js/js_if_else.asp)
+* [JavaScript Conditionals](https://www.javascript.com/learn/conditionals)
+
+---
+class: left
+
+```javascript
+// else if statement
+
+if (today === 'Saturday') {
+  console.log('Watch cartoons');
+} else if (today === 'Sunday') {
+  console.log('Watch sports');
+} else {
+  console.log('Watch the news');
+}
+
+// switch statement
+
+switch (today) {
+  case 'Saturday':
+    console.log('Watch cartoons');
+    break;
+  case 'Sunday':
+    console.log('Watch sports');
+    break;
+  default:
+    console.log('Watch the news');
+}
+```
 
 ---
 class: left
