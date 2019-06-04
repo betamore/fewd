@@ -1,9 +1,9 @@
-class: center, middle
+class: left
 
 # What is the difference between a tag and an element?
 
 ---
-class:
+class: left
 
 # How do you remove the bullets from an unordered list?
 
@@ -18,71 +18,67 @@ class:
 ```
 
 ---
-class: center, middle
+class: left
 
 # What might be wrong if your images don't appear when you view the page in a browser?
 
-### There are 3 possible explanations.
+---
+class: left
+
+# Identify all parts of this CSS delcaration:
+
+![CSS Declaration](assets/css-declaration.svg)
 
 ---
-class: center, middle
-
-# Identify the parts of this declaration.
-
-## (selector, property, value)
-
-### `font: normal 100%/1.5 "Arimo", sans-serif;`
-
----
-class: center, middle
+class: left
 
 # The box model is made up of?
+
+???
+
+* Margin, border, padding, and content
 
 ---
 class:
 
-# Positioning methods?
+# Name each position property
 
-### (static, relative, absolute, fixed)
+## 1) Positions an element relative to the nearest positioned ancestor.
+## 2) Positions an element relative to its normal position.
+## 3) Always positions an element relative to the viewport.
+## 4) Positions an element in normal flow (aka "unpositioned").
 
-## - Positions the element relative to the containing block.
-## - Removes the element from normal flow.
-## - Always positions the element relative to the viewport.
-## - Positions the element in normal flow.
+???
+
+1. Absolute
+2. Relative  
+3. Fixed
+4. Static  
 
 ---
-class: center, middle
+class: left
 
 # What does the CSS acronym stand for?
 
 ---
-
-class: center
+class: left
 
 # HTML or CSS?
 
-### - content
-### - appearance
-### - “what something is”
-### - “how something looks”
-### - semantic markup of data
-### - rules for appearance of content
+### Content
+### Appearance
+### What something is
+### How something looks
+### Semantic markup of data
+### Rules for appearance of content
 
 ---
+class: left
 
-class: center, middle
-
-# Explain why CSS has several advantages over alternative methods of determining the appearance of web pages.
-
----
-
-class: center, middle
-
-# Talk about several ways in which styles<br>can be applied to web pages.
+# Explain the three ways in which styles can be applied to web pages.
 
 ---
-
-class: center, middle
+class: left
 
 # What's wrong with this markup?
 
@@ -91,33 +87,6 @@ class: center, middle
 ```
 
 ---
-
-class:
-
-# Identify all parts of the CSS syntax.
-
-![CSS Declaration](assets/css-declaration.svg)
-
----
-
-class: center, middle
-
-# What's the syntax for CSS comments?
-
----
-
-class: center, middle
-
-# What CSS selectors have you studied so far?
-
----
-
-class: center, middle
+class: left
 
 # Explain the concept of CSS inheritance in your own words.
-
----
-
-class: center, middle
-
-# Discuss a practical application of CSS inheritance.
