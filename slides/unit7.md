@@ -126,6 +126,31 @@ var firstElement = document.querySelector('p');
 ---
 class: left
 
+# Selecting HTML DOM Elements with JavaScript (cont.)
+
+Using the markup below, select and store the following items in variables:
+
+- The `#main-content` element
+- All `.content-section` elements
+- The first `p` element
+- The `h2` element
+
+```html
+<main id="main-content">
+  <section class="content-section">
+    <h1>Fanny Pack Poutine</h1>
+    <p>Raw denim hoodie affogato umami crucifix whatever jean shorts normcore meh biodiesel glossier pop-up four dollar toast.</p>
+  </section>
+  <section class="content-section">
+    <h2>Hashtag Chambray Offal</h2>
+    <p>Squid intelligentsia +1 8-bit asymmetrical bushwick hashtag. Ugh bushwick hell of, enamel pin crucifix hot chicken single-origin coffee messenger bag.</p>
+  </section>
+</main>
+```
+
+---
+class: left
+
 # Event Handling with JavaScript ~
 
 ### The browser "listens" for an event, then does something:
@@ -152,15 +177,15 @@ class: left
 
 ### Users trigger events -> Events trigger code -> Code does stuff
 
-The .red-text[addEventListener] function registers its second argument to be called whenever the event described by its first argument occurs.
+The .red-text[addEventListener] method registers its second argument to be called whenever the event described by its first argument occurs.
 
 ```html
 <p>Click this document to activate the handler.</p>
 ```
 
 ```javascript
-document.addEventListener("click", function() {
-  console.log("You clicked!");
+document.addEventListener('click', function() {
+  console.log('You clicked!');
 });
 ```
 
