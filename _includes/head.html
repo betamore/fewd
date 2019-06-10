@@ -5,7 +5,7 @@
   <meta name="robots" content="noindex, nofollow">
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %} | {{ site.title }}</title>
   <meta name="description" content="{{ page.description | strip_html | strip_newlines | truncate: 160 }}">
-  <link rel="stylesheet" href="{{ "/css/main.css.gz" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   {% comment %}
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
