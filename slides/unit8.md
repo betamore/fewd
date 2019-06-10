@@ -139,7 +139,7 @@ class: left
 ---
 class: left
 
-# Spinning Up a Local Server
+# Spinning Up a Local Server ~
 
 ## Two Basic Methods
 
@@ -158,3 +158,33 @@ class: left
 * [Intro to Web Servers by Chris Uehlinger](http://chrisuehlinger.com/StaticWebSiteTutorial/#/)
 * [Install node.js and npm on macOS](https://blog.teamtreehouse.com/install-node-js-npm-mac)
 * [node-static package on npm](https://www.npmjs.com/package/node-static)
+
+---
+class: left
+
+# Compression & Minification ~
+
+### Server-side compression (via gzip) and minification of your HTML, CSS, and JS reduce the overall size of your files. This reduced file size makes them load faster in the browser, providing better UX and providing a speed/performance boost to your site's SEO.
+
+???
+
+* [The Difference Between Minification and Gzipping](https://css-tricks.com/the-difference-between-minification-and-gzipping/)
+* [How to Minify CSS, JS, and HTML](https://codeburst.io/how-to-minify-css-js-and-html-ddd9dbea25c6)
+* [Code Minifier and Beautifier Tool](http://minifycode.com/)
+
+---
+class: left
+
+# Deploying Your Project
+
+## There are _TONS_ of options for deploying (aka hosting) your static web projects:
+
+* [Amazon S3](https://aws.amazon.com/getting-started/projects/host-static-website/)
+* [Google Cloud or Firebase](https://cloud.google.com/solutions/web-serving-overview)
+* Other cloud-based hosting > [Surge](https://surge.sh/), [Now](https://zeit.co/now), [Paperplane.io](https://www.paperplane.io/), [Aerobatic](https://www.aerobatic.com/), etc.
+* Cheapo hosting > GoDaddy, HostGator, Bluehost, etc.
+
+We are going to try out these 2:
+
+* [GitHub Pages](https://help.github.com/en/categories/github-pages-basics)
+* [Netlify](https://www.netlify.com/)
