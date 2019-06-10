@@ -47,12 +47,9 @@ permalink: /syllabus
   * Intro to the DOM
   * Responding to events in JavaScript  
 
-## Unit 8: Accessibility
+## Unit 8: Accessibility, Optimization, and Deployment
   * What is web accessibility?
-  * Accessible HTML and ARIA landmark roles.
-  * Accessible CSS and JavaScript.
-
-## Unit 9: Optimization & Deployment
-  * Browser and device testing.
-  * Intro to web performance.
-  * Modern deployment workflow with GitHub Pages.
+  * Accessible HTML and ARIA
+  * Browser and device testing
+  * Compression and minification
+  * Modern web deployment
