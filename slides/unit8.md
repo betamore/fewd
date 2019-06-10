@@ -1,136 +1,114 @@
 class: center, middle
 
-## Unit 9
-# .red-text[Accessibility]
-## \#a11y
-
-???
-
-* [The A11y Project](https://a11yproject.com/)
+# Unit 8
+## Accessibility, Optimization, and Deployment
 
 ---
+class: left
 
-name: a11y-berners-lee-quote
-class: middle
+# Web Accessibility & \#a11y ~
 
 > The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.
 
 <cite>-- Tim Berners-Lee, W3C Director and inventor of the World Wide Web</cite>
 
+## The A11Y Project
+
+A community-driven effort to make web accessibility easier. A11y offers accessibility pattern libraries, website checklists, software, tools, and other resources.
+
 ???
-[W3C Accessibility](http://www.w3.org/standards/webdesign/accessibility)
 
-[Web Accessibility Initiative (WAI)](http://www.w3.org/WAI/)
-
----
-
-name: a11y-gustafson-quote
-class: middle
-
-> To me, accessibility is ultimately about ensuring people have equal opportunity to access your content while simultaneously recognizing that we all have special needs -- physical limitations, bandwidth limitations, device limitations -- that may require each of us to have different experiences of the same web page.
-
-<cite>-- Aaron Gustafson</cite>
+* [W3C Accessibility](http://www.w3.org/standards/webdesign/accessibility)
+* [Web Accessibility Initiative (WAI)](http://www.w3.org/WAI/)
+* [The A11y Project](https://a11yproject.com/)
 
 ---
-
-name: a11y-disabilities
-class: center
+class: left
 
 # Broad Categories of Disabilities
 
-### - vision impairment
-### - mobility impairment
-### - auditory impairment
-### - cognitive impairment
+### Vision impairment
+### Mobility impairment
+### Auditory impairment
+### Cognitive impairment
 
 ---
-
-name: a11y-vision
-class: center
+class: left
 
 # Vision Impairment
 
-### - low or no vision
-### - screen reader
-### - Braille display
-### - screen magnifier
-### - browser text zoom
+### Low or no vision
+### Screen reader
+### Braille display
+### Screen magnifier
+### Browser text zoom
 
 ---
-
-name: a11y-mobility
-class: center
+class: left
 
 # Mobility Impairment
 
-### - limited or no use of hands
-### - modified mice and keyboards
-### - foot pedals
-### - joysticks
-### - assistive voice software
+### Limited or no use of hands
+### Modified mice and keyboards
+### Foot pedals
+### Joysticks
+### Assistive voice software
 
 ---
-
-name: a11y-audio
-class: center
+class: left
 
 # Auditory Impairment
 
-### - limited or no hearing
-### - miss out on multimedia audio
-### - provide alternatives (transcripts, video captions)
+### Limited or no hearing
+### Miss out on multimedia audio
 
 ---
-
-name: a11k-cognitive
-class: center
+class: left
 
 # Cognitive Impairment
 
-### - memory problems
-### - reading and comprehension problems
-### - problem solving
-### - attention limitations
-### - design sites simply and clearly (which benefits _all_ users)
----
-
-name: a11k-overview
-class: center
-
-# Accessibility 101
-
-### - good design
-### - great user experience
-### - standards-compliant, clean HTML
-### - semantic HTML
-### - separation of content/structure (HTML) and presentation (CSS)
+### Memory problems
+### Reading and comprehension problems
+### Difficulty with problem solving
+### Attention limitations
 
 ---
+class: left
 
+# Accessibility 101 ~
 
-name: a11y-wai
-class: center
+## How Do We Make Our Websites More Accessible?
 
-# Web Accessibility Initiative (WAI)
-
- ### - created by W3C to make the Web usable for everyone (w3.org/WAI)
- ### - Web Content Accessibility Guidelines (w3.org/WAI/intro/wcag)
- ### - US government used WCAG as basis for Section 508 accessibility guidelines
- ### - section508.gov
+* Start with good design and great user experience (UX)
+* Write standards-compliant, [semantic HTML](https://www.lifewire.com/why-use-semantic-html-3468271)
+* Separate content/structure (HTML) and presentation (CSS)
+* Provide alternatives when necessary (alt tags, transcripts, video captions, etc.)
+* Design sites simply and clearly (which benefits _all_ users)
 
 ???
 
-[US Government Section 508](http://section508.gov)
+* [25 Accessibility Testing Tools](https://dynomapper.com/blog/27-accessibility-testing/246-top-25-awesome-accessibility-testing-tools-for-websites)
+* [Section 508: GSA Government IT Accessibility Guide](http://section508.gov)
 
 ---
-
-name: a11y-aria
-class: center
+class: left
 
 # ARIA
+
 ## (Accessible Rich Internet Applications)
 
-### Adding .red-text[accessibility information] to HTML elements using the<br> .red-text[Accessible Rich Internet Applications specification (WAI-ARIA]).
+ARIA is a set of attributes that add accessibility information to non-semantic HTML elements. It utilizes **roles** and **properties** to provide enhanced meaning and accessibility.
+
+```js
+// Example div that is enhanced with ARIA role and attributes
+<div id="percent-loaded" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" />
+```
+If you can use a native HTML element or attribute to create the necessary semantics and behavior, rather than re-purposing an element and adding an ARIA role, state or property to make it accessible, then do so.
+
+```js
+// The code below is preferable to the enhanced div above, since it utilizes the native <progress> HTML element
+<progress id="percent-loaded" max="100" value="75"></progress>
+```
 
 ???
 
