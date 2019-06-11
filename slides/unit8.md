@@ -93,6 +93,19 @@ class: left
 ---
 class: left
 
+# Exercise: Accessibility Exercise
+
+### ➡️ [Go to Exercise](https://github.com/betamore/fewd-accessibility-exercise)
+
+**Some helpful resources:**
+
+* [HTML: A Good Basis for Accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML)
+* [How to Structure an HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/How_to_structure_an_HTML_form)
+* [HTML Form Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Forms)
+
+---
+class: left
+
 # ARIA ~
 
 ## (Accessible Rich Internet Applications)
