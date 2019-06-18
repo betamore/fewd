@@ -53,3 +53,8 @@ permalink: /syllabus
   * Browser and device testing
   * Compression and minification
   * Modern web deployment
+
+## Unit 9: Working with APIs
+  * What is an API?
+  * APIs in Client-Side JavaScript
+  * AJAX and XHR

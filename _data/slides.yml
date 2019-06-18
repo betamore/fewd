@@ -14,3 +14,5 @@
   unit-title: The DOM and Event Handling
 - unit: 8
   unit-title: Accessibility, Optimization, and Deployment
+- unit: 9
+  unit-title: Working with APIs
