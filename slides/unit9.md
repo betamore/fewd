@@ -219,3 +219,10 @@ div.innerHTML = '<p>' + sanitizeHTML(data[1].songTitle) + '</p>';
 ???
 
 * [Preventing XSS Attacks](https://gomakethings.com/preventing-cross-site-scripting-attacks-when-using-innerhtml-in-vanilla-javascript/)
+
+---
+class: left
+
+# Exercise: Random Ron
+
+### ➡️ [Go to Exercise](https://github.com/betamore/fewd-js-random-ron)
