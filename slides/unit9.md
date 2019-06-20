@@ -127,7 +127,7 @@ The JSON that we get back from our request is in `string` format, so we need to 
 
 ```javascript
 // Convert the data stored in our variable
-// above from a string into a JSON object
+// above from a string to a JSON object
 JSON.parse(data);
 ```
 
@@ -166,13 +166,51 @@ class: left
 
 # Working with API Data (cont.) ~
 
-TBD > Using `innerHTML` or `textContent` to update DOM
+When we're ready to inject some API data into our project, we can use either `innerHTML` or `textContent` to update the DOM.
 
-https://courses.gomakethings.com/academy/fall-2018/injecting-html-into-the-dom/
+```javascript
+// Cache body element
+var body = document.querySelector('body');
+// Create paragraph as a string
+var p = '<p>' + data[1].songTitle + '</p>';
+// Update inner HTML of body
+body.innerHTML = p;
 
-https://gomakethings.com/preventing-cross-site-scripting-attacks-when-using-innerhtml-in-vanilla-javascript/
+//=== OR ===//
+
+// Cache body element
+var body = document.querySelector('body');
+// Create paragraph element
+var p = document.createElement('p');
+// Update content of p element with API data
+p.textContent = data[1].songTitle;
+// Append p element to body
+body.appendChild(p);
+```
 
 ???
 
 * [textContent vs. innerText](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent#Differences_from_innerText)
+
+---
+class: left
+
+# Sanitizing API Data ~
+
+Before we inject data from a 3rd party source, we need to **sanitize** that data to prevent any malicious code or cross-script (XSS) attacks from being executed in our markup. To do so, we can use the helper function from [Chris Ferdinandi](https://gomakethings.com/preventing-cross-site-scripting-attacks-when-using-innerhtml-in-vanilla-javascript/) below:
+
+```javascript
+// Sanitize and encode all HTML in from a 3rd party
+var sanitizeHTML = function(str) {
+	var temp = document.createElement('div');
+	temp.textContent = str;
+	return temp.innerHTML;
+};
+
+// Injecting 3rd party data into the DOM
+div.innerHTML = '<p>' + sanitizeHTML(data[1].songTitle) + '</p>';
+```
+
+???
+
 * [Preventing XSS Attacks](https://gomakethings.com/preventing-cross-site-scripting-attacks-when-using-innerhtml-in-vanilla-javascript/)
