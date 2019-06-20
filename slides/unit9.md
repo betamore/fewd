@@ -101,6 +101,11 @@ xhr.send();
 
 ### Let's try this one ☝️
 
+* Open your DevTools Console
+* Copy+Paste the JavaScript code from slide 6
+* Copy+Paste the JavaScript code from slide 7
+* Expand & inspect the returned `XMLHttpRequest` object
+
 ???
 
 * [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
