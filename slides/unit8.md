@@ -171,6 +171,7 @@ class: left
 * [Intro to Web Servers by Chris Uehlinger](http://chrisuehlinger.com/StaticWebSiteTutorial/#/)
 * [Install node.js and npm on macOS](https://blog.teamtreehouse.com/install-node-js-npm-mac)
 * [node-static package on npm](https://www.npmjs.com/package/node-static)
+* [http-server > An alternative to node-static](https://github.com/http-party/http-server)
 
 ---
 class: left
