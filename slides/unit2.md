@@ -301,7 +301,7 @@ class: left
 ---
 class: left
 
-# More Than Notification
+# More Than a Notification
 
 ### Discuss the proposed feature (post feedback)
 ### Tweak the feature by pushing follow-up commits
