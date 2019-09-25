@@ -1,9 +1,9 @@
-class: left
+class: center, middle
 
 # What is the difference between a tag and an element?
 
 ---
-class: left
+class: left, middle
 
 # How do you remove the bullets from an unordered list?
 
@@ -18,19 +18,19 @@ class: left
 ```
 
 ---
-class: left
+class: center, middle
 
 # What might be wrong if your images don't appear when you view the page in a browser?
 
 ---
-class: left
+class: center, middle
 
 # Identify all parts of this CSS delcaration:
 
 ![CSS Declaration](assets/css-declaration.svg)
 
 ---
-class: left
+class: center, middle
 
 # The box model is made up of?
 
@@ -39,7 +39,7 @@ class: left
 * Margin, border, padding, and content
 
 ---
-class:
+class: left
 
 # Name each position property
 
@@ -56,12 +56,12 @@ class:
 4. Static  
 
 ---
-class: left
+class: center, middle
 
 # What does the CSS acronym stand for?
 
 ---
-class: left
+class: center, middle
 
 # HTML or CSS?
 
@@ -73,12 +73,12 @@ class: left
 ### Rules for appearance of content
 
 ---
-class: left
+class: center, middle
 
 # Explain the three ways in which styles can be applied to web pages.
 
 ---
-class: left
+class: center, middle
 
 # What's wrong with this markup?
 
@@ -87,6 +87,6 @@ class: left
 ```
 
 ---
-class: left
+class: center, middle
 
 # Explain the concept of CSS inheritance in your own words.
