@@ -8,11 +8,11 @@ class: center, middle
 ---
 class: left
 
-# Welcome to Betamore FEWD Fall 2019 🙌
+# Welcome to Betamore FEWD Winter 2020 🙌
 ### Zac Heisey
 ### zheisey@gmail.com
 ### (408) 444-0546
-### fewd-fall19
+### fewd-winter20
 
 ---
 class: left
