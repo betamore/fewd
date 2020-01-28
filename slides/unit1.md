@@ -19,8 +19,6 @@ class: left
 
 # Expectations for this Course
 
-## Sincere, not serious.
-
 ### This is an interactive course.
 
 ### There will be uncomfortable moments.
@@ -32,7 +30,7 @@ class: left
 ---
 class: left
 
-# Design vs. Developer
+# Designers vs. Developers
 
 ## What is a Web Designer?
 
@@ -42,13 +40,12 @@ class: left
 * Tools of the Trade: Photoshop, Illustrator, InDesign, Sketch
 * [Should designers learn to code?](http://www.webdesignerdepot.com/2015/04/should-designers-learn-to-code/) (Spoiler Alert: HELL YES THEY SHOULD!)
 
-## What is a Front-End Web Developer?
+## What is a Web Developer?
 
-* That's us!
 * Builds websites from the ground up, (mostly) by hand
 * Typically self-taught or CS background
 * Clean, semantic code
-* Tools of the Trade: Text Editor, Browser Dev Tools, HTML, CSS, JavaScript
+* Tools of the Trade: Text Editor, Browser, Developer Tools, HTML, CSS, JavaScript
 
 ---
 class: left
@@ -56,6 +53,8 @@ class: left
 # Let's Get Real!
 
 ![Real web designers write code. Always have, always will.](../assets/zeldman-web-designer-tweet.png)
+
+This course focuses on front-end web development, which sits at the intersection of graphic design, UI/UX, and engineering. At the end of the day, it's less about a specific job title or role and more about making beautiful, usable products for the web.
 
 ---
 class: left
@@ -128,7 +127,7 @@ class: left
 ## HTTP(s) (Hypertext Transfer Protocol)
 ## DNS (Domain Name System)
 ## Domain Names
-## Browsers
+## Browsers (aka Clients)
 ## Servers
 
 ???
@@ -147,7 +146,7 @@ class: left
 ---
 class: left
 
-# Browser Landscape
+# Browser Landscape ~
 
 ## Desktop
 
@@ -230,16 +229,6 @@ class: left
 ---
 class: left
 
-# Text Editors
-
-### [Atom](https://atom.io/)
-### [SublimeText](https://www.sublimetext.com/)
-### [Visual Studio Code](https://code.visualstudio.com/)
-### [And tons more...](https://kinsta.com/blog/best-text-editors/)
-
----
-class: left
-
 # Browser Developer Tools
 
 ### [Chrome DevTools](https://developer.chrome.com/devtools)
@@ -265,6 +254,16 @@ class: left
 ---
 class: left
 
+# Text Editors
+
+### [Atom](https://atom.io/)
+### [SublimeText](https://www.sublimetext.com/)
+### [Visual Studio Code](https://code.visualstudio.com/)
+### [And tons more...](https://kinsta.com/blog/best-text-editors/)
+
+---
+class: left
+
 # Terminal Emulators
 
 ## macOS
@@ -279,7 +278,7 @@ class: left
 # Setting Up Your Local Dev Environment (macOS) ~
 
 ```bash
-# check if Xcode Command Line Tools are already installed
+# check if Xcode Command Line Tools are already installed (don't copy $ symbol)
 $ xcode-select --version
 # if not, install them
 $ xcode-select --install
